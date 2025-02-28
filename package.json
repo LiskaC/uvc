@@ -1,19 +1,28 @@
 {
   "name": "uvc",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
   },
   "devDependencies": {
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "parcel": "^2.13.3",
     "process": "^0.11.10",
     "typescript": "^5.7.3"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.2.0"
   }
 }
