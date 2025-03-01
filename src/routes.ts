@@ -1,15 +1,21 @@
 /**
  * Data for a single route
  */
-type Route = { name: string, path: string }
+export type Route = { name: string, path: string, subroutes?: Record<ResourceSubroutes, Route> }
+
+/**
+ * List of subroutes for resources
+ */
+export type ResourceSubroutes = "initiatives" | "membership" | "contact";
 
 /**
  * Type for all the routes available in the application
  */
-type Routes = {
-  home: Route,
-  events: Route,
-  collab: Route
+export type Routes = {
+  home: Route
+  reporting: Route
+  events: Route
+  resources: Route
 }
 
 /**
@@ -18,14 +24,23 @@ type Routes = {
 export const routes: Routes = {
   home: {
     name: 'Home',
-    path: '/'
+    path: '/',
+  },
+  reporting: {
+    name: 'Reporting',
+    path: '/reporting',
   },
   events: {
     name: 'Events',
-    path: '/events'
+    path: '/events',
   },
-  collab: {
-    name: 'Collab',
-    path: '/collab'
+  resources: {
+    name: 'Resources',
+    path: '/resources',
+    subroutes: {
+      initiatives: { name: 'Initiatives', path: '/resources/initiatives' },
+      membership: { name: 'Become a member', path: '/resources/member' },
+      contact: { name: 'Contact us', path: '/resources/contact' }
+    }
   }
 }
