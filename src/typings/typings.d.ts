@@ -13,7 +13,7 @@ declare module '*.png' {
   export default src
 }
 
-declare module '*.jpeg' {
+declare module '*.jpg' {
   const src: string
   export default src
 }
