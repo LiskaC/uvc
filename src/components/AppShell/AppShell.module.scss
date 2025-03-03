@@ -1,3 +1,6 @@
+@use '../../assets/styles/variables';
+@use '../../assets/styles/medias.scss';
+
 .appShell {
   margin: 0;
   padding: 0;
@@ -5,9 +8,58 @@
   width: 100vw;
 }
 
-.appHeader {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@mixin mobile-md {
+  @media only screen and (min-width: 475px) { @content; }
 }
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) { @content; }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1024px) { @content; }
+}
+
+.appHeader {
+  padding: 0.5rem 2rem;
+  align-items: center;
+  background-color: var(--darkblue);
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "title"
+    "navigation"
+    "social";
+
+    @include tablet() {
+      grid-template-areas:
+        "title social"
+        "navigation navigation";
+    }
+
+    @include desktop() {
+      grid-template-areas: "title navigation social";
+    }
+}
+
+.title {
+  grid-area: title;
+}
+
+.navigation {
+  grid-area: navigation;
+  display: none;
+
+  @include mobile-md() {
+    display: block;
+  }
+}
+
+.social {
+  grid-area: social;
+}
+
+.appContent {
+  padding: 2rem;
+}
+

@@ -1,11 +1,12 @@
+@use '../../assets/styles/variables';
+
 .appNavigation {
-  background-color: blue;
   position: relative;
 }
 
 .navigationLinks {
   display: flex;
-  justify-content: space-around;
+  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -19,19 +20,18 @@
   display: block;
   padding: 1rem;
   color: #fff;
-  background-color: #89CFF0;
   text-decoration: none;
 }
 
 .navigationLink:hover {
-  background-color: #68b0d8;
+  background-color: var(--yellow);
 }
 
 .dropdownMenu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #89CFF0;
+  background-color: var(--darkblue);
   min-width: 200px;
   z-index: 1000;
 }
@@ -51,5 +51,5 @@
 }
 
 .dropdownItem:hover {
-  background-color: #f0f0f0;
+  background-color: var(--yellow);
 }

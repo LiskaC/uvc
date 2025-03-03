@@ -8,11 +8,11 @@ import styles from './AppShell.module.scss'
 export const AppShell: FC = () => (
   <div className={styles.appShell}>
     <header className={styles.appHeader}>
-      <h1>Ukrainian Victory Campaign</h1>
-      <Social/>
+      <h1 className={styles.title}>UKRAINIAN VICTORY CAMPAIGN</h1>
+      <div className={styles.navigation}><Navigation/></div>
+      <div className={styles.social}><Social/></div>
     </header>
-    <Navigation/>
-    <main className='app-content'>
+    <main className={styles.appContent}>
       <Outlet/>
     </main>
   </div>
