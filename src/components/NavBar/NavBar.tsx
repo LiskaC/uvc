@@ -28,7 +28,7 @@ const NavItem: FC<{route: Route}> = props => {
 export const Navigation: FC = () => (
 	<nav className={styles.appNavigation}>
 		<ol className={styles.navigationLinks}>
-			{Object.values(routes).map((route) => <NavItem route={route}/>)}
+			{Object.values(routes).map((route) => <NavItem route={route} key={route.name}/>)}
 		</ol>
 	</nav>
 );
