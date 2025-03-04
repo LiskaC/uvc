@@ -8,3 +8,8 @@
 .socialsIcon {
   height: 100%;
 }
+
+.socialsIcon:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
