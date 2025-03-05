@@ -18570,16 +18570,15 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
+var _reactRouter = require("react-router");
 var _routes = require("./routes");
 var _appShell = require("./components/AppShell/AppShell");
 var _home = require("./views/Home");
 var _reports = require("./views/Reports");
 var _events = require("./views/Events");
-const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-        basename: "/uvc",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                 path: (0, _routes.routes).home.path,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appShell.AppShell), {}, void 0, false, {
                     fileName: "src/App.tsx",
@@ -18587,7 +18586,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                     columnNumber: 47
                 }, void 0),
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         index: true,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
                             fileName: "src/App.tsx",
@@ -18599,7 +18598,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 13,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).reporting.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
                             fileName: "src/App.tsx",
@@ -18611,7 +18610,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 14,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).events.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
                             fileName: "src/App.tsx",
@@ -18623,7 +18622,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "resources"
@@ -18637,7 +18636,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.subroutes.initiatives.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Initiatives"
@@ -18651,7 +18650,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.subroutes.membership.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Member"
@@ -18665,7 +18664,7 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Bro
                         lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.subroutes.contact.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Contact"
@@ -18704,163 +18703,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"lyno9"}],"cAFqI":[function(require,module,exports,__globalThis) {
-/**
- * Data for a single route
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "routes", ()=>routes);
-const routes = {
-    home: {
-        name: 'Home',
-        path: '/'
-    },
-    reporting: {
-        name: 'Reporting',
-        path: '/reporting'
-    },
-    events: {
-        name: 'Events',
-        path: '/events'
-    },
-    resources: {
-        name: 'Resources',
-        path: '/resources',
-        subroutes: {
-            initiatives: {
-                name: 'Initiatives',
-                path: '/resources/initiatives'
-            },
-            membership: {
-                name: 'Become a member',
-                path: '/resources/member'
-            },
-            contact: {
-                name: 'Contact us',
-                path: '/resources/contact'
-            }
-        }
-    }
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"eq8hI":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$fda5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fda5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "AppShell", ()=>AppShell);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouter = require("react-router");
-var _navBar = require("../NavBar/NavBar");
-var _social = require("../Social/Social");
-var _appShellModuleScss = require("./AppShell.module.scss");
-var _appShellModuleScssDefault = parcelHelpers.interopDefault(_appShellModuleScss);
-const AppShell = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _appShellModuleScssDefault.default).appShell,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: (0, _appShellModuleScssDefault.default).appHeader,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _appShellModuleScssDefault.default).title,
-                        children: "UKRAINIAN VICTORY CAMPAIGN"
-                    }, void 0, false, {
-                        fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 11,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _appShellModuleScssDefault.default).navigation,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.Navigation), {}, void 0, false, {
-                            fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 12,
-                            columnNumber: 42
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 12,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _appShellModuleScssDefault.default).social,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
-                            fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 13,
-                            columnNumber: 38
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 13,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 10,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-                className: (0, _appShellModuleScssDefault.default).appContent,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
-                    fileName: "src/components/AppShell/AppShell.tsx",
-                    lineNumber: 16,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 15,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 9,
-        columnNumber: 3
-    }, undefined);
-_c = AppShell;
-var _c;
-$RefreshReg$(_c, "AppShell");
-
-  $parcel$ReactRefreshHelpers$fda5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -28013,7 +27856,163 @@ module.exports.parse = parse;
 module.exports.parseString = parseString;
 module.exports.splitCookiesString = splitCookiesString;
 
-},{}],"bZWpS":[function(require,module,exports,__globalThis) {
+},{}],"gkKU3":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"cAFqI":[function(require,module,exports,__globalThis) {
+/**
+ * Data for a single route
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "routes", ()=>routes);
+const routes = {
+    home: {
+        name: 'Home',
+        path: '/'
+    },
+    reporting: {
+        name: 'Reporting',
+        path: '/reporting'
+    },
+    events: {
+        name: 'Events',
+        path: '/events'
+    },
+    resources: {
+        name: 'Resources',
+        path: '/resources',
+        subroutes: {
+            initiatives: {
+                name: 'Initiatives',
+                path: '/resources/initiatives'
+            },
+            membership: {
+                name: 'Become a member',
+                path: '/resources/member'
+            },
+            contact: {
+                name: 'Contact us',
+                path: '/resources/contact'
+            }
+        }
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eq8hI":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$fda5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fda5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AppShell", ()=>AppShell);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouter = require("react-router");
+var _navBar = require("../NavBar/NavBar");
+var _social = require("../Social/Social");
+var _appShellModuleScss = require("./AppShell.module.scss");
+var _appShellModuleScssDefault = parcelHelpers.interopDefault(_appShellModuleScss);
+const AppShell = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _appShellModuleScssDefault.default).appShell,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                className: (0, _appShellModuleScssDefault.default).appHeader,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: (0, _appShellModuleScssDefault.default).title,
+                        children: "UKRAINIAN VICTORY CAMPAIGN"
+                    }, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 11,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _appShellModuleScssDefault.default).navigation,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.Navigation), {}, void 0, false, {
+                            fileName: "src/components/AppShell/AppShell.tsx",
+                            lineNumber: 12,
+                            columnNumber: 42
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 12,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _appShellModuleScssDefault.default).social,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
+                            fileName: "src/components/AppShell/AppShell.tsx",
+                            lineNumber: 13,
+                            columnNumber: 38
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 13,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/AppShell/AppShell.tsx",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+                className: (0, _appShellModuleScssDefault.default).appContent,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
+                    fileName: "src/components/AppShell/AppShell.tsx",
+                    lineNumber: 16,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/AppShell/AppShell.tsx",
+                lineNumber: 15,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/AppShell/AppShell.tsx",
+        lineNumber: 9,
+        columnNumber: 3
+    }, undefined);
+_c = AppShell;
+var _c;
+$RefreshReg$(_c, "AppShell");
+
+  $parcel$ReactRefreshHelpers$fda5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bZWpS":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$1c99 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28707,25 +28706,6 @@ async function fetchEvents() {
 module.exports["calendar"] = `LufJma_calendar`;
 module.exports["event"] = `LufJma_event`;
 
-},{}],"lyno9":[function(require,module,exports,__globalThis) {
-/**
- * react-router-dom v7.2.0
- *
- * Copyright (c) Remix Software Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.md file in the root directory of this source tree.
- *
- * @license MIT
- */ // index.ts
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "HydratedRouter", ()=>(0, _reactRouterDom.HydratedRouter));
-parcelHelpers.export(exports, "RouterProvider", ()=>(0, _reactRouterDom.RouterProvider));
-var _reactRouterDom = require("react-router-dom");
-var _reactRouter = require("react-router");
-parcelHelpers.exportAll(_reactRouter, exports);
-
-},{"react-router":"dXVwI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react-router-dom":false}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map
