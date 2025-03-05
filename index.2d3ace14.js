@@ -28037,7 +28037,7 @@ const NavItem = (props)=>{
         onMouseLeave: ()=>setShowDropdown(false),
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: props.route.path,
+                href: '/uvc/#' + props.route.path,
                 className: (0, _navBarModuleScssDefault.default).navigationLink,
                 children: props.route.name
             }, void 0, false, {
@@ -28051,7 +28051,7 @@ const NavItem = (props)=>{
                     children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: (0, _navBarModuleScssDefault.default).dropdownItem,
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: subroute.path,
+                                href: '/uvc/#' + subroute.path,
                                 children: subroute.name
                             }, void 0, false, {
                                 fileName: "src/components/NavBar/NavBar.tsx",
