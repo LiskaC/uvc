@@ -4325,6 +4325,7 @@ var _home = require("./views/Home");
 var _reports = require("./views/Reports");
 var _events = require("./views/Events");
 const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.BrowserRouter), {
+        basename: "/uvc",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                 path: (0, _routes.routes).home.path,
