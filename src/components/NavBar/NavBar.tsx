@@ -9,13 +9,13 @@ const NavItem: FC<{route: Route}> = props => {
 	return (
 		<li className={styles.navigationItem} onMouseEnter={() => setShowDropdown(true)}
 			onMouseLeave={() => setShowDropdown(false)}>
-			<a href={props.route.path} className={styles.navigationLink}>{props.route.name}</a>
+			<a href={'/uvc/#' + props.route.path} className={styles.navigationLink}>{props.route.name}</a>
 			{(showDropdown && (props.route.subroutes !== undefined)) ? (
 				<nav className={styles.dropdownMenu}>
 					<ol>
 						{Object.values(props.route.subroutes!).map((subroute) => (
 							<li key={subroute.path} className={styles.dropdownItem}>
-								<a href={subroute.path}>{subroute.name}</a>
+								<a href={'/uvc/#' + subroute.path}>{subroute.name}</a>
 							</li>
 						))}
 					</ol>

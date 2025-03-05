@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { HashRouter, Route, Routes } from 'react-router'
 import { routes } from './routes'
 import { AppShell } from './components/AppShell/AppShell'
 import { Home } from './views/Home'
@@ -7,7 +7,7 @@ import { Reports } from './views/Reports'
 import { Events } from './views/Events'
 
 export const App: FC = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path={routes.home.path} element={<AppShell/>}>
         <Route index element={<Home/>}/>
@@ -19,5 +19,5 @@ export const App: FC = () => (
         <Route path={routes.resources.subroutes.contact.path} element={<div>Contact</div>}/>
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 )

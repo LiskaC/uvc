@@ -2,11 +2,15 @@
   "name": "uvc",
   "source": "src/index.html",
   "type": "module",
+  "homepage": "https://liskac.github.io/uvc/",
+
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "predeploy": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
@@ -18,6 +22,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
     "process": "^0.11.10",
     "typescript": "^5.7.3"
