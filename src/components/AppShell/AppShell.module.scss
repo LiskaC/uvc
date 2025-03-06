@@ -9,15 +9,22 @@
 }
 
 .app-shell__header {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   align-items: center;
   background-color: vars.$darkblue;
   display: grid;
   justify-items: center;
   grid-template-areas:
-    'title'
-    'navigation'
-    'social';
+    'hamburger title'
+    'social social';
+  gap: 16px;
+
+  @include medias.mobile-md() {
+    grid-template-areas:
+      'title'
+      'navigation'
+      'social';
+  }
 
   @include medias.tablet() {
     grid-template-areas:
@@ -30,8 +37,21 @@
   }
 }
 
+.app-shell__hamburger {
+  grid-area: hamburger;
+
+  @include medias.mobile-md() {
+    display: none;
+  }
+}
+
 .app-shell__title {
   grid-area: title;
+  margin: 0;
+
+  @include medias.mobile-md() {
+    text-align: center;
+  }
 }
 
 .app-shell__navigation {
@@ -43,10 +63,19 @@
   }
 }
 
+.app-shell__sidemenu {
+  display: block;
+
+  @include medias.mobile-md() {
+    display: none;
+  }
+}
+
 .app-shell__social {
   grid-area: social;
 }
 
 .app-shell__content {
   padding: 2rem;
+  position: relative;
 }
