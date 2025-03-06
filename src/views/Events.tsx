@@ -6,14 +6,20 @@ import styles from './Events.module.scss'
 
 const CALENDAR_ID = process.env.CALENDAR_ID
 
-const Event: FC<{ event: GoogleCalendarEvent }> = ({ event }) => (
-  <div key={event.id} className={styles['event']}>
-    <h2 className={styles['event__title']}>{event.summary}</h2>
-    <p className={styles['event__datetime']}>{event.start.dateTime}</p>
-    {event.location && <p className={styles['event__location']}>{event.location}</p>}
-    {event.description && <p className={styles['event__description']}>{event.description}</p>}
-    {event.hangoutLink && (
-      <a href={event.hangoutLink} className={styles['event__link']}>Join here!</a>
+interface Props {
+  event: GoogleCalendarEvent
+}
+
+const Event: FC<Props> = props => (
+  <div key={props.event.id} className={styles['event']}>
+    <h2 className={styles['event__title']}>{props.event.summary}</h2>
+    <p className={styles['event__datetime']}>{props.event.start.dateTime}</p>
+    {props.event.location && <p className={styles['event__location']}>{props.event.location}</p>}
+    {props.event.description && (
+      <p className={styles['event__description']}>{props.event.description}</p>
+      )}
+    {props.event.hangoutLink && (
+      <a href={props.event.hangoutLink} className={styles['event__link']}>Join here!</a>
     )}
   </div>
 )

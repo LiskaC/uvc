@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import INSTAGRAM from '../../assets/icons/instagram.png'
 import FACEBOOK from '../../assets/icons/facebook.png'
 

@@ -7,6 +7,8 @@ import { Reports } from './views/Reports'
 import { Events } from './views/Events'
 
 export const App: FC = () => (
+  // To deploy a test version to Github Pages, it is necessary to use HashRouter since
+  // routing with BrowserRouter is not supported
   <HashRouter>
     <Routes>
       <Route path={routes.home.path} element={<AppShell/>}>
@@ -14,7 +16,8 @@ export const App: FC = () => (
         <Route path={routes.reporting.path} element={<Reports/>}/>
         <Route path={routes.events.path} element={<Events/>}/>
         <Route path={routes.resources.path} element={<div>resources</div>}/>
-        <Route path={routes.resources.subroutes.initiatives.path} element={<div>Initiatives</div>}/>
+        <Route path={routes.resources.subroutes.initiatives.path}
+          element={<div>Initiatives</div>}/>
         <Route path={routes.resources.subroutes.membership.path} element={<div>Member</div>}/>
         <Route path={routes.resources.subroutes.contact.path} element={<div>Contact</div>}/>
       </Route>

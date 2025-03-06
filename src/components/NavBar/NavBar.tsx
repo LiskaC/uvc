@@ -3,7 +3,11 @@ import { Route, routes } from '../../routes'
 
 import styles from './NavBar.module.scss'
 
-const NavItem: FC<{route: Route}> = props => {
+interface Props {
+	route: Route
+}
+
+const NavItem: FC<Props> = props => {
 	const [showDropdown, setShowDropdown] = useState(false)
 
 	return (
@@ -29,7 +33,7 @@ const NavItem: FC<{route: Route}> = props => {
 	)
 }
 
-export const Navigation: FC = () => (
+export const NavBar: FC = () => (
 	<nav className={styles['navbar']}>
 		<ol className={styles['navbar__links']}>
 			{Object.values(routes).map((route) => <NavItem route={route} key={route.name}/>)}
