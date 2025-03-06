@@ -18576,13 +18576,16 @@ var _appShell = require("./components/AppShell/AppShell");
 var _home = require("./views/Home");
 var _reports = require("./views/Reports");
 var _events = require("./views/Events");
-const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
+var _contact = require("./views/Contact");
+const App = ()=>// To deploy a test version to Github Pages, it is necessary to use HashRouter since
+    // routing with BrowserRouter is not supported
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                 path: (0, _routes.routes).home.path,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appShell.AppShell), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 12,
+                    lineNumber: 15,
                     columnNumber: 47
                 }, void 0),
                 children: [
@@ -18590,36 +18593,36 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRo
                         index: true,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 13,
+                            lineNumber: 16,
                             columnNumber: 31
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 13,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).reporting.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 14,
+                            lineNumber: 17,
                             columnNumber: 54
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 14,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).events.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 15,
+                            lineNumber: 18,
                             columnNumber: 51
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 15,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18628,12 +18631,12 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRo
                             children: "resources"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 16,
+                            lineNumber: 19,
                             columnNumber: 54
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 16,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18642,12 +18645,12 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRo
                             children: "Initiatives"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 17,
-                            columnNumber: 76
+                            lineNumber: 21,
+                            columnNumber: 20
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 17,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18656,42 +18659,40 @@ const App = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRo
                             children: "Member"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 18,
+                            lineNumber: 22,
                             columnNumber: 75
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 18,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.subroutes.contact.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: "Contact"
-                        }, void 0, false, {
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contact.Contact), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 19,
+                            lineNumber: 23,
                             columnNumber: 72
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 19,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 12,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 11,
+            lineNumber: 14,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 10,
+        lineNumber: 13,
         columnNumber: 3
     }, undefined);
 _c = App;
@@ -18703,7 +18704,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Contact":"jBFbm"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -27936,83 +27937,136 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AppShell", ()=>AppShell);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _reactRouter = require("react-router");
 var _navBar = require("../NavBar/NavBar");
 var _social = require("../Social/Social");
+var _hamburger = require("../Hamburger/Hamburger");
+var _sideMenu = require("../SideMenu/SideMenu");
 var _appShellModuleScss = require("./AppShell.module.scss");
 var _appShellModuleScssDefault = parcelHelpers.interopDefault(_appShellModuleScss);
-const AppShell = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _appShellModuleScssDefault.default).appShell,
+var _s = $RefreshSig$();
+const AppShell = ()=>{
+    _s();
+    const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
+    function toggleMenu() {
+        setMenuOpen(!menuOpen);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppShellView, {
+        isMenuOpen: menuOpen,
+        toggleMenu: toggleMenu
+    }, void 0, false, {
+        fileName: "src/components/AppShell/AppShell.tsx",
+        lineNumber: 17,
+        columnNumber: 10
+    }, undefined);
+};
+_s(AppShell, "K77eQVFAaxZgbvGoNWFAiCE7OTY=");
+_c = AppShell;
+const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _appShellModuleScssDefault.default)['app-shell'],
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: (0, _appShellModuleScssDefault.default).appHeader,
+                className: (0, _appShellModuleScssDefault.default)['app-shell__header'],
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__hamburger'],
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _hamburger.Hamburger), {
+                            onClick: props.toggleMenu,
+                            isOpen: props.isMenuOpen
+                        }, void 0, false, {
+                            fileName: "src/components/AppShell/AppShell.tsx",
+                            lineNumber: 29,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 28,
+                        columnNumber: 7
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _appShellModuleScssDefault.default).title,
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__title'],
                         children: "UKRAINIAN VICTORY CAMPAIGN"
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 11,
+                        lineNumber: 31,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _appShellModuleScssDefault.default).navigation,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.Navigation), {}, void 0, false, {
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__navigation'],
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.NavBar), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 12,
-                            columnNumber: 42
+                            lineNumber: 32,
+                            columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 12,
+                        lineNumber: 32,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _appShellModuleScssDefault.default).social,
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__social'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 13,
-                            columnNumber: 38
+                            lineNumber: 33,
+                            columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 13,
+                        lineNumber: 33,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 10,
+                lineNumber: 27,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-                className: (0, _appShellModuleScssDefault.default).appContent,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
-                    fileName: "src/components/AppShell/AppShell.tsx",
-                    lineNumber: 16,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
+                className: (0, _appShellModuleScssDefault.default)['app-shell__content'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__sidemenu'],
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sideMenu.SideMenu), {
+                            isMenuOpen: props.isMenuOpen
+                        }, void 0, false, {
+                            fileName: "src/components/AppShell/AppShell.tsx",
+                            lineNumber: 37,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 36,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
+                        fileName: "src/components/AppShell/AppShell.tsx",
+                        lineNumber: 39,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 15,
+                lineNumber: 35,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 9,
+        lineNumber: 26,
         columnNumber: 3
     }, undefined);
-_c = AppShell;
-var _c;
+_c1 = AppShellView;
+var _c, _c1;
 $RefreshReg$(_c, "AppShell");
+$RefreshReg$(_c1, "AppShellView");
 
   $parcel$ReactRefreshHelpers$fda5.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bZWpS":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../Hamburger/Hamburger":"exICt","../SideMenu/SideMenu":"4q4f6"}],"bZWpS":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$1c99 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28021,7 +28075,7 @@ $parcel$ReactRefreshHelpers$1c99.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Navigation", ()=>Navigation);
+parcelHelpers.export(exports, "NavBar", ()=>NavBar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _routes = require("../../routes");
@@ -28032,81 +28086,82 @@ const NavItem = (props)=>{
     _s();
     const [showDropdown, setShowDropdown] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-        className: (0, _navBarModuleScssDefault.default).navigationItem,
+        className: (0, _navBarModuleScssDefault.default)['navbar__item'],
         onMouseEnter: ()=>setShowDropdown(true),
         onMouseLeave: ()=>setShowDropdown(false),
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: '/uvc/#' + props.route.path,
-                className: (0, _navBarModuleScssDefault.default).navigationLink,
+                className: (0, _navBarModuleScssDefault.default)['navbar__link'],
                 children: props.route.name
             }, void 0, false, {
                 fileName: "src/components/NavBar/NavBar.tsx",
-                lineNumber: 12,
+                lineNumber: 18,
                 columnNumber: 4
             }, undefined),
             showDropdown && props.route.subroutes !== undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                className: (0, _navBarModuleScssDefault.default).dropdownMenu,
+                className: (0, _navBarModuleScssDefault.default)['navbar__dropdown'],
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+                    className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-list'],
                     children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: (0, _navBarModuleScssDefault.default).dropdownItem,
+                            className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-item'],
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 href: '/uvc/#' + subroute.path,
                                 children: subroute.name
                             }, void 0, false, {
                                 fileName: "src/components/NavBar/NavBar.tsx",
-                                lineNumber: 18,
+                                lineNumber: 26,
                                 columnNumber: 9
                             }, undefined)
                         }, subroute.path, false, {
                             fileName: "src/components/NavBar/NavBar.tsx",
-                            lineNumber: 17,
+                            lineNumber: 25,
                             columnNumber: 8
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/NavBar/NavBar.tsx",
-                    lineNumber: 15,
+                    lineNumber: 23,
                     columnNumber: 6
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/NavBar/NavBar.tsx",
-                lineNumber: 14,
+                lineNumber: 22,
                 columnNumber: 5
             }, undefined) : null
         ]
     }, void 0, true, {
         fileName: "src/components/NavBar/NavBar.tsx",
-        lineNumber: 10,
+        lineNumber: 14,
         columnNumber: 3
     }, undefined);
 };
 _s(NavItem, "/Fk0mfoaTkcfqmlHhjzD5FM1xJk=");
 _c = NavItem;
-const Navigation = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: (0, _navBarModuleScssDefault.default).appNavigation,
+const NavBar = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: (0, _navBarModuleScssDefault.default)['navbar'],
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
-            className: (0, _navBarModuleScssDefault.default).navigationLinks,
+            className: (0, _navBarModuleScssDefault.default)['navbar__links'],
             children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavItem, {
                     route: route
                 }, route.name, false, {
                     fileName: "src/components/NavBar/NavBar.tsx",
-                    lineNumber: 31,
+                    lineNumber: 39,
                     columnNumber: 42
                 }, undefined))
         }, void 0, false, {
             fileName: "src/components/NavBar/NavBar.tsx",
-            lineNumber: 30,
+            lineNumber: 38,
             columnNumber: 3
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/NavBar/NavBar.tsx",
-        lineNumber: 29,
+        lineNumber: 37,
         columnNumber: 2
     }, undefined);
-_c1 = Navigation;
+_c1 = NavBar;
 var _c, _c1;
 $RefreshReg$(_c, "NavItem");
-$RefreshReg$(_c1, "Navigation");
+$RefreshReg$(_c1, "NavBar");
 
   $parcel$ReactRefreshHelpers$1c99.postlude(module);
 } finally {
@@ -28114,12 +28169,13 @@ $RefreshReg$(_c1, "Navigation");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../routes":"cAFqI","./NavBar.module.scss":"e2ZiR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e2ZiR":[function(require,module,exports,__globalThis) {
-module.exports["appNavigation"] = `h5kkdq_appNavigation`;
-module.exports["dropdownItem"] = `h5kkdq_dropdownItem`;
-module.exports["dropdownMenu"] = `h5kkdq_dropdownMenu`;
-module.exports["navigationItem"] = `h5kkdq_navigationItem`;
-module.exports["navigationLink"] = `h5kkdq_navigationLink`;
-module.exports["navigationLinks"] = `h5kkdq_navigationLinks`;
+module.exports["navbar"] = `h5kkdq_navbar`;
+module.exports["navbar__dropdown"] = `h5kkdq_navbar__dropdown`;
+module.exports["navbar__dropdown-item"] = `h5kkdq_navbar__dropdown-item`;
+module.exports["navbar__dropdown-list"] = `h5kkdq_navbar__dropdown-list`;
+module.exports["navbar__item"] = `h5kkdq_navbar__item`;
+module.exports["navbar__link"] = `h5kkdq_navbar__link`;
+module.exports["navbar__links"] = `h5kkdq_navbar__links`;
 
 },{}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
@@ -28284,7 +28340,7 @@ var _facebookPngDefault = parcelHelpers.interopDefault(_facebookPng);
 var _socialModuleScss = require("./Social.module.scss");
 var _socialModuleScssDefault = parcelHelpers.interopDefault(_socialModuleScss);
 const Social = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: (0, _socialModuleScssDefault.default).socials,
+        className: (0, _socialModuleScssDefault.default)['social'],
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "https://www.instagram.com/ukrainian_victory_campaign/",
@@ -28293,15 +28349,15 @@ const Social = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _instagramPngDefault.default),
                     alt: "Instagram",
-                    className: (0, _socialModuleScssDefault.default).socialsIcon
+                    className: (0, _socialModuleScssDefault.default)['social__icon']
                 }, void 0, false, {
                     fileName: "src/components/Social/Social.tsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Social/Social.tsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28311,21 +28367,21 @@ const Social = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _facebookPngDefault.default),
                     alt: "Facebook",
-                    className: (0, _socialModuleScssDefault.default).socialsIcon
+                    className: (0, _socialModuleScssDefault.default)['social__icon']
                 }, void 0, false, {
                     fileName: "src/components/Social/Social.tsx",
-                    lineNumber: 15,
+                    lineNumber: 16,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Social/Social.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Social/Social.tsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 3
     }, undefined);
 _c = Social;
@@ -28379,16 +28435,160 @@ exports.getOrigin = getOrigin;
 module.exports = require("aba5a929c9c61c1e").getBundleURL('6EXJA') + "facebook.ae2c5416.png" + "?" + Date.now();
 
 },{"aba5a929c9c61c1e":"lgJ39"}],"c9Knv":[function(require,module,exports,__globalThis) {
-module.exports["socials"] = `_2NmL2q_socials`;
-module.exports["socialsIcon"] = `_2NmL2q_socialsIcon`;
+module.exports["social"] = `_2NmL2q_social`;
+module.exports["social__icon"] = `_2NmL2q_social__icon`;
 
 },{}],"7ZCSG":[function(require,module,exports,__globalThis) {
-module.exports["appContent"] = `oZT2ra_appContent`;
-module.exports["appHeader"] = `oZT2ra_appHeader`;
-module.exports["appShell"] = `oZT2ra_appShell`;
+module.exports["app-shell"] = `oZT2ra_app-shell`;
+module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
+module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
+module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
+module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
+module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
+module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
+module.exports["app-shell__title"] = `oZT2ra_app-shell__title`;
+module.exports["hamburger"] = `oZT2ra_hamburger`;
 module.exports["navigation"] = `oZT2ra_navigation`;
 module.exports["social"] = `oZT2ra_social`;
 module.exports["title"] = `oZT2ra_title`;
+
+},{}],"exICt":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$c2c5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c2c5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Hamburger", ()=>Hamburger);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _hamburgerModuleScss = require("./Hamburger.module.scss");
+var _hamburgerModuleScssDefault = parcelHelpers.interopDefault(_hamburgerModuleScss);
+const Hamburger = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        onClick: props.onClick,
+        className: `${(0, _hamburgerModuleScssDefault.default)['hamburger']} ${props.isOpen ? (0, _hamburgerModuleScssDefault.default)['hamburger--open'] : ''}`,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: (0, _hamburgerModuleScssDefault.default)['hamburger__icon']
+        }, void 0, false, {
+            fileName: "src/components/Hamburger/Hamburger.tsx",
+            lineNumber: 14,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Hamburger/Hamburger.tsx",
+        lineNumber: 11,
+        columnNumber: 3
+    }, undefined);
+_c = Hamburger;
+var _c;
+$RefreshReg$(_c, "Hamburger");
+
+  $parcel$ReactRefreshHelpers$c2c5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Hamburger.module.scss":"1Tm5y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1Tm5y":[function(require,module,exports,__globalThis) {
+module.exports["hamburger"] = `z9YX8W_hamburger`;
+module.exports["hamburger--open"] = `z9YX8W_hamburger--open`;
+module.exports["hamburger__icon"] = `z9YX8W_hamburger__icon`;
+
+},{}],"4q4f6":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$2947 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2947.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SideMenu", ()=>SideMenu);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _routes = require("../../routes");
+var _sideMenuModuleScss = require("./SideMenu.module.scss");
+var _sideMenuModuleScssDefault = parcelHelpers.interopDefault(_sideMenuModuleScss);
+const MenuItem = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+        className: (0, _sideMenuModuleScssDefault.default)['navbar__item'],
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: '/uvc/#' + props.route.path,
+                className: (0, _sideMenuModuleScssDefault.default)['navbar__link'],
+                children: props.route.name
+            }, void 0, false, {
+                fileName: "src/components/SideMenu/SideMenu.tsx",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            props.route.subroutes && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: (0, _sideMenuModuleScssDefault.default)['navbar__subroutes'],
+                children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: (0, _sideMenuModuleScssDefault.default)['navbar__subroute-item'],
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: '/uvc/#' + subroute.path,
+                            className: (0, _sideMenuModuleScssDefault.default)['navbar__subroute-link'],
+                            children: subroute.name
+                        }, void 0, false, {
+                            fileName: "src/components/SideMenu/SideMenu.tsx",
+                            lineNumber: 19,
+                            columnNumber: 13
+                        }, undefined)
+                    }, subroute.path, false, {
+                        fileName: "src/components/SideMenu/SideMenu.tsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/SideMenu/SideMenu.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/SideMenu/SideMenu.tsx",
+        lineNumber: 11,
+        columnNumber: 3
+    }, undefined);
+_c = MenuItem;
+const SideMenu = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: `${(0, _sideMenuModuleScssDefault.default)['navbar']} ${props.isMenuOpen ? (0, _sideMenuModuleScssDefault.default)['navbar--open'] : ''}`,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+            className: (0, _sideMenuModuleScssDefault.default)['navbar__links'],
+            children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MenuItem, {
+                    route: route
+                }, void 0, false, {
+                    fileName: "src/components/SideMenu/SideMenu.tsx",
+                    lineNumber: 36,
+                    columnNumber: 43
+                }, undefined))
+        }, void 0, false, {
+            fileName: "src/components/SideMenu/SideMenu.tsx",
+            lineNumber: 35,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/SideMenu/SideMenu.tsx",
+        lineNumber: 34,
+        columnNumber: 3
+    }, undefined);
+_c1 = SideMenu;
+var _c, _c1;
+$RefreshReg$(_c, "MenuItem");
+$RefreshReg$(_c1, "SideMenu");
+
+  $parcel$ReactRefreshHelpers$2947.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","./SideMenu.module.scss":"hInGk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hInGk":[function(require,module,exports,__globalThis) {
+module.exports["navbar"] = `IlcxAW_navbar`;
+module.exports["navbar--open"] = `IlcxAW_navbar--open`;
+module.exports["navbar__item"] = `IlcxAW_navbar__item`;
+module.exports["navbar__link"] = `IlcxAW_navbar__link`;
+module.exports["navbar__links"] = `IlcxAW_navbar__links`;
+module.exports["navbar__subroute-link"] = `IlcxAW_navbar__subroute-link`;
+module.exports["navbar__subroutes"] = `IlcxAW_navbar__subroutes`;
 
 },{}],"m8LEy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$6e1c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -28430,7 +28630,7 @@ const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: (0, _tempImageReplaceJpgDefault.default),
                 alt: "protester",
-                className: (0, _homeModuleScssDefault.default).image
+                className: (0, _homeModuleScssDefault.default)['home__image']
             }, void 0, false, {
                 fileName: "src/views/Home.tsx",
                 lineNumber: 14,
@@ -28455,7 +28655,7 @@ $RefreshReg$(_c, "Home");
 module.exports = require("8d42bf85aa307807").getBundleURL('6EXJA') + "temp-image-replace.845b3b95.jpg" + "?" + Date.now();
 
 },{"8d42bf85aa307807":"lgJ39"}],"403AH":[function(require,module,exports,__globalThis) {
-module.exports["image"] = `p41lpW_image`;
+module.exports["home__image"] = `p41lpW_home__image`;
 
 },{}],"3a4TN":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8dfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -28504,20 +28704,20 @@ const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: (0, _reportsModuleScssDefault.default).reportList,
+                className: (0, _reportsModuleScssDefault.default).reports__list,
                 children: pdfs.map((pdf)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: pdf.filename,
                             id: pdf.filename,
                             target: "_blank",
-                            className: (0, _reportsModuleScssDefault.default).reportLink,
+                            className: (0, _reportsModuleScssDefault.default).reports__link,
                             children: pdf.text
                         }, void 0, false, {
                             fileName: "src/views/Reports.tsx",
                             lineNumber: 18,
                             columnNumber: 11
                         }, undefined)
-                    }, void 0, false, {
+                    }, pdf.filename, false, {
                         fileName: "src/views/Reports.tsx",
                         lineNumber: 17,
                         columnNumber: 9
@@ -28539,8 +28739,8 @@ $RefreshReg$(_c, "Reports");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","./Reports.module.scss":"4LQqK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4LQqK":[function(require,module,exports,__globalThis) {
-module.exports["reportLink"] = `awwOxG_reportLink`;
-module.exports["reportList"] = `awwOxG_reportList`;
+module.exports["reports__link"] = `awwOxG_reports__link`;
+module.exports["reports__list"] = `awwOxG_reports__list`;
 
 },{}],"6SVLA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5326 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -28559,49 +28759,59 @@ var _eventsModuleScss = require("./Events.module.scss");
 var _eventsModuleScssDefault = parcelHelpers.interopDefault(_eventsModuleScss);
 var _s = $RefreshSig$();
 const CALENDAR_ID = "cc4058d2c561f607f03105309f22efb95585edf7c71ea5ba47d59f0d2f5ad925%40group.calendar.google.com";
+function sortByDateTime(a, b) {
+    const dateA = new Date(a).getTime();
+    const dateB = new Date(b).getTime();
+    return dateB - dateA;
+}
 const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _eventsModuleScssDefault.default).event,
+        className: (0, _eventsModuleScssDefault.default)['event'],
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: (0, _eventsModuleScssDefault.default)['event__title'],
                 children: props.event.summary
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 11,
+                lineNumber: 21,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: (0, _eventsModuleScssDefault.default)['event__datetime'],
                 children: props.event.start.dateTime
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 12,
+                lineNumber: 22,
                 columnNumber: 5
             }, undefined),
             props.event.location && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: (0, _eventsModuleScssDefault.default)['event__location'],
                 children: props.event.location
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 13,
+                lineNumber: 23,
                 columnNumber: 30
             }, undefined),
             props.event.description && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: (0, _eventsModuleScssDefault.default)['event__description'],
                 children: props.event.description
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 14,
-                columnNumber: 33
+                lineNumber: 25,
+                columnNumber: 7
             }, undefined),
             props.event.hangoutLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: props.event.hangoutLink,
+                className: (0, _eventsModuleScssDefault.default)['event__link'],
                 children: "Join here!"
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 15,
-                columnNumber: 33
+                lineNumber: 28,
+                columnNumber: 7
             }, undefined)
         ]
     }, props.event.id, true, {
         fileName: "src/views/Events.tsx",
-        lineNumber: 10,
+        lineNumber: 20,
         columnNumber: 3
     }, undefined);
 _c = Event;
@@ -28610,7 +28820,9 @@ const Events = ()=>{
     const [events, setEvents] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         async function loadEvents() {
-            setEvents(await (0, _google.fetchEvents)());
+            const events = await (0, _google.fetchEvents)();
+            const sortedEvents = events.sort((a, b)=>sortByDateTime(a.start.dateTime, b.start.dateTime));
+            setEvents(sortedEvents);
         }
         loadEvents();
     }, []);
@@ -28620,51 +28832,52 @@ const Events = ()=>{
                 children: "Events"
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 29,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Sundays 13:00 - 17:00, Wellington Statue"
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 30,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Join our weekly demo at Wellington statue"
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 31,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("iframe", {
-                className: (0, _eventsModuleScssDefault.default).calendar,
+                className: (0, _eventsModuleScssDefault.default)['calendar'],
                 src: `https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`
             }, void 0, false, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 32,
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _eventsModuleScssDefault.default)['events__list'],
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "An alternate display for events:"
                     }, void 0, false, {
                         fileName: "src/views/Events.tsx",
-                        lineNumber: 35,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     events.map((event)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Event, {
                             event: event
-                        }, void 0, false, {
+                        }, event.id, false, {
                             fileName: "src/views/Events.tsx",
-                            lineNumber: 36,
+                            lineNumber: 56,
                             columnNumber: 30
                         }, undefined))
                 ]
             }, void 0, true, {
                 fileName: "src/views/Events.tsx",
-                lineNumber: 34,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28692,9 +28905,6 @@ async function fetchEvents() {
     try {
         const res = await fetch(GOOGLE_CALENDAR_EVENTS_URL);
         const data = await res.json();
-        console.log({
-            data
-        });
         return data.items;
     } catch (e) {
         console.error('Error fetching events: ', e);
@@ -28705,7 +28915,46 @@ async function fetchEvents() {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1CF50":[function(require,module,exports,__globalThis) {
 module.exports["calendar"] = `LufJma_calendar`;
 module.exports["event"] = `LufJma_event`;
+module.exports["event__datetime"] = `LufJma_event__datetime`;
+module.exports["event__description"] = `LufJma_event__description`;
+module.exports["event__link"] = `LufJma_event__link`;
+module.exports["event__location"] = `LufJma_event__location`;
+module.exports["event__title"] = `LufJma_event__title`;
+module.exports["events__list"] = `LufJma_events__list`;
 
-},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{}],"jBFbm":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0d38 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0d38.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Contact", ()=>Contact);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Contact = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {
+            children: "Contact"
+        }, void 0, false, {
+            fileName: "src/views/Contact.tsx",
+            lineNumber: 5,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/views/Contact.tsx",
+        lineNumber: 4,
+        columnNumber: 3
+    }, undefined);
+_c = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$0d38.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map
