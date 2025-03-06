@@ -8,7 +8,6 @@ export async function fetchEvents(): Promise<GoogleCalendarEvent[]> {
   try {
     const res = await fetch(GOOGLE_CALENDAR_EVENTS_URL)
     const data = await res.json()
-    console.log({data})
     return data.items
   } catch (e) {
     console.error('Error fetching events: ', e)

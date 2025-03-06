@@ -10,6 +10,12 @@ interface Props {
   event: GoogleCalendarEvent
 }
 
+function sortByDateTime(a: string, b: string) {
+  const dateA = new Date(a).getTime()
+  const dateB = new Date(b).getTime()
+  return dateB - dateA
+} 
+
 const Event: FC<Props> = props => (
   <div key={props.event.id} className={styles['event']}>
     <h2 className={styles['event__title']}>{props.event.summary}</h2>
@@ -29,7 +35,9 @@ export const Events: FC = () => {
 
   useEffect(() => {
     async function loadEvents() {
-      setEvents(await fetchEvents())
+      const events = await fetchEvents()
+      const sortedEvents = events.sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
+      setEvents(sortedEvents)
     }
     loadEvents()
   }, [])
