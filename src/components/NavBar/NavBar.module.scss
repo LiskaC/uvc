@@ -1,10 +1,10 @@
-@use '../../assets/styles/variables';
+@use '../../assets/styles/variables' as vars;
 
-.appNavigation {
+.navbar {
   position: relative;
 }
 
-.navigationLinks {
+.navbar__links {
   display: flex;
   gap: 16px;
   list-style: none;
@@ -12,44 +12,44 @@
   margin: 0;
 }
 
-.navigationItem {
+.navbar__item {
   position: relative;
 }
 
-.navigationLink {
+.navbar__link {
   display: block;
   padding: 1rem;
-  color: #fff;
+  color: vars.$white;
   text-decoration: none;
+
+  &:hover {
+    background-color: vars.$yellow;
+  }
 }
 
-.navigationLink:hover {
-  background-color: var(--yellow);
-}
-
-.dropdownMenu {
+.navbar__dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--darkblue);
+  background-color: vars.$darkblue;
   min-width: 200px;
   z-index: 1000;
 }
 
-.dropdownMenu ol {
+.navbar__dropdown-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.dropdownItem {
+.navbar__dropdown-item {
   display: block;
   padding: 1rem;
   white-space: nowrap;
   text-decoration: none;
   color: inherit;
-}
 
-.dropdownItem:hover {
-  background-color: var(--yellow);
+  &:hover {
+    background-color: vars.$yellow;
+  }
 }

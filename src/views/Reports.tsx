@@ -12,10 +12,10 @@ export const Reports: FC = () => (
     <h1>Reports</h1>
     <p>Our monthly spending reports</p>
     <p>Open pdfs:</p>
-    <ul className={styles.reportList}>
+    <ul className={styles.reports__list}>
       {pdfs.map(pdf => (
-        <li>
-          <a href={pdf.filename} id={pdf.filename} target='_blank' className={styles.reportLink}>
+        <li key={pdf.filename}>
+          <a href={pdf.filename} id={pdf.filename} target='_blank' className={styles.reports__link}>
             {pdf.text}
           </a>
         </li>

@@ -1,4 +1,4 @@
-.socials {
+.social {
   display: flex;
   gap: 1rem;
   height: 2rem;
@@ -6,11 +6,11 @@
   width: 112px;
 }
 
-.socialsIcon {
+.social__icon {
   height: 100%;
-}
 
-.socialsIcon:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
 }

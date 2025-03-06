@@ -1,23 +1,49 @@
+@use '../assets/styles/variables.scss' as vars;
+@use '../assets/styles/medias.scss' as medias;
+
 .event {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid vars.$white;
+  padding-bottom: 1rem;
 }
 
 .event:last-child {
   border-bottom: none;
 }
 
-@mixin mobile-lg {
-  @media only screen and (min-width: 576px) { @content; }
+.event__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.event__datetime,
+.event__location,
+.event__description {
+  font-size: 1rem;
+}
+
+.event__link {
+  color: vars.$lightblue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .calendar {
   display: none;
 
-  @include mobile-lg() {
+  @include medias.mobile-lg() {
     display: block;
     height: 600px;
     width: 100%;
     max-width: 800px;
     min-width: 500px;
   }
+}
+
+.events__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

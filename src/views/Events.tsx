@@ -6,13 +6,15 @@ import styles from './Events.module.scss'
 
 const CALENDAR_ID = process.env.CALENDAR_ID
 
-const Event: FC<{event: GoogleCalendarEvent}> = props => (
-  <div key={props.event.id} className={styles.event}>
-    <h2>{props.event.summary}</h2>
-    <p>{props.event.start.dateTime}</p>
-    {props.event.location && <p>{props.event.location}</p>}
-    {props.event.description && <p>{props.event.description}</p>}
-    {props.event.hangoutLink && <a href={props.event.hangoutLink}>Join here!</a>}
+const Event: FC<{ event: GoogleCalendarEvent }> = ({ event }) => (
+  <div key={event.id} className={styles['event']}>
+    <h2 className={styles['event__title']}>{event.summary}</h2>
+    <p className={styles['event__datetime']}>{event.start.dateTime}</p>
+    {event.location && <p className={styles['event__location']}>{event.location}</p>}
+    {event.description && <p className={styles['event__description']}>{event.description}</p>}
+    {event.hangoutLink && (
+      <a href={event.hangoutLink} className={styles['event__link']}>Join here!</a>
+    )}
   </div>
 )
 
@@ -20,7 +22,9 @@ export const Events: FC = () => {
   const [events, setEvents] = useState<GoogleCalendarEvent[]>([])
 
   useEffect(() => {
-    async function loadEvents() { setEvents(await fetchEvents()) }
+    async function loadEvents() {
+      setEvents(await fetchEvents())
+    }
     loadEvents()
   }, [])
 
@@ -29,11 +33,13 @@ export const Events: FC = () => {
       <h1>Events</h1>
       <h2>Sundays 13:00 - 17:00, Wellington Statue</h2>
       <p>Join our weekly demo at Wellington statue</p>
-      <iframe className={styles.calendar}
-        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`}/>
-      <div>
+      <iframe
+        className={styles['calendar']}
+        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`}
+      />
+      <div className={styles['events__list']}>
         <p>An alternate display for events:</p>
-        {events.map(event => <Event event={event}/>)}
+        {events.map(event => <Event event={event} key={event.id} />)}
       </div>
     </>
   )

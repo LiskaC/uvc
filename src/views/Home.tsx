@@ -11,6 +11,6 @@ export const Home: FC = () => (
       <br/><br/>
       We focus on ... 
     </p>
-    <img src={TEMP} alt='protester' className={styles.image}/>
+    <img src={TEMP} alt='protester' className={styles['home__image']}/>
   </div>
 )
