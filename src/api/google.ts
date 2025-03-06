@@ -1,4 +1,4 @@
-import { GoogleCalendarEvent } from './types';
+import { GoogleCalendarEvent } from './types'
 
 const CALENDAR_ID = process.env.CALENDAR_ID
 const CALENDAR_KEY = process.env.CALENDAR_KEY

@@ -6,7 +6,7 @@ export type Route = { name: string, path: string, subroutes?: Record<ResourceSub
 /**
  * List of subroutes for resources
  */
-export type ResourceSubroutes = "initiatives" | "membership" | "contact";
+export type ResourceSubroutes = "initiatives" | "membership" | "contact"
 
 /**
  * Type for all the routes available in the application
