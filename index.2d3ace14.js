@@ -18573,10 +18573,10 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouter = require("react-router");
 var _routes = require("./routes");
 var _appShell = require("./components/AppShell/AppShell");
-var _home = require("./views/Home");
-var _reports = require("./views/Reports");
-var _events = require("./views/Events");
-var _contact = require("./views/Contact");
+var _home = require("./views/Home/Home");
+var _reports = require("./views/Reports/Reports");
+var _events = require("./views/Events/Events");
+var _contact = require("./views/Contact/Contact");
 const App = ()=>// To deploy a test version to Github Pages, it is necessary to use HashRouter since
     // routing with BrowserRouter is not supported
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
@@ -18696,7 +18696,7 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).resources.subroutes.initiatives.path,
+                        path: (0, _routes.routes).support.subroutes.initiatives.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Initiatives"
                         }, void 0, false, {
@@ -18760,7 +18760,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","./views/Contact":"jBFbm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -27975,6 +27975,10 @@ const routes = {
                 name: 'Donate',
                 path: '/support/donate'
             },
+            initiatives: {
+                name: 'Find initiatives',
+                path: '/resources/initiatives'
+            },
             volunteer: {
                 name: 'Volunteer',
                 path: '/support/volunteer'
@@ -27989,10 +27993,6 @@ const routes = {
         name: 'Resources',
         path: '/resources',
         subroutes: {
-            initiatives: {
-                name: 'Initiatives',
-                path: '/resources/initiatives'
-            },
             membership: {
                 name: 'Become a member',
                 path: '/resources/member'
@@ -28672,18 +28672,18 @@ module.exports["navbar__links"] = `h9NVDq_navbar__links`;
 module.exports["navbar__subroute-link"] = `h9NVDq_navbar__subroute-link`;
 module.exports["navbar__subroutes"] = `h9NVDq_navbar__subroutes`;
 
-},{}],"m8LEy":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$6e1c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"eNyEK":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$5faf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6e1c.prelude(module);
+$parcel$ReactRefreshHelpers$5faf.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Home", ()=>Home);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _tempImageReplaceJpg = require("../assets/images/temp-image-replace.jpg");
+var _tempImageReplaceJpg = require("../../assets/images/temp-image-replace.jpg");
 var _tempImageReplaceJpgDefault = parcelHelpers.interopDefault(_tempImageReplaceJpg);
 var _homeModuleScss = require("./Home.module.scss");
 var _homeModuleScssDefault = parcelHelpers.interopDefault(_homeModuleScss);
@@ -28693,19 +28693,30 @@ const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     "We are a Scottish based volunteer organisation of Ukrainian activists working for Ukrainian Victory.",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/Home.tsx",
+                        fileName: "src/views/Home/Home.tsx",
                         lineNumber: 11,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/Home.tsx",
+                        fileName: "src/views/Home/Home.tsx",
                         lineNumber: 11,
                         columnNumber: 12
                     }, undefined),
-                    "We focus on ..."
+                    "We focus on ...",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/Home/Home.tsx",
+                        lineNumber: 13,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/Home/Home.tsx",
+                        lineNumber: 13,
+                        columnNumber: 12
+                    }, undefined),
+                    "Make an impact - join us! You can find all of our regular events, initiatives you can support with actions or money, information, financial reporting and more."
                 ]
             }, void 0, true, {
-                fileName: "src/views/Home.tsx",
+                fileName: "src/views/Home/Home.tsx",
                 lineNumber: 9,
                 columnNumber: 5
             }, undefined),
@@ -28714,13 +28725,13 @@ const Home = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 alt: "protester",
                 className: (0, _homeModuleScssDefault.default)['home__image']
             }, void 0, false, {
-                fileName: "src/views/Home.tsx",
-                lineNumber: 14,
+                fileName: "src/views/Home/Home.tsx",
+                lineNumber: 17,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/views/Home.tsx",
+        fileName: "src/views/Home/Home.tsx",
         lineNumber: 8,
         columnNumber: 3
     }, undefined);
@@ -28728,22 +28739,22 @@ _c = Home;
 var _c;
 $RefreshReg$(_c, "Home");
 
-  $parcel$ReactRefreshHelpers$6e1c.postlude(module);
+  $parcel$ReactRefreshHelpers$5faf.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/images/temp-image-replace.jpg":"24vJn","./Home.module.scss":"403AH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"24vJn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../../assets/images/temp-image-replace.jpg":"24vJn","./Home.module.scss":"baDtd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"24vJn":[function(require,module,exports,__globalThis) {
 module.exports = require("8d42bf85aa307807").getBundleURL('6EXJA') + "temp-image-replace.845b3b95.jpg" + "?" + Date.now();
 
-},{"8d42bf85aa307807":"lgJ39"}],"403AH":[function(require,module,exports,__globalThis) {
-module.exports["home__image"] = `p41lpW_home__image`;
+},{"8d42bf85aa307807":"lgJ39"}],"baDtd":[function(require,module,exports,__globalThis) {
+module.exports["home__image"] = `pbAkYq_home__image`;
 
-},{}],"3a4TN":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$8dfc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"8S2qo":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$231f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8dfc.prelude(module);
+$parcel$ReactRefreshHelpers$231f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28767,21 +28778,21 @@ const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Reports"
             }, void 0, false, {
-                fileName: "src/views/Reports.tsx",
+                fileName: "src/views/Reports/Reports.tsx",
                 lineNumber: 12,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Our monthly spending reports"
             }, void 0, false, {
-                fileName: "src/views/Reports.tsx",
+                fileName: "src/views/Reports/Reports.tsx",
                 lineNumber: 13,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Open pdfs:"
             }, void 0, false, {
-                fileName: "src/views/Reports.tsx",
+                fileName: "src/views/Reports/Reports.tsx",
                 lineNumber: 14,
                 columnNumber: 5
             }, undefined),
@@ -28795,17 +28806,17 @@ const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.
                             className: (0, _reportsModuleScssDefault.default).reports__link,
                             children: pdf.text
                         }, void 0, false, {
-                            fileName: "src/views/Reports.tsx",
+                            fileName: "src/views/Reports/Reports.tsx",
                             lineNumber: 18,
                             columnNumber: 11
                         }, undefined)
                     }, pdf.filename, false, {
-                        fileName: "src/views/Reports.tsx",
+                        fileName: "src/views/Reports/Reports.tsx",
                         lineNumber: 17,
                         columnNumber: 9
                     }, undefined))
             }, void 0, false, {
-                fileName: "src/views/Reports.tsx",
+                fileName: "src/views/Reports/Reports.tsx",
                 lineNumber: 15,
                 columnNumber: 5
             }, undefined)
@@ -28815,20 +28826,20 @@ _c = Reports;
 var _c;
 $RefreshReg$(_c, "Reports");
 
-  $parcel$ReactRefreshHelpers$8dfc.postlude(module);
+  $parcel$ReactRefreshHelpers$231f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Reports.module.scss":"4LQqK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4LQqK":[function(require,module,exports,__globalThis) {
-module.exports["reports__link"] = `awwOxG_reports__link`;
-module.exports["reports__list"] = `awwOxG_reports__list`;
+},{"react/jsx-dev-runtime":"iTorj","./Reports.module.scss":"dv23R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dv23R":[function(require,module,exports,__globalThis) {
+module.exports["reports__link"] = `_8Tsp7W_reports__link`;
+module.exports["reports__list"] = `_8Tsp7W_reports__list`;
 
-},{}],"6SVLA":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5326 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"3sEZD":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e44b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5326.prelude(module);
+$parcel$ReactRefreshHelpers$e44b.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28836,7 +28847,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Events", ()=>Events);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _google = require("../api/google");
+var _google = require("../../api/google");
 var _eventsModuleScss = require("./Events.module.scss");
 var _eventsModuleScssDefault = parcelHelpers.interopDefault(_eventsModuleScss);
 var _s = $RefreshSig$();
@@ -28853,7 +28864,7 @@ const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _eventsModuleScssDefault.default)['event__title'],
                 children: props.event.summary
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 21,
                 columnNumber: 5
             }, undefined),
@@ -28861,7 +28872,7 @@ const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _eventsModuleScssDefault.default)['event__datetime'],
                 children: props.event.start.dateTime
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 22,
                 columnNumber: 5
             }, undefined),
@@ -28869,7 +28880,7 @@ const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _eventsModuleScssDefault.default)['event__location'],
                 children: props.event.location
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 23,
                 columnNumber: 30
             }, undefined),
@@ -28877,7 +28888,7 @@ const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _eventsModuleScssDefault.default)['event__description'],
                 children: props.event.description
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 25,
                 columnNumber: 7
             }, undefined),
@@ -28886,13 +28897,13 @@ const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _eventsModuleScssDefault.default)['event__link'],
                 children: "Join here!"
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
     }, props.event.id, true, {
-        fileName: "src/views/Events.tsx",
+        fileName: "src/views/Events/Events.tsx",
         lineNumber: 20,
         columnNumber: 3
     }, undefined);
@@ -28913,21 +28924,21 @@ const Events = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Events"
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Sundays 13:00 - 17:00, Wellington Statue"
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Join our weekly demo at Wellington statue"
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 49,
                 columnNumber: 7
             }, undefined),
@@ -28935,7 +28946,7 @@ const Events = ()=>{
                 className: (0, _eventsModuleScssDefault.default)['calendar'],
                 src: `https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`
             }, void 0, false, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 50,
                 columnNumber: 7
             }, undefined),
@@ -28945,20 +28956,20 @@ const Events = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "An alternate display for events:"
                     }, void 0, false, {
-                        fileName: "src/views/Events.tsx",
+                        fileName: "src/views/Events/Events.tsx",
                         lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     events.map((event)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Event, {
                             event: event
                         }, event.id, false, {
-                            fileName: "src/views/Events.tsx",
+                            fileName: "src/views/Events/Events.tsx",
                             lineNumber: 56,
                             columnNumber: 30
                         }, undefined))
                 ]
             }, void 0, true, {
-                fileName: "src/views/Events.tsx",
+                fileName: "src/views/Events/Events.tsx",
                 lineNumber: 54,
                 columnNumber: 7
             }, undefined)
@@ -28971,12 +28982,12 @@ var _c, _c1;
 $RefreshReg$(_c, "Event");
 $RefreshReg$(_c1, "Events");
 
-  $parcel$ReactRefreshHelpers$5326.postlude(module);
+  $parcel$ReactRefreshHelpers$e44b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../api/google":"1kNaR","./Events.module.scss":"1CF50","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1kNaR":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../api/google":"1kNaR","./Events.module.scss":"l9Q8f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1kNaR":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchEvents", ()=>fetchEvents);
@@ -28994,46 +29005,46 @@ async function fetchEvents() {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1CF50":[function(require,module,exports,__globalThis) {
-module.exports["calendar"] = `LufJma_calendar`;
-module.exports["event"] = `LufJma_event`;
-module.exports["event__datetime"] = `LufJma_event__datetime`;
-module.exports["event__description"] = `LufJma_event__description`;
-module.exports["event__link"] = `LufJma_event__link`;
-module.exports["event__location"] = `LufJma_event__location`;
-module.exports["event__title"] = `LufJma_event__title`;
-module.exports["events__list"] = `LufJma_events__list`;
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l9Q8f":[function(require,module,exports,__globalThis) {
+module.exports["calendar"] = `K5nriq_calendar`;
+module.exports["event"] = `K5nriq_event`;
+module.exports["event__datetime"] = `K5nriq_event__datetime`;
+module.exports["event__description"] = `K5nriq_event__description`;
+module.exports["event__link"] = `K5nriq_event__link`;
+module.exports["event__location"] = `K5nriq_event__location`;
+module.exports["event__title"] = `K5nriq_event__title`;
+module.exports["events__list"] = `K5nriq_events__list`;
 
-},{}],"jBFbm":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$0d38 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"eUwRS":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a5ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0d38.prelude(module);
+$parcel$ReactRefreshHelpers$a5ca.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Contact", ()=>Contact);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _contactForm = require("../sections/ContactForm/ContactForm");
+var _contactForm = require("../../sections/ContactForm/ContactForm");
 const Contact = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Contact"
             }, void 0, false, {
-                fileName: "src/views/Contact.tsx",
+                fileName: "src/views/Contact/Contact.tsx",
                 lineNumber: 6,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Get in touch with us via our contact form"
             }, void 0, false, {
-                fileName: "src/views/Contact.tsx",
+                fileName: "src/views/Contact/Contact.tsx",
                 lineNumber: 7,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactForm.ContactForm), {}, void 0, false, {
-                fileName: "src/views/Contact.tsx",
+                fileName: "src/views/Contact/Contact.tsx",
                 lineNumber: 8,
                 columnNumber: 5
             }, undefined)
@@ -29043,12 +29054,12 @@ _c = Contact;
 var _c;
 $RefreshReg$(_c, "Contact");
 
-  $parcel$ReactRefreshHelpers$0d38.postlude(module);
+  $parcel$ReactRefreshHelpers$a5ca.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../sections/ContactForm/ContactForm":"llmsJ"}],"llmsJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../../sections/ContactForm/ContactForm":"llmsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"llmsJ":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fe35 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

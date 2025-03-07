@@ -316,53 +316,53 @@ input, select, textarea {
   list-style: none;
 }
 
-.p41lpW_home__image {
+.pbAkYq_home__image {
   width: 100%;
 }
 
-.awwOxG_reports__list {
+._8Tsp7W_reports__list {
   flex-direction: column;
   gap: 1rem;
   display: flex;
 }
 
-.awwOxG_reports__link {
+._8Tsp7W_reports__link {
   text-decoration: underline;
 }
 
-.LufJma_event {
+.K5nriq_event {
   border-bottom: 1px solid #fff;
   padding-bottom: 1rem;
 }
 
-.LufJma_event:last-child {
+.K5nriq_event:last-child {
   border-bottom: none;
 }
 
-.LufJma_event__title {
+.K5nriq_event__title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.LufJma_event__datetime, .LufJma_event__location, .LufJma_event__description {
+.K5nriq_event__datetime, .K5nriq_event__location, .K5nriq_event__description {
   font-size: 1rem;
 }
 
-.LufJma_event__link {
+.K5nriq_event__link {
   color: #149adb;
   text-decoration: none;
 }
 
-.LufJma_event__link:hover {
+.K5nriq_event__link:hover {
   text-decoration: underline;
 }
 
-.LufJma_calendar {
+.K5nriq_calendar {
   display: none;
 }
 
 @media only screen and (width >= 576px) {
-  .LufJma_calendar {
+  .K5nriq_calendar {
     width: 100%;
     min-width: 500px;
     max-width: 800px;
@@ -371,7 +371,7 @@ input, select, textarea {
   }
 }
 
-.LufJma_events__list {
+.K5nriq_events__list {
   flex-direction: column;
   gap: 1rem;
   display: flex;
