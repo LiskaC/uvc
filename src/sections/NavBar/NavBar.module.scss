@@ -56,9 +56,13 @@
 }
 
 .navbar__dropdown-item {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar__dropdown-link {
   display: block;
   padding: 1rem;
-  white-space: nowrap;
   text-decoration: none;
   color: inherit;
 

@@ -23,7 +23,9 @@ const NavItem: FC<Props> = props => {
 					<ol className={styles['navbar__dropdown-list']}>
 						{Object.values(props.route.subroutes!).map((subroute) => (
 							<li key={subroute.path} className={styles['navbar__dropdown-item']}>
-								<a href={'/uvc/#' + subroute.path}>{subroute.name}</a>
+								<a href={'/uvc/#' + subroute.path} className={styles['navbar__dropdown-link']}>
+									{subroute.name}
+								</a>
 							</li>
 						))}
 					</ol>
