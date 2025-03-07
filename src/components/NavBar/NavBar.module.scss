@@ -1,7 +1,16 @@
 @use '../../assets/styles/variables' as vars;
+@use '../../assets/styles/medias' as medias;
 
 .navbar {
   position: relative;
+
+  @include medias.mobile-lg() {
+    margin-left: -1.5rem;
+  }
+
+  @include medias.tablet() {
+    margin-left: unset;
+  }
 }
 
 .navbar__links {

@@ -9,7 +9,7 @@
 }
 
 .app-shell__header {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   align-items: center;
   background-color: vars.$darkblue;
   display: grid;
@@ -19,7 +19,7 @@
     'social social';
   gap: 16px;
 
-  @include medias.mobile-md() {
+  @include medias.mobile-lg() {
     grid-template-areas:
       'title'
       'navigation'
@@ -40,7 +40,7 @@
 .app-shell__hamburger {
   grid-area: hamburger;
 
-  @include medias.mobile-md() {
+  @include medias.mobile-lg() {
     display: none;
   }
 }
@@ -49,7 +49,7 @@
   grid-area: title;
   margin: 0;
 
-  @include medias.mobile-md() {
+  @include medias.mobile-lg() {
     text-align: center;
   }
 }
@@ -58,7 +58,7 @@
   grid-area: navigation;
   display: none;
 
-  @include medias.mobile-md() {
+  @include medias.mobile-lg() {
     display: block;
   }
 }
@@ -66,7 +66,7 @@
 .app-shell__sidemenu {
   display: block;
 
-  @include medias.mobile-md() {
+  @include medias.mobile-lg() {
     display: none;
   }
 }
