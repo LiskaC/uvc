@@ -18626,17 +18626,73 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Support"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 19,
+                            columnNumber: 52
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.volunteer.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Volunteer"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 20,
+                            columnNumber: 72
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.donate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Donate"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 21,
+                            columnNumber: 69
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.communicate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Spread the word"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 23,
+                            columnNumber: 20
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "resources"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 19,
+                            lineNumber: 24,
                             columnNumber: 54
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 19,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18645,12 +18701,12 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                             children: "Initiatives"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 21,
+                            lineNumber: 26,
                             columnNumber: 20
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 20,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18659,24 +18715,24 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                             children: "Member"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 22,
+                            lineNumber: 27,
                             columnNumber: 75
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 22,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                         path: (0, _routes.routes).resources.subroutes.contact.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contact.Contact), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 23,
+                            lineNumber: 28,
                             columnNumber: 72
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 23,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -18704,7 +18760,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Contact":"jBFbm"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home":"m8LEy","./views/Reports":"3a4TN","./views/Events":"6SVLA","./views/Contact":"jBFbm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -27893,6 +27949,11 @@ exports.export = function(dest, destName, get) {
  */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "routes", ()=>routes);
+/**
+ * Typeguard to filter for routes which have subroutes
+ * @param route Any {@link Route}
+ * @returns Only routes with subroutes
+ */ parcelHelpers.export(exports, "hasSubroutes", ()=>hasSubroutes);
 const routes = {
     home: {
         name: 'Home',
@@ -27905,6 +27966,24 @@ const routes = {
     events: {
         name: 'Events',
         path: '/events'
+    },
+    support: {
+        name: 'Support',
+        path: '/support',
+        subroutes: {
+            donate: {
+                name: 'Donate',
+                path: '/support/donate'
+            },
+            volunteer: {
+                name: 'Volunteer',
+                path: '/support/volunteer'
+            },
+            communicate: {
+                name: 'Spread the word',
+                path: '/support/communicate'
+            }
+        }
     },
     resources: {
         name: 'Resources',
@@ -27925,6 +28004,9 @@ const routes = {
         }
     }
 };
+function hasSubroutes(route) {
+    return route.subroutes !== undefined;
+}
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eq8hI":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fda5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -28066,7 +28148,7 @@ $RefreshReg$(_c1, "AppShellView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../Hamburger/Hamburger":"exICt","../SideMenu/SideMenu":"4q4f6"}],"bZWpS":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../NavBar/NavBar":"bZWpS","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../SideMenu/SideMenu":"4q4f6","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bZWpS":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$1c99 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28099,7 +28181,7 @@ const NavItem = (props)=>{
                 lineNumber: 18,
                 columnNumber: 4
             }, undefined),
-            showDropdown && props.route.subroutes !== undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+            showDropdown && (0, _routes.hasSubroutes)(props.route) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
                 className: (0, _navBarModuleScssDefault.default)['navbar__dropdown'],
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
                     className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-list'],
@@ -28438,20 +28520,6 @@ module.exports = require("aba5a929c9c61c1e").getBundleURL('6EXJA') + "facebook.a
 module.exports["social"] = `_2NmL2q_social`;
 module.exports["social__icon"] = `_2NmL2q_social__icon`;
 
-},{}],"7ZCSG":[function(require,module,exports,__globalThis) {
-module.exports["app-shell"] = `oZT2ra_app-shell`;
-module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
-module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
-module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
-module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
-module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
-module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
-module.exports["app-shell__title"] = `oZT2ra_app-shell__title`;
-module.exports["hamburger"] = `oZT2ra_hamburger`;
-module.exports["navigation"] = `oZT2ra_navigation`;
-module.exports["social"] = `oZT2ra_social`;
-module.exports["title"] = `oZT2ra_title`;
-
 },{}],"exICt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c2c5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -28520,7 +28588,7 @@ const MenuItem = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                 lineNumber: 12,
                 columnNumber: 5
             }, undefined),
-            props.route.subroutes && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+            (0, _routes.hasSubroutes)(props.route) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: (0, _sideMenuModuleScssDefault.default)['navbar__subroutes'],
                 children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _sideMenuModuleScssDefault.default)['navbar__subroute-item'],
@@ -28556,7 +28624,7 @@ const SideMenu = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
             className: (0, _sideMenuModuleScssDefault.default)['navbar__links'],
             children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MenuItem, {
                     route: route
-                }, void 0, false, {
+                }, route.name, false, {
                     fileName: "src/components/SideMenu/SideMenu.tsx",
                     lineNumber: 36,
                     columnNumber: 43
@@ -28589,6 +28657,20 @@ module.exports["navbar__link"] = `IlcxAW_navbar__link`;
 module.exports["navbar__links"] = `IlcxAW_navbar__links`;
 module.exports["navbar__subroute-link"] = `IlcxAW_navbar__subroute-link`;
 module.exports["navbar__subroutes"] = `IlcxAW_navbar__subroutes`;
+
+},{}],"7ZCSG":[function(require,module,exports,__globalThis) {
+module.exports["app-shell"] = `oZT2ra_app-shell`;
+module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
+module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
+module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
+module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
+module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
+module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
+module.exports["app-shell__title"] = `oZT2ra_app-shell__title`;
+module.exports["hamburger"] = `oZT2ra_hamburger`;
+module.exports["navigation"] = `oZT2ra_navigation`;
+module.exports["social"] = `oZT2ra_social`;
+module.exports["title"] = `oZT2ra_title`;
 
 },{}],"m8LEy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$6e1c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
