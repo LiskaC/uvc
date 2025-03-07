@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from 'react'
-import { fetchEvents } from '../api/google'
-import { GoogleCalendarEvent } from '../api/types'
+import { fetchEvents } from '../../api/google'
+import { GoogleCalendarEvent } from '../../api/types'
 
 import styles from './Events.module.scss'
 

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ContactForm } from '../sections/ContactForm/ContactForm'
+import { ContactForm } from '../../sections/ContactForm/ContactForm'
 
 export const Contact: FC = () => (
   <>

@@ -1,9 +1,9 @@
 import { FC, useState } from 'react'
 import { Outlet } from 'react-router'
-import { NavBar } from '../NavBar/NavBar'
+import { NavBar } from '../../sections/NavBar/NavBar'
 import { Social } from '../Social/Social'
 import { Hamburger } from '../Hamburger/Hamburger'
-import { SideMenu } from '../SideMenu/SideMenu'
+import { SideMenu } from '../../sections/SideMenu/SideMenu'
 
 import styles from './AppShell.module.scss'
 

@@ -13,13 +13,13 @@ export type Routes = {
   support: Route & {
     subroutes: {
       donate: Route
+      initiatives: Route
       volunteer: Route
       communicate: Route
     }
   }
   resources: Route & {
     subroutes: {
-      initiatives: Route
       membership: Route
       contact: Route
     }
@@ -47,6 +47,7 @@ export const routes: Routes = {
     path: '/support',
     subroutes: {
       donate: { name: 'Donate', path: '/support/donate' },
+      initiatives: { name: 'Find initiatives', path: '/resources/initiatives' },
       volunteer: { name: 'Volunteer', path: '/support/volunteer' },
       communicate: { name: 'Spread the word', path: '/support/communicate' }
     }
@@ -55,7 +56,6 @@ export const routes: Routes = {
     name: 'Resources',
     path: '/resources',
     subroutes: {
-      initiatives: { name: 'Initiatives', path: '/resources/initiatives' },
       membership: { name: 'Become a member', path: '/resources/member' },
       contact: { name: 'Contact us', path: '/resources/contact' }
     }

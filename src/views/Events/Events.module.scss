@@ -1,5 +1,5 @@
-@use '../assets/styles/variables.scss' as vars;
-@use '../assets/styles/medias.scss' as medias;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/medias.scss' as medias;
 
 .event {
   border-bottom: 1px solid vars.$white;

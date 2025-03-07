@@ -34,6 +34,10 @@
   &:hover {
     background-color: vars.$yellow;
   }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .navbar__dropdown {
@@ -60,5 +64,9 @@
 
   &:hover {
     background-color: vars.$yellow;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
