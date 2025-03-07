@@ -254,18 +254,22 @@ input, select, textarea {
 }
 
 .qOKiMW_navbar__dropdown-item {
-  white-space: nowrap;
+  padding: 0;
+  list-style: none;
+}
+
+.qOKiMW_navbar__dropdown-link {
   color: inherit;
   padding: 1rem;
   text-decoration: none;
   display: block;
 }
 
-.qOKiMW_navbar__dropdown-item:hover {
+.qOKiMW_navbar__dropdown-link:hover {
   background-color: #ffce26;
 }
 
-.qOKiMW_navbar__dropdown-item:active {
+.qOKiMW_navbar__dropdown-link:active {
   opacity: .8;
 }
 
