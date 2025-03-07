@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Route, routes } from '../../routes'
+import { hasSubroutes, Route, routes } from '../../routes'
 
 import styles from './SideMenu.module.scss'
 
@@ -12,7 +12,7 @@ const MenuItem: FC<MenuItemProps> = props => (
     <a href={'/uvc/#' + props.route.path} className={styles['navbar__link']}>
       {props.route.name}
     </a>
-    {props.route.subroutes && (
+    {hasSubroutes(props.route) && (
       <ul className={styles['navbar__subroutes']}>
         {Object.values(props.route.subroutes).map((subroute) => (
           <li key={subroute.path} className={styles['navbar__subroute-item']}>
@@ -33,7 +33,7 @@ interface Props {
 export const SideMenu: FC<Props> = props => (
   <nav className={`${styles['navbar']} ${props.isMenuOpen ? styles['navbar--open'] : ''}`}>
     <ol className={styles['navbar__links']}>
-      {Object.values(routes).map(route => <MenuItem route={route}/>)}
+      {Object.values(routes).map(route => <MenuItem key={route.name} route={route}/>)}
     </ol>
   </nav>
 )

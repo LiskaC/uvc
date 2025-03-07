@@ -1,12 +1,7 @@
 /**
  * Data for a single route
  */
-export type Route = { name: string, path: string, subroutes?: Record<ResourceSubroutes, Route> }
-
-/**
- * List of subroutes for resources
- */
-export type ResourceSubroutes = "initiatives" | "membership" | "contact"
+export type Route = { name: string, path: string }
 
 /**
  * Type for all the routes available in the application
@@ -15,7 +10,20 @@ export type Routes = {
   home: Route
   reporting: Route
   events: Route
-  resources: Route
+  support: Route & {
+    subroutes: {
+      donate: Route
+      volunteer: Route
+      communicate: Route
+    }
+  }
+  resources: Route & {
+    subroutes: {
+      initiatives: Route
+      membership: Route
+      contact: Route
+    }
+  }
 }
 
 /**
@@ -34,6 +42,15 @@ export const routes: Routes = {
     name: 'Events',
     path: '/events',
   },
+  support: {
+    name: 'Support',
+    path: '/support',
+    subroutes: {
+      donate: { name: 'Donate', path: '/support/donate' },
+      volunteer: { name: 'Volunteer', path: '/support/volunteer' },
+      communicate: { name: 'Spread the word', path: '/support/communicate' }
+    }
+  },
   resources: {
     name: 'Resources',
     path: '/resources',
@@ -43,4 +60,13 @@ export const routes: Routes = {
       contact: { name: 'Contact us', path: '/resources/contact' }
     }
   }
+}
+
+/**
+ * Typeguard to filter for routes which have subroutes
+ * @param route Any {@link Route}
+ * @returns Only routes with subroutes
+ */
+export function hasSubroutes(route: Route): route is Route & { subroutes: Record<string, Route> } {
+  return (route as any).subroutes !== undefined
 }

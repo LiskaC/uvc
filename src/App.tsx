@@ -16,6 +16,11 @@ export const App: FC = () => (
         <Route index element={<Home/>}/>
         <Route path={routes.reporting.path} element={<Reports/>}/>
         <Route path={routes.events.path} element={<Events/>}/>
+        <Route path={routes.support.path} element={<div>Support</div>}/>
+        <Route path={routes.support.subroutes.volunteer.path} element={<div>Volunteer</div>}/>
+        <Route path={routes.support.subroutes.donate.path} element={<div>Donate</div>}/>
+        <Route path={routes.support.subroutes.communicate.path}
+          element={<div>Spread the word</div>}/>
         <Route path={routes.resources.path} element={<div>resources</div>}/>
         <Route path={routes.resources.subroutes.initiatives.path}
           element={<div>Initiatives</div>}/>
