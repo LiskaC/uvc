@@ -24,7 +24,8 @@ interface Props {
 
 const AppShellView: FC<Props> = props => (
   <div className={styles['app-shell']}>
-    <header className={styles['app-shell__header']}>
+    <header className={`${styles['app-shell__header']}
+      ${props.isMenuOpen ? styles['app-shell__header--sticky'] : ''}`}>
       <div className={styles['app-shell__hamburger']}>
         <Hamburger onClick={props.toggleMenu} isOpen={props.isMenuOpen}/>
       </div>
@@ -34,7 +35,7 @@ const AppShellView: FC<Props> = props => (
     </header>
     <main className={styles['app-shell__content']}>
       <div className={styles['app-shell__sidemenu']}>
-        <SideMenu isMenuOpen={props.isMenuOpen}/>
+        <SideMenu isMenuOpen={props.isMenuOpen} toggleMenu={props.toggleMenu}/>
       </div>
       <Outlet/>
     </main>
