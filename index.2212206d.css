@@ -1,47 +1,3 @@
-html {
-  font-size: 1.2rem;
-}
-
-body {
-  color: #fff;
-  background-color: #000;
-  width: 100vw;
-  height: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-weight: 100;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-input, select, textarea {
-  font-size: inherit;
-  color: inherit;
-  background-color: inherit;
-  border: 1px solid #fff;
-  padding: 8px;
-  font-family: inherit;
-}
-
 .qOKiMW_navbar {
   position: relative;
 }
@@ -436,5 +392,53 @@ input, select, textarea {
 
 .vX6X1W_contact__submit {
   align-self: center;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fffc;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+a {
+  color: #fff;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: 1px solid #fff;
+  padding: 8px;
+  font-family: inherit;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
