@@ -18577,7 +18577,7 @@ var _home = require("./views/Home/Home");
 var _reports = require("./views/Reports/Reports");
 var _events = require("./views/Events/Events");
 var _contact = require("./views/Contact/Contact");
-var _initiatives = require("./sections/Initiatives/Initiatives");
+var _needs = require("./sections/Needs/Needs");
 var _donate = require("./sections/Donate/Donate");
 var _communicate = require("./sections/Communicate/Communicate");
 var _support = require("./views/Support/Support");
@@ -18679,8 +18679,8 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.initiatives.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _initiatives.Initiatives), {}, void 0, false, {
+                        path: (0, _routes.routes).support.subroutes.needs.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _needs.Needs), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 30,
                             columnNumber: 20
@@ -18727,7 +18727,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./sections/Initiatives/Initiatives":"i7LLf"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -27942,9 +27942,9 @@ const routes = {
                 name: 'Donate',
                 path: '/support/donate'
             },
-            initiatives: {
-                name: 'Find initiatives',
-                path: '/resources/initiatives'
+            needs: {
+                name: 'Current needs',
+                path: '/resources/needs'
             },
             volunteer: {
                 name: 'Volunteer',
@@ -29425,6 +29425,223 @@ module.exports["contact__label"] = `vX6X1W_contact__label`;
 module.exports["contact__message"] = `vX6X1W_contact__message`;
 module.exports["contact__submit"] = `vX6X1W_contact__submit`;
 
+},{}],"3UTsk":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$79c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$79c9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Needs", ()=>Needs);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _data = require("./data");
+var _needsModuleScss = require("./Needs.module.scss");
+var _needsModuleScssDefault = parcelHelpers.interopDefault(_needsModuleScss);
+const Need = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _needsModuleScssDefault.default)['need'],
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: props.need.name
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _needsModuleScssDefault.default)['need__gallery'],
+                children: props.need.images.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: img,
+                        alt: "image in gallery",
+                        width: "300px"
+                    }, img, false, {
+                        fileName: "src/sections/Needs/Needs.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 13,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: props.need.description
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 18,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _needsModuleScssDefault.default)['need__links'],
+                children: props.need.links.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: link.url,
+                        children: link.text
+                    }, link.text, false, {
+                        fileName: "src/sections/Needs/Needs.tsx",
+                        lineNumber: 20,
+                        columnNumber: 37
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 19,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/sections/Needs/Needs.tsx",
+        lineNumber: 11,
+        columnNumber: 3
+    }, undefined);
+_c = Need;
+const Needs = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Current needs"
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 27,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "We work with many groups who have need of specific supplies and donations. Want to help? Find needs to support here!"
+            }, void 0, false, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "search",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Search here: "
+                            }, void 0, false, {
+                                fileName: "src/sections/Needs/Needs.tsx",
+                                lineNumber: 34,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                id: "search",
+                                name: "search",
+                                placeholder: "drones..."
+                            }, void 0, false, {
+                                fileName: "src/sections/Needs/Needs.tsx",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/Needs/Needs.tsx",
+                        lineNumber: 33,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: (0, _data.needs).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Need, {
+                                need: item
+                            }, item.name, false, {
+                                fileName: "src/sections/Needs/Needs.tsx",
+                                lineNumber: 38,
+                                columnNumber: 28
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/sections/Needs/Needs.tsx",
+                        lineNumber: 37,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/Needs/Needs.tsx",
+                lineNumber: 32,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/sections/Needs/Needs.tsx",
+        lineNumber: 26,
+        columnNumber: 3
+    }, undefined);
+_c1 = Needs;
+var _c, _c1;
+$RefreshReg$(_c, "Need");
+$RefreshReg$(_c1, "Needs");
+
+  $parcel$ReactRefreshHelpers$79c9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./data":"cJBPj","./Needs.module.scss":"aNibj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cJBPj":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "needs", ()=>needs);
+var _routes = require("../../routes");
+const needs = [
+    {
+        name: 'Drone operators',
+        images: [
+            'https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2021/10/Family-of-Raccoons.jpg'
+        ],
+        description: 'Support a group of drone operators who need computers with high quality graphics cards! Donate money or your laptop.',
+        links: [
+            {
+                text: 'Donate laptop',
+                url: '/some-url'
+            },
+            {
+                text: 'Donate cash',
+                url: '/some-url'
+            },
+            {
+                text: 'Group instagram',
+                url: '/some-instagra,'
+            }
+        ]
+    },
+    {
+        name: 'Medics',
+        images: [
+            'https://img.freepik.com/premium-photo/three-raccoons-wearing-hard-hats-safety-glasses-pose-front-yellow-background_14117-496088.jpg',
+            'data:image/jpeg;base64,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'
+        ],
+        description: 'Medics of x company need bandages!',
+        links: [
+            {
+                text: 'Donate bandages',
+                url: '/some-url'
+            },
+            {
+                text: 'Donate cash',
+                url: '/some-url'
+            }
+        ]
+    },
+    {
+        name: 'Urgent appeal vehicle replacement',
+        images: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mdfGLQDn5csqYRBD6DMLWUa59XwUUimgRw&s'
+        ],
+        description: 'One of our regular contacts urgently needs a new car. Can you help? Contact us!',
+        links: [
+            {
+                text: 'Contact us',
+                url: (0, _routes.routes).contact.path
+            },
+            {
+                text: 'Donate cash',
+                url: '/some-url'
+            }
+        ]
+    }
+];
+
+},{"../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aNibj":[function(require,module,exports,__globalThis) {
+module.exports["need"] = `qOX-ja_need`;
+module.exports["need__gallery"] = `qOX-ja_need__gallery`;
+module.exports["need__links"] = `qOX-ja_need__links`;
+
 },{}],"1QmPI":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8d1e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -29472,21 +29689,21 @@ const Donate = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Donate directly to an initiative"
+                        children: "Donate directly to fill a need"
                     }, void 0, false, {
                         fileName: "src/sections/Donate/Donate.tsx",
                         lineNumber: 12,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "We receive many requests for support, find an initiative to support via our initatives page:"
+                        children: "We receive many requests for support, find a need you can help with in our current needs page:"
                     }, void 0, false, {
                         fileName: "src/sections/Donate/Donate.tsx",
                         lineNumber: 13,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: (0, _routes.routes).support.subroutes.initiatives.path,
+                        href: (0, _routes.routes).support.subroutes.needs.path,
                         children: "browse needs"
                     }, void 0, false, {
                         fileName: "src/sections/Donate/Donate.tsx",
@@ -29666,7 +29883,7 @@ parcelHelpers.export(exports, "Support", ()=>Support);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _donate = require("../../sections/Donate/Donate");
 var _communicate = require("../../sections/Communicate/Communicate");
-var _initiatives = require("../../sections/Initiatives/Initiatives");
+var _needs = require("../../sections/Needs/Needs");
 var _volunteer = require("../../sections/Volunteer/Volunteer");
 const Support = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -29675,7 +29892,7 @@ const Support = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 lineNumber: 9,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _initiatives.Initiatives), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _needs.Needs), {}, void 0, false, {
                 fileName: "src/views/Support/Support.tsx",
                 lineNumber: 10,
                 columnNumber: 5
@@ -29705,7 +29922,7 @@ $RefreshReg$(_c, "Support");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../sections/Donate/Donate":"1QmPI","../../sections/Communicate/Communicate":"20u8p","../../sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../sections/Initiatives/Initiatives":"i7LLf"}],"34g23":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../../sections/Donate/Donate":"1QmPI","../../sections/Communicate/Communicate":"20u8p","../../sections/Needs/Needs":"3UTsk","../../sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"34g23":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$f638 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29841,223 +30058,6 @@ $RefreshReg$(_c1, "Volunteer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i7LLf":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$ffa9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ffa9.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Initiatives", ()=>Initiatives);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _data = require("./data");
-var _initiativesModuleScss = require("./Initiatives.module.scss");
-var _initiativesModuleScssDefault = parcelHelpers.interopDefault(_initiativesModuleScss);
-const Intiative = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _initiativesModuleScssDefault.default)['initiative'],
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: props.initiative.name
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 12,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _initiativesModuleScssDefault.default)['initiative__gallery'],
-                children: props.initiative.images.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: img,
-                        alt: "image in gallery",
-                        width: "300px"
-                    }, img, false, {
-                        fileName: "src/sections/Initiatives/Initiatives.tsx",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 13,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: props.initiative.description
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 18,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _initiativesModuleScssDefault.default)['initiative__links'],
-                children: props.initiative.links.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: link.url,
-                        children: link.text
-                    }, void 0, false, {
-                        fileName: "src/sections/Initiatives/Initiatives.tsx",
-                        lineNumber: 20,
-                        columnNumber: 43
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 19,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/sections/Initiatives/Initiatives.tsx",
-        lineNumber: 11,
-        columnNumber: 3
-    }, undefined);
-_c = Intiative;
-const Initiatives = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Find initiatives to support"
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 27,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "We work with many groups who have need of volunteers, supplies and donations. Want to help? Find initiatives to support here!"
-            }, void 0, false, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 28,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "search",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Search here: "
-                            }, void 0, false, {
-                                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                                lineNumber: 34,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "text",
-                                id: "search",
-                                name: "search",
-                                placeholder: "drones..."
-                            }, void 0, false, {
-                                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                                lineNumber: 35,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/Initiatives/Initiatives.tsx",
-                        lineNumber: 33,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: (0, _data.initiatives).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Intiative, {
-                                initiative: item
-                            }, void 0, false, {
-                                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                                lineNumber: 38,
-                                columnNumber: 34
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/sections/Initiatives/Initiatives.tsx",
-                        lineNumber: 37,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/Initiatives/Initiatives.tsx",
-                lineNumber: 32,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/sections/Initiatives/Initiatives.tsx",
-        lineNumber: 26,
-        columnNumber: 3
-    }, undefined);
-_c1 = Initiatives;
-var _c, _c1;
-$RefreshReg$(_c, "Intiative");
-$RefreshReg$(_c1, "Initiatives");
-
-  $parcel$ReactRefreshHelpers$ffa9.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./data":"eRUho","./Initiatives.module.scss":"e4311","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRUho":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initiatives", ()=>initiatives);
-var _routes = require("../../routes");
-const initiatives = [
-    {
-        name: 'Drone operators',
-        images: [
-            'https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2021/10/Family-of-Raccoons.jpg'
-        ],
-        description: 'Support a group of drone operators who need computers with high quality graphics cards! Donate money or your laptop.',
-        links: [
-            {
-                text: 'Donate laptop',
-                url: '/some-url'
-            },
-            {
-                text: 'Donate cash',
-                url: '/some-url'
-            },
-            {
-                text: 'Group instagram',
-                url: '/some-instagra,'
-            }
-        ]
-    },
-    {
-        name: 'Medics',
-        images: [
-            'https://img.freepik.com/premium-photo/three-raccoons-wearing-hard-hats-safety-glasses-pose-front-yellow-background_14117-496088.jpg',
-            'data:image/jpeg;base64,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'
-        ],
-        description: 'Medics of x company need bandages!',
-        links: [
-            {
-                text: 'Donate bandages',
-                url: '/some-url'
-            },
-            {
-                text: 'Donate cash',
-                url: '/some-url'
-            }
-        ]
-    },
-    {
-        name: 'Urgent appeal vehicle replacement',
-        images: [
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mdfGLQDn5csqYRBD6DMLWUa59XwUUimgRw&s'
-        ],
-        description: 'One of our regular contacts urgently needs a new car. Can you help? Contact us!',
-        links: [
-            {
-                text: 'Contact us',
-                url: (0, _routes.routes).contact.path
-            },
-            {
-                text: 'Donate cash',
-                url: '/some-url'
-            }
-        ]
-    }
-];
-
-},{"../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e4311":[function(require,module,exports,__globalThis) {
-module.exports["initiative"] = `fcjzoG_initiative`;
-module.exports["initiative__gallery"] = `fcjzoG_initiative__gallery`;
-module.exports["initiative__links"] = `fcjzoG_initiative__links`;
-
-},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

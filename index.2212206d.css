@@ -442,22 +442,23 @@ input, select, textarea {
   align-self: center;
 }
 
-.fcjzoG_initiative {
+.qOX-ja_need {
   border-top: 1px solid #fff;
   margin-top: 2rem;
 }
 
-.fcjzoG_initiative:first-child {
+.qOX-ja_need:first-child {
   border-top: none;
   margin-top: 0;
 }
 
-.fcjzoG_initiative__gallery {
+.qOX-ja_need__gallery {
+  flex-wrap: wrap;
   gap: 4px;
   display: flex;
 }
 
-.fcjzoG_initiative__links {
+.qOX-ja_need__links {
   gap: 16px;
   display: flex;
 }
