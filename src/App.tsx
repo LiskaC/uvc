@@ -6,7 +6,7 @@ import { Home } from './views/Home/Home'
 import { Reports } from './views/Reports/Reports'
 import { Events } from './views/Events/Events'
 import { Contact } from './views/Contact/Contact'
-import { Initiatives } from './sections/Initiatives/Initiatives'
+import { Needs } from './sections/Needs/Needs'
 import { Donate } from './sections/Donate/Donate'
 import { Communicate } from './sections/Communicate/Communicate'
 import { Support } from './views/Support/Support'
@@ -26,8 +26,8 @@ export const App: FC = () => (
         <Route path={routes.support.subroutes.donate.path} element={<Donate/>}/>
         <Route path={routes.support.subroutes.communicate.path}
           element={<Communicate/>}/>
-        <Route path={routes.support.subroutes.initiatives.path}
-          element={<Initiatives/>}/>
+        <Route path={routes.support.subroutes.needs.path}
+          element={<Needs/>}/>
         <Route path={routes.contact.path} element={<Contact/>}/>
       </Route>
     </Routes>

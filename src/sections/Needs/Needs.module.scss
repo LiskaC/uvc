@@ -1,6 +1,6 @@
 @use '../../assets/styles/variables.scss' as vars;
 
-.initiative {
+.need {
   border-top: solid 1px vars.$white;
   margin-top: 2rem;
 
@@ -10,12 +10,12 @@
   }
 }
 
-.initiative__gallery {
+.need__gallery {
   display: flex;
   gap: 4px;
 }
 
-.initiative__links {
+.need__links {
   display: flex;
   gap: 16px;
 }

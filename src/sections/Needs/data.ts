@@ -1,13 +1,13 @@
 import { routes } from '../../routes'
 
-export type Initiative = {
+export type Need = {
   name: string
   images: string[]
   description: string
   links: { text: string, url: string }[]
 }
 
-export const initiatives: Initiative[] = [
+export const needs: Need[] = [
   {
     name: 'Drone operators',
     images: ['https://ndow-production-media.s3-us-gov-west-1.amazonaws.com/wp-content/uploads/2021/10/Family-of-Raccoons.jpg'],

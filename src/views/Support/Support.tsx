@@ -1,13 +1,13 @@
 import { FC } from 'react'
 import { Donate } from '../../sections/Donate/Donate'
 import { Communicate } from '../../sections/Communicate/Communicate'
-import { Initiatives } from '../../sections/Initiatives/Initiatives'
+import { Needs } from '../../sections/Needs/Needs'
 import { Volunteer } from '../../sections/Volunteer/Volunteer'
 
 export const Support: FC = () => (
   <div>
     <Donate/>
-    <Initiatives/>
+    <Needs/>
     <Volunteer/>
     <Communicate/>
   </div>

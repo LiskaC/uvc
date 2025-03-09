@@ -9,11 +9,11 @@ export const Donate: FC = () => (
       <a href=''>Link to donation page/paypal or whatever</a>
     </div>
     <div>
-      <h2>Donate directly to an initiative</h2>
+      <h2>Donate directly to fill a need</h2>
       <p>
-        We receive many requests for support, find an initiative to support via our initatives page:
+        We receive many requests for support, find a need you can help with in our current needs page:
       </p>
-      <a href={routes.support.subroutes.initiatives.path}>browse needs</a>
+      <a href={routes.support.subroutes.needs.path}>browse needs</a>
     </div>
   </section>
 )
