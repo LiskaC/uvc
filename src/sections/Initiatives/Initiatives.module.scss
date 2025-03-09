@@ -1,0 +1,21 @@
+@use '../../assets/styles/variables.scss' as vars;
+
+.initiative {
+  border-top: solid 1px vars.$white;
+  margin-top: 2rem;
+
+  &:first-child {
+    border-top: none;
+    margin-top: 0;
+  }
+}
+
+.initiative__gallery {
+  display: flex;
+  gap: 4px;
+}
+
+.initiative__links {
+  display: flex;
+  gap: 16px;
+}

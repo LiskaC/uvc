@@ -33,7 +33,7 @@ export const Volunteer: FC = () => (
     <h2>Volunter with:</h2>
     <Opportunity name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
       link={{ text: 'where to find timetable', address: '' }}/>
-    <Opportunity name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
-      link={{ text: 'where to find timetable', address: '' }}/>
+    <Opportunity name='Help Ukraine Scotland' description='Lots of events and stuff.'
+      link={{ text: 'facebook group', address: 'https://www.facebook.com/groups/helpukrainescotland' }}/>
   </section>
 )
