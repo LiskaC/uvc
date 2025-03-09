@@ -18759,7 +18759,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./views/Initiatives/Initiatives":"5N4kX"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./views/Initiatives/Initiatives":"5N4kX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -28048,7 +28048,8 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _appShellModuleScssDefault.default)['app-shell'],
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                className: (0, _appShellModuleScssDefault.default)['app-shell__header'],
+                className: `${(0, _appShellModuleScssDefault.default)['app-shell__header']}
+      ${props.isMenuOpen ? (0, _appShellModuleScssDefault.default)['app-shell__header--sticky'] : ''}`,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__hamburger'],
@@ -28057,12 +28058,12 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             isOpen: props.isMenuOpen
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -28070,31 +28071,31 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "UKRAINIAN VICTORY CAMPAIGN"
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__navigation'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.NavBar), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 32,
+                            lineNumber: 33,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__social'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 7
                     }, undefined)
                 ]
@@ -28109,26 +28110,27 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__sidemenu'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sideMenu.SideMenu), {
-                            isMenuOpen: props.isMenuOpen
+                            isMenuOpen: props.isMenuOpen,
+                            toggleMenu: props.toggleMenu
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 5
             }, undefined)
         ]
@@ -28147,121 +28149,118 @@ $RefreshReg$(_c1, "AppShellView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../sections/NavBar/NavBar":"g8Lpy","../../sections/SideMenu/SideMenu":"cbqCp"}],"bw1zr":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$563c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g8Lpy":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$550a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$563c.prelude(module);
+$parcel$ReactRefreshHelpers$550a.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Social", ()=>Social);
+parcelHelpers.export(exports, "NavBar", ()=>NavBar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _instagramPng = require("../../assets/icons/instagram.png");
-var _instagramPngDefault = parcelHelpers.interopDefault(_instagramPng);
-var _facebookPng = require("../../assets/icons/facebook.png");
-var _facebookPngDefault = parcelHelpers.interopDefault(_facebookPng);
-var _socialModuleScss = require("./Social.module.scss");
-var _socialModuleScssDefault = parcelHelpers.interopDefault(_socialModuleScss);
-const Social = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: (0, _socialModuleScssDefault.default)['social'],
+var _react = require("react");
+var _routes = require("../../routes");
+var _navBarModuleScss = require("./NavBar.module.scss");
+var _navBarModuleScssDefault = parcelHelpers.interopDefault(_navBarModuleScss);
+var _s = $RefreshSig$();
+const NavItem = (props)=>{
+    _s();
+    const [showDropdown, setShowDropdown] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+        className: (0, _navBarModuleScssDefault.default)['navbar__item'],
+        onMouseEnter: ()=>setShowDropdown(true),
+        onMouseLeave: ()=>setShowDropdown(false),
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "https://www.instagram.com/ukrainian_victory_campaign/",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _instagramPngDefault.default),
-                    alt: "Instagram",
-                    className: (0, _socialModuleScssDefault.default)['social__icon']
-                }, void 0, false, {
-                    fileName: "src/components/Social/Social.tsx",
-                    lineNumber: 12,
-                    columnNumber: 7
-                }, undefined)
+                href: '/uvc/#' + props.route.path,
+                className: (0, _navBarModuleScssDefault.default)['navbar__link'],
+                children: props.route.name
             }, void 0, false, {
-                fileName: "src/components/Social/Social.tsx",
-                lineNumber: 10,
-                columnNumber: 5
+                fileName: "src/sections/NavBar/NavBar.tsx",
+                lineNumber: 18,
+                columnNumber: 4
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "https://www.facebook.com/UkrainianVictoryCampaign",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _facebookPngDefault.default),
-                    alt: "Facebook",
-                    className: (0, _socialModuleScssDefault.default)['social__icon']
+            showDropdown && (0, _routes.hasSubroutes)(props.route) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                className: (0, _navBarModuleScssDefault.default)['navbar__dropdown'],
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+                    className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-list'],
+                    children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-item'],
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: '/uvc/#' + subroute.path,
+                                className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-link'],
+                                children: subroute.name
+                            }, void 0, false, {
+                                fileName: "src/sections/NavBar/NavBar.tsx",
+                                lineNumber: 26,
+                                columnNumber: 9
+                            }, undefined)
+                        }, subroute.path, false, {
+                            fileName: "src/sections/NavBar/NavBar.tsx",
+                            lineNumber: 25,
+                            columnNumber: 8
+                        }, undefined))
                 }, void 0, false, {
-                    fileName: "src/components/Social/Social.tsx",
-                    lineNumber: 16,
-                    columnNumber: 7
+                    fileName: "src/sections/NavBar/NavBar.tsx",
+                    lineNumber: 23,
+                    columnNumber: 6
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/Social/Social.tsx",
-                lineNumber: 14,
+                fileName: "src/sections/NavBar/NavBar.tsx",
+                lineNumber: 22,
                 columnNumber: 5
-            }, undefined)
+            }, undefined) : null
         ]
     }, void 0, true, {
-        fileName: "src/components/Social/Social.tsx",
-        lineNumber: 9,
+        fileName: "src/sections/NavBar/NavBar.tsx",
+        lineNumber: 14,
         columnNumber: 3
     }, undefined);
-_c = Social;
-var _c;
-$RefreshReg$(_c, "Social");
+};
+_s(NavItem, "/Fk0mfoaTkcfqmlHhjzD5FM1xJk=");
+_c = NavItem;
+const NavBar = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: (0, _navBarModuleScssDefault.default)['navbar'],
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+            className: (0, _navBarModuleScssDefault.default)['navbar__links'],
+            children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavItem, {
+                    route: route
+                }, route.name, false, {
+                    fileName: "src/sections/NavBar/NavBar.tsx",
+                    lineNumber: 41,
+                    columnNumber: 42
+                }, undefined))
+        }, void 0, false, {
+            fileName: "src/sections/NavBar/NavBar.tsx",
+            lineNumber: 40,
+            columnNumber: 3
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/sections/NavBar/NavBar.tsx",
+        lineNumber: 39,
+        columnNumber: 2
+    }, undefined);
+_c1 = NavBar;
+var _c, _c1;
+$RefreshReg$(_c, "NavItem");
+$RefreshReg$(_c1, "NavBar");
 
-  $parcel$ReactRefreshHelpers$563c.postlude(module);
+  $parcel$ReactRefreshHelpers$550a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../assets/icons/instagram.png":"sdZd4","../../assets/icons/facebook.png":"gG5H6","./Social.module.scss":"c9Knv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"sdZd4":[function(require,module,exports,__globalThis) {
-module.exports = require("5510bb887dbca4a5").getBundleURL('6EXJA') + "instagram.8e96e721.png" + "?" + Date.now();
-
-},{"5510bb887dbca4a5":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"gG5H6":[function(require,module,exports,__globalThis) {
-module.exports = require("aba5a929c9c61c1e").getBundleURL('6EXJA') + "facebook.ae2c5416.png" + "?" + Date.now();
-
-},{"aba5a929c9c61c1e":"lgJ39"}],"c9Knv":[function(require,module,exports,__globalThis) {
-module.exports["social"] = `_2NmL2q_social`;
-module.exports["social__icon"] = `_2NmL2q_social__icon`;
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../routes":"cAFqI","./NavBar.module.scss":"ixzU8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ixzU8":[function(require,module,exports,__globalThis) {
+module.exports["navbar"] = `qOKiMW_navbar`;
+module.exports["navbar__dropdown"] = `qOKiMW_navbar__dropdown`;
+module.exports["navbar__dropdown-item"] = `qOKiMW_navbar__dropdown-item`;
+module.exports["navbar__dropdown-link"] = `qOKiMW_navbar__dropdown-link`;
+module.exports["navbar__dropdown-list"] = `qOKiMW_navbar__dropdown-list`;
+module.exports["navbar__item"] = `qOKiMW_navbar__item`;
+module.exports["navbar__link"] = `qOKiMW_navbar__link`;
+module.exports["navbar__links"] = `qOKiMW_navbar__links`;
 
 },{}],"km3Ru":[function(require,module,exports,__globalThis) {
 "use strict";
@@ -28408,6 +28407,122 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
+},{}],"bw1zr":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$563c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$563c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Social", ()=>Social);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _instagramPng = require("../../assets/icons/instagram.png");
+var _instagramPngDefault = parcelHelpers.interopDefault(_instagramPng);
+var _facebookPng = require("../../assets/icons/facebook.png");
+var _facebookPngDefault = parcelHelpers.interopDefault(_facebookPng);
+var _socialModuleScss = require("./Social.module.scss");
+var _socialModuleScssDefault = parcelHelpers.interopDefault(_socialModuleScss);
+const Social = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        className: (0, _socialModuleScssDefault.default)['social'],
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "https://www.instagram.com/ukrainian_victory_campaign/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _instagramPngDefault.default),
+                    alt: "Instagram",
+                    className: (0, _socialModuleScssDefault.default)['social__icon']
+                }, void 0, false, {
+                    fileName: "src/components/Social/Social.tsx",
+                    lineNumber: 12,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Social/Social.tsx",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "https://www.facebook.com/UkrainianVictoryCampaign",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _facebookPngDefault.default),
+                    alt: "Facebook",
+                    className: (0, _socialModuleScssDefault.default)['social__icon']
+                }, void 0, false, {
+                    fileName: "src/components/Social/Social.tsx",
+                    lineNumber: 16,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Social/Social.tsx",
+                lineNumber: 14,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Social/Social.tsx",
+        lineNumber: 9,
+        columnNumber: 3
+    }, undefined);
+_c = Social;
+var _c;
+$RefreshReg$(_c, "Social");
+
+  $parcel$ReactRefreshHelpers$563c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../assets/icons/instagram.png":"sdZd4","../../assets/icons/facebook.png":"gG5H6","./Social.module.scss":"c9Knv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"sdZd4":[function(require,module,exports,__globalThis) {
+module.exports = require("5510bb887dbca4a5").getBundleURL('6EXJA') + "instagram.8e96e721.png" + "?" + Date.now();
+
+},{"5510bb887dbca4a5":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"gG5H6":[function(require,module,exports,__globalThis) {
+module.exports = require("aba5a929c9c61c1e").getBundleURL('6EXJA') + "facebook.ae2c5416.png" + "?" + Date.now();
+
+},{"aba5a929c9c61c1e":"lgJ39"}],"c9Knv":[function(require,module,exports,__globalThis) {
+module.exports["social"] = `_2NmL2q_social`;
+module.exports["social__icon"] = `_2NmL2q_social__icon`;
+
 },{}],"exICt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c2c5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -28450,133 +28565,6 @@ module.exports["hamburger"] = `z9YX8W_hamburger`;
 module.exports["hamburger--open"] = `z9YX8W_hamburger--open`;
 module.exports["hamburger__icon"] = `z9YX8W_hamburger__icon`;
 
-},{}],"7ZCSG":[function(require,module,exports,__globalThis) {
-module.exports["app-shell"] = `oZT2ra_app-shell`;
-module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
-module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
-module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
-module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
-module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
-module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
-module.exports["app-shell__title"] = `oZT2ra_app-shell__title`;
-module.exports["hamburger"] = `oZT2ra_hamburger`;
-module.exports["navigation"] = `oZT2ra_navigation`;
-module.exports["social"] = `oZT2ra_social`;
-module.exports["title"] = `oZT2ra_title`;
-
-},{}],"g8Lpy":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$550a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$550a.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NavBar", ()=>NavBar);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _routes = require("../../routes");
-var _navBarModuleScss = require("./NavBar.module.scss");
-var _navBarModuleScssDefault = parcelHelpers.interopDefault(_navBarModuleScss);
-var _s = $RefreshSig$();
-const NavItem = (props)=>{
-    _s();
-    const [showDropdown, setShowDropdown] = (0, _react.useState)(false);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-        className: (0, _navBarModuleScssDefault.default)['navbar__item'],
-        onMouseEnter: ()=>setShowDropdown(true),
-        onMouseLeave: ()=>setShowDropdown(false),
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: '/uvc/#' + props.route.path,
-                className: (0, _navBarModuleScssDefault.default)['navbar__link'],
-                children: props.route.name
-            }, void 0, false, {
-                fileName: "src/sections/NavBar/NavBar.tsx",
-                lineNumber: 18,
-                columnNumber: 4
-            }, undefined),
-            showDropdown && (0, _routes.hasSubroutes)(props.route) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                className: (0, _navBarModuleScssDefault.default)['navbar__dropdown'],
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
-                    className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-list'],
-                    children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-item'],
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: '/uvc/#' + subroute.path,
-                                className: (0, _navBarModuleScssDefault.default)['navbar__dropdown-link'],
-                                children: subroute.name
-                            }, void 0, false, {
-                                fileName: "src/sections/NavBar/NavBar.tsx",
-                                lineNumber: 26,
-                                columnNumber: 9
-                            }, undefined)
-                        }, subroute.path, false, {
-                            fileName: "src/sections/NavBar/NavBar.tsx",
-                            lineNumber: 25,
-                            columnNumber: 8
-                        }, undefined))
-                }, void 0, false, {
-                    fileName: "src/sections/NavBar/NavBar.tsx",
-                    lineNumber: 23,
-                    columnNumber: 6
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/sections/NavBar/NavBar.tsx",
-                lineNumber: 22,
-                columnNumber: 5
-            }, undefined) : null
-        ]
-    }, void 0, true, {
-        fileName: "src/sections/NavBar/NavBar.tsx",
-        lineNumber: 14,
-        columnNumber: 3
-    }, undefined);
-};
-_s(NavItem, "/Fk0mfoaTkcfqmlHhjzD5FM1xJk=");
-_c = NavItem;
-const NavBar = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: (0, _navBarModuleScssDefault.default)['navbar'],
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
-            className: (0, _navBarModuleScssDefault.default)['navbar__links'],
-            children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavItem, {
-                    route: route
-                }, route.name, false, {
-                    fileName: "src/sections/NavBar/NavBar.tsx",
-                    lineNumber: 41,
-                    columnNumber: 42
-                }, undefined))
-        }, void 0, false, {
-            fileName: "src/sections/NavBar/NavBar.tsx",
-            lineNumber: 40,
-            columnNumber: 3
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/sections/NavBar/NavBar.tsx",
-        lineNumber: 39,
-        columnNumber: 2
-    }, undefined);
-_c1 = NavBar;
-var _c, _c1;
-$RefreshReg$(_c, "NavItem");
-$RefreshReg$(_c1, "NavBar");
-
-  $parcel$ReactRefreshHelpers$550a.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../routes":"cAFqI","./NavBar.module.scss":"ixzU8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ixzU8":[function(require,module,exports,__globalThis) {
-module.exports["navbar"] = `qOKiMW_navbar`;
-module.exports["navbar__dropdown"] = `qOKiMW_navbar__dropdown`;
-module.exports["navbar__dropdown-item"] = `qOKiMW_navbar__dropdown-item`;
-module.exports["navbar__dropdown-link"] = `qOKiMW_navbar__dropdown-link`;
-module.exports["navbar__dropdown-list"] = `qOKiMW_navbar__dropdown-list`;
-module.exports["navbar__item"] = `qOKiMW_navbar__item`;
-module.exports["navbar__link"] = `qOKiMW_navbar__link`;
-module.exports["navbar__links"] = `qOKiMW_navbar__links`;
-
 },{}],"cbqCp":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8813 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -28588,70 +28576,86 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SideMenu", ()=>SideMenu);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouter = require("react-router");
 var _routes = require("../../routes");
 var _sideMenuModuleScss = require("./SideMenu.module.scss");
 var _sideMenuModuleScssDefault = parcelHelpers.interopDefault(_sideMenuModuleScss);
-const MenuItem = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+var _s = $RefreshSig$();
+const MenuItem = (props)=>{
+    _s();
+    const navigate = (0, _reactRouter.useNavigate)();
+    function handleClick(path) {
+        navigate(path);
+        props.toggleMenu();
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
         className: (0, _sideMenuModuleScssDefault.default)['navbar__item'],
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: '/uvc/#' + props.route.path,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>handleClick(props.route.path),
                 className: (0, _sideMenuModuleScssDefault.default)['navbar__link'],
                 children: props.route.name
             }, void 0, false, {
                 fileName: "src/sections/SideMenu/SideMenu.tsx",
-                lineNumber: 12,
-                columnNumber: 5
+                lineNumber: 22,
+                columnNumber: 7
             }, undefined),
             (0, _routes.hasSubroutes)(props.route) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: (0, _sideMenuModuleScssDefault.default)['navbar__subroutes'],
                 children: Object.values(props.route.subroutes).map((subroute)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _sideMenuModuleScssDefault.default)['navbar__subroute-item'],
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: '/uvc/#' + subroute.path,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>handleClick(subroute.path),
                             className: (0, _sideMenuModuleScssDefault.default)['navbar__subroute-link'],
                             children: subroute.name
                         }, void 0, false, {
                             fileName: "src/sections/SideMenu/SideMenu.tsx",
-                            lineNumber: 19,
-                            columnNumber: 13
+                            lineNumber: 30,
+                            columnNumber: 15
                         }, undefined)
                     }, subroute.path, false, {
                         fileName: "src/sections/SideMenu/SideMenu.tsx",
-                        lineNumber: 18,
-                        columnNumber: 11
+                        lineNumber: 29,
+                        columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/sections/SideMenu/SideMenu.tsx",
-                lineNumber: 16,
-                columnNumber: 7
+                lineNumber: 27,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/sections/SideMenu/SideMenu.tsx",
-        lineNumber: 11,
-        columnNumber: 3
+        lineNumber: 21,
+        columnNumber: 5
     }, undefined);
+};
+_s(MenuItem, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+    return [
+        (0, _reactRouter.useNavigate)
+    ];
+});
 _c = MenuItem;
 const SideMenu = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         className: `${(0, _sideMenuModuleScssDefault.default)['navbar']} ${props.isMenuOpen ? (0, _sideMenuModuleScssDefault.default)['navbar--open'] : ''}`,
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
             className: (0, _sideMenuModuleScssDefault.default)['navbar__links'],
             children: Object.values((0, _routes.routes)).map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MenuItem, {
-                    route: route
+                    route: route,
+                    toggleMenu: props.toggleMenu
                 }, route.name, false, {
                     fileName: "src/sections/SideMenu/SideMenu.tsx",
-                    lineNumber: 36,
+                    lineNumber: 50,
                     columnNumber: 43
                 }, undefined))
         }, void 0, false, {
             fileName: "src/sections/SideMenu/SideMenu.tsx",
-            lineNumber: 35,
+            lineNumber: 49,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/sections/SideMenu/SideMenu.tsx",
-        lineNumber: 34,
+        lineNumber: 48,
         columnNumber: 3
     }, undefined);
 _c1 = SideMenu;
@@ -28664,7 +28668,7 @@ $RefreshReg$(_c1, "SideMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","./SideMenu.module.scss":"a8Cx7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"a8Cx7":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","../../routes":"cAFqI","./SideMenu.module.scss":"a8Cx7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"a8Cx7":[function(require,module,exports,__globalThis) {
 module.exports["navbar"] = `h9NVDq_navbar`;
 module.exports["navbar--open"] = `h9NVDq_navbar--open`;
 module.exports["navbar__item"] = `h9NVDq_navbar__item`;
@@ -28672,6 +28676,21 @@ module.exports["navbar__link"] = `h9NVDq_navbar__link`;
 module.exports["navbar__links"] = `h9NVDq_navbar__links`;
 module.exports["navbar__subroute-link"] = `h9NVDq_navbar__subroute-link`;
 module.exports["navbar__subroutes"] = `h9NVDq_navbar__subroutes`;
+
+},{}],"7ZCSG":[function(require,module,exports,__globalThis) {
+module.exports["app-shell"] = `oZT2ra_app-shell`;
+module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
+module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
+module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
+module.exports["app-shell__header--sticky"] = `oZT2ra_app-shell__header--sticky`;
+module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
+module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
+module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
+module.exports["app-shell__title"] = `oZT2ra_app-shell__title`;
+module.exports["hamburger"] = `oZT2ra_hamburger`;
+module.exports["navigation"] = `oZT2ra_navigation`;
+module.exports["social"] = `oZT2ra_social`;
+module.exports["title"] = `oZT2ra_title`;
 
 },{}],"eNyEK":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5faf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
