@@ -1,0 +1,11 @@
+@use '../../assets/styles/variables.scss' as vars;
+
+.opportunity {
+  border-top: solid 1px vars.$white;
+  margin-top: 2rem;
+
+  &:first-child {
+    border: none;
+    margin: 0;
+  }
+}
