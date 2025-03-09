@@ -53,7 +53,7 @@ export const Events: FC = () => {
       />
       <div className={styles['events__list']}>
         <p>An alternate display for events:</p>
-        {events.map(event => <Event event={event} key={event.id} />)}
+        {events.map(event => <Event key={event.id} event={event}/>)}
       </div>
     </>
   )

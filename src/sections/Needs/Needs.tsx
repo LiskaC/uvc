@@ -17,7 +17,7 @@ const Need: FC<Props> = props => (
     </div>
     <p>{props.need.description}</p>
     <div className={styles['need__links']}>
-      {props.need.links.map(link => <a href={link.url}>{link.text}</a>)}
+      {props.need.links.map(link => <a key={link.text} href={link.url}>{link.text}</a>)}
     </div>
   </div>
 )
@@ -35,7 +35,7 @@ export const Needs: FC = () => (
         <input type='text' id='search' name='search' placeholder='drones...'/>
       </label>
       <div>
-        {needs.map(item => <Need need={item}/>)}
+        {needs.map(item => <Need key={item.name} need={item}/>)}
       </div>
     </div>
   </section>

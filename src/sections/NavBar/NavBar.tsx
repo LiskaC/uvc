@@ -38,7 +38,7 @@ const NavItem: FC<Props> = props => {
 export const NavBar: FC = () => (
 	<nav className={styles['navbar']}>
 		<ol className={styles['navbar__links']}>
-			{Object.values(routes).map((route) => <NavItem route={route} key={route.name}/>)}
+			{Object.values(routes).map((route) => <NavItem key={route.name} route={route}/>)}
 		</ol>
 	</nav>
 );
