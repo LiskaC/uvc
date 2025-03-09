@@ -29703,7 +29703,7 @@ const Donate = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: (0, _routes.routes).support.subroutes.needs.path,
+                        href: '/uvc/#' + (0, _routes.routes).support.subroutes.needs.path,
                         children: "browse needs"
                     }, void 0, false, {
                         fileName: "src/sections/Donate/Donate.tsx",
@@ -29934,20 +29934,23 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Volunteer", ()=>Volunteer);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _routes = require("../../routes");
+var _volunteerModuleScss = require("./Volunteer.module.scss");
+var _volunteerModuleScssDefault = parcelHelpers.interopDefault(_volunteerModuleScss);
 const Opportunity = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _volunteerModuleScssDefault.default)['opportunity'],
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: props.name
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: props.description
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 16,
+                lineNumber: 18,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -29955,13 +29958,13 @@ const Opportunity = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: props.link.text
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/sections/Volunteer/Volunteer.tsx",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 3
     }, undefined);
 _c = Opportunity;
@@ -29971,14 +29974,14 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 children: "Volunteer"
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 23,
+                lineNumber: 25,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Volunteer with us!"
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 24,
+                lineNumber: 26,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29989,55 +29992,63 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         children: "events"
                     }, void 0, false, {
                         fileName: "src/sections/Volunteer/Volunteer.tsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 59
                     }, undefined),
                     ".",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/sections/Volunteer/Volunteer.tsx",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 7
                     }, undefined),
                     "If you'd like to help some other way you can also talk to us there.",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/sections/Volunteer/Volunteer.tsx",
-                        lineNumber: 30,
+                        lineNumber: 32,
                         columnNumber: 7
                     }, undefined),
                     "Other ways people can volunteer with UVC....."
                 ]
             }, void 0, true, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 25,
+                lineNumber: 27,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Volunter with:"
+                children: "Volunteer with other groups"
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Opportunity, {
-                name: "Edinburgh Spiders",
-                description: "Description: Weave camouflage nets.",
-                link: {
-                    text: 'where to find timetable',
-                    address: ''
-                }
-            }, void 0, false, {
-                fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 34,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Opportunity, {
-                name: "Help Ukraine Scotland",
-                description: "Lots of events and stuff.",
-                link: {
-                    text: 'facebook group',
-                    address: 'https://www.facebook.com/groups/helpukrainescotland'
-                }
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Opportunity, {
+                        name: "Edinburgh Spiders",
+                        description: "Description: Weave camouflage nets.",
+                        link: {
+                            text: 'where to find timetable',
+                            address: ''
+                        }
+                    }, void 0, false, {
+                        fileName: "src/sections/Volunteer/Volunteer.tsx",
+                        lineNumber: 37,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Opportunity, {
+                        name: "Help Ukraine Scotland",
+                        description: "Lots of events and stuff.",
+                        link: {
+                            text: 'facebook group',
+                            address: 'https://www.facebook.com/groups/helpukrainescotland'
+                        }
+                    }, void 0, false, {
+                        fileName: "src/sections/Volunteer/Volunteer.tsx",
+                        lineNumber: 39,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
                 lineNumber: 36,
                 columnNumber: 5
@@ -30045,7 +30056,7 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         ]
     }, void 0, true, {
         fileName: "src/sections/Volunteer/Volunteer.tsx",
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 3
     }, undefined);
 _c1 = Volunteer;
@@ -30058,6 +30069,9 @@ $RefreshReg$(_c1, "Volunteer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Volunteer.module.scss":"3CLHl"}],"3CLHl":[function(require,module,exports,__globalThis) {
+module.exports["opportunity"] = `-7NWQa_opportunity`;
+
+},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

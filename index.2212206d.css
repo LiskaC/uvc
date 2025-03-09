@@ -28,6 +28,10 @@ h1 {
   font-weight: 100;
 }
 
+h2 {
+  font-weight: 100;
+}
+
 a {
   color: #fff;
 }
@@ -461,5 +465,15 @@ input, select, textarea {
 .qOX-ja_need__links {
   gap: 16px;
   display: flex;
+}
+
+.-\37 NWQa_opportunity {
+  border-top: 1px solid #fff;
+  margin-top: 2rem;
+}
+
+.-\37 NWQa_opportunity:first-child {
+  border: none;
+  margin: 0;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
