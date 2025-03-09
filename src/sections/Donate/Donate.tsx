@@ -13,7 +13,7 @@ export const Donate: FC = () => (
       <p>
         We receive many requests for support, find a need you can help with in our current needs page:
       </p>
-      <a href={routes.support.subroutes.needs.path}>browse needs</a>
+      <a href={'/uvc/#' + routes.support.subroutes.needs.path}>browse needs</a>
     </div>
   </section>
 )
