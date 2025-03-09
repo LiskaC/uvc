@@ -18,12 +18,7 @@ export type Routes = {
       communicate: Route
     }
   }
-  resources: Route & {
-    subroutes: {
-      membership: Route
-      contact: Route
-    }
-  }
+  contact: Route
 }
 
 /**
@@ -52,14 +47,7 @@ export const routes: Routes = {
       communicate: { name: 'Spread the word', path: '/support/communicate' }
     }
   },
-  resources: {
-    name: 'Resources',
-    path: '/resources',
-    subroutes: {
-      membership: { name: 'Become a member', path: '/resources/member' },
-      contact: { name: 'Contact us', path: '/resources/contact' }
-    }
-  }
+  contact: { name: 'Contact us', path: '/resources/contact' }
 }
 
 /**

@@ -1,0 +1,39 @@
+import { FC } from 'react'
+import { routes } from '../../routes'
+
+interface Props {
+  name: string
+  description: string
+  link: {
+    text: string
+    address: string
+  }
+}
+
+const Opportunity: FC<Props> = props => (
+  <div>
+    <h3>{props.name}</h3>
+    <p>{props.description}</p>
+    <a href={props.link.address}>{props.link.text}</a>
+  </div>
+)
+
+export const Volunteer: FC = () => (
+  <section>
+    <h1>Volunteer</h1>
+    <p>Volunteer with us!</p>
+    <p>
+      The most basic way to volunteer is to show support. Join our weekly Sunday demonstration at
+      Wellington Statue in Edinburgh, or one of our other <a href={routes.events.path}>events</a>.
+      <br/>
+      If you'd like to help some other way you can also talk to us there.
+      <br/>
+      Other ways people can volunteer with UVC.....
+    </p>
+    <h2>Volunter with:</h2>
+    <Opportunity name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
+      link={{ text: 'where to find timetable', address: '' }}/>
+    <Opportunity name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
+      link={{ text: 'where to find timetable', address: '' }}/>
+  </section>
+)
