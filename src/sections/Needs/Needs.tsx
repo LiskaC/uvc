@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { ChangeEvent, FC, useState } from 'react'
 import { Need, needs } from './data'
 
 import styles from './Needs.module.scss'
@@ -22,21 +22,39 @@ const Need: FC<Props> = props => (
   </div>
 )
 
-export const Needs: FC = () => (
-  <section>
-    <h1>Current needs</h1>
-    <p>
-      We work with many groups who have need of specific supplies and donations. Want to help?
-      Find needs to support here!
-    </p>
-    <div>
-      <label htmlFor='search'>
-        <span>Search here: </span>
-        <input type='text' id='search' name='search' placeholder='drones...'/>
-      </label>
+export const Needs: FC = () => {
+  const [searchTerm, setSearchTerm] = useState<string>('')
+  const [shownNeeds, setShownNeeds] = useState<Need[]>(needs)
+
+  function handleSearch(event: ChangeEvent<HTMLInputElement>) {
+    const value = event.target.value.toLowerCase()
+    setSearchTerm(value)
+
+    setShownNeeds(
+      needs.filter(need => {
+        return need.name.toLowerCase().includes(value) ||
+        need.description.toLowerCase().includes(value)
+      })
+    )
+  }
+
+  return (
+    <section>
+      <h1>Current needs</h1>
+      <p>
+        We work with many groups who have need of specific supplies and donations. Want to help?
+        Find needs to support here!
+      </p>
       <div>
-        {needs.map(item => <Need key={item.name} need={item}/>)}
+        <label htmlFor='search'>
+          <span>Search here: </span>
+          <input type='text' id='search' name='search' placeholder='drones...' value={searchTerm}
+            onChange={handleSearch}/>
+        </label>
+        <div>
+          {shownNeeds.map(item => <Need key={item.name} need={item}/>)}
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}

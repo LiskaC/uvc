@@ -14,3 +14,6 @@ dist/
 
 # dotenv
 .env
+
+# notes
+notes.md
