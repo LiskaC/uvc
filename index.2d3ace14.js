@@ -29436,9 +29436,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Needs", ()=>Needs);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _data = require("./data");
 var _needsModuleScss = require("./Needs.module.scss");
 var _needsModuleScssDefault = parcelHelpers.interopDefault(_needsModuleScss);
+var _s = $RefreshSig$();
 const Need = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _needsModuleScssDefault.default)['need'],
         children: [
@@ -29494,21 +29496,32 @@ const Need = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         columnNumber: 3
     }, undefined);
 _c = Need;
-const Needs = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+const Needs = ()=>{
+    _s();
+    const [searchTerm, setSearchTerm] = (0, _react.useState)('');
+    const [shownNeeds, setShownNeeds] = (0, _react.useState)((0, _data.needs));
+    function handleSearch(event) {
+        const value = event.target.value.toLowerCase();
+        setSearchTerm(value);
+        setShownNeeds((0, _data.needs).filter((need)=>{
+            return need.name.toLowerCase().includes(value) || need.description.toLowerCase().includes(value);
+        }));
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Current needs"
             }, void 0, false, {
                 fileName: "src/sections/Needs/Needs.tsx",
-                lineNumber: 27,
-                columnNumber: 5
+                lineNumber: 43,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "We work with many groups who have need of specific supplies and donations. Want to help? Find needs to support here!"
             }, void 0, false, {
                 fileName: "src/sections/Needs/Needs.tsx",
-                lineNumber: 28,
-                columnNumber: 5
+                lineNumber: 44,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
@@ -29519,50 +29532,54 @@ const Needs = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                                 children: "Search here: "
                             }, void 0, false, {
                                 fileName: "src/sections/Needs/Needs.tsx",
-                                lineNumber: 34,
-                                columnNumber: 9
+                                lineNumber: 50,
+                                columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
                                 id: "search",
                                 name: "search",
-                                placeholder: "drones..."
+                                placeholder: "drones...",
+                                value: searchTerm,
+                                onChange: handleSearch
                             }, void 0, false, {
                                 fileName: "src/sections/Needs/Needs.tsx",
-                                lineNumber: 35,
-                                columnNumber: 9
+                                lineNumber: 51,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/sections/Needs/Needs.tsx",
-                        lineNumber: 33,
-                        columnNumber: 7
+                        lineNumber: 49,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: (0, _data.needs).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Need, {
+                        children: shownNeeds.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Need, {
                                 need: item
                             }, item.name, false, {
                                 fileName: "src/sections/Needs/Needs.tsx",
-                                lineNumber: 38,
-                                columnNumber: 28
+                                lineNumber: 55,
+                                columnNumber: 35
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/sections/Needs/Needs.tsx",
-                        lineNumber: 37,
-                        columnNumber: 7
+                        lineNumber: 54,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/sections/Needs/Needs.tsx",
-                lineNumber: 32,
-                columnNumber: 5
+                lineNumber: 48,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/sections/Needs/Needs.tsx",
-        lineNumber: 26,
-        columnNumber: 3
+        lineNumber: 42,
+        columnNumber: 5
     }, undefined);
+};
+_s(Needs, "NtohG8T69ekopQ5bHav9Hr0A0sM=");
 _c1 = Needs;
 var _c, _c1;
 $RefreshReg$(_c, "Need");
@@ -29573,7 +29590,7 @@ $RefreshReg$(_c1, "Needs");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./data":"cJBPj","./Needs.module.scss":"aNibj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cJBPj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./data":"cJBPj","./Needs.module.scss":"aNibj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"cJBPj":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "needs", ()=>needs);
@@ -30069,7 +30086,7 @@ $RefreshReg$(_c1, "Volunteer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Volunteer.module.scss":"3CLHl"}],"3CLHl":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","./Volunteer.module.scss":"3CLHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3CLHl":[function(require,module,exports,__globalThis) {
 module.exports["opportunity"] = `-7NWQa_opportunity`;
 
 },{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
