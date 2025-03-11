@@ -4,7 +4,7 @@ import { Submit } from '../../components/Buttons/Submit'
 import styles from './ContactForm.module.scss'
 
 export const ContactForm: FC = () => (
-  <form action='https://formspree.io/f/xoveanqj' method='post' className={styles['contact__form']}>
+  <form action='https://formspree.io/f/xaneybbo' method='post' className={styles['contact__form']}>
     <p>
       Required fields are followed by 
       <strong><span aria-label='required'>*</span></strong>.

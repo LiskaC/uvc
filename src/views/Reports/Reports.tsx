@@ -10,6 +10,10 @@ const pdfs = [
 export const Reports: FC = () => (
   <>
     <h1>Reports</h1>
+    <ul>
+      <li>Spending</li>
+      <li>Impact</li>
+    </ul>
     <p>Our monthly spending reports</p>
     <p>Open pdfs:</p>
     <ul className={styles.reports__list}>
@@ -21,5 +25,8 @@ export const Reports: FC = () => (
         </li>
       ))}
     </ul>
+    <h2>Impact</h2>
+    <p>Group a did b</p>
+    <p>images here</p>
   </>
 )

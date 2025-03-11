@@ -11,6 +11,7 @@ import { Donate } from './sections/Donate/Donate'
 import { Communicate } from './sections/Communicate/Communicate'
 import { Support } from './views/Support/Support'
 import { Volunteer } from './sections/Volunteer/Volunteer'
+import { About } from './views/About/About'
 
 export const App: FC = () => (
   // To deploy a test version to Github Pages, it is necessary to use HashRouter since
@@ -19,15 +20,19 @@ export const App: FC = () => (
     <Routes>
       <Route path={routes.home.path} element={<AppShell/>}>
         <Route index element={<Home/>}/>
-        <Route path={routes.reporting.path} element={<Reports/>}/>
+        <Route path={routes.home.subroutes.about.path} element={<About/>} />
+        <Route path={routes.home.subroutes.constitution.path} element={<div>Our constitution</div>} />
+        <Route path={routes.home.subroutes.reports.path} element={<Reports/>}/>
         <Route path={routes.events.path} element={<Events/>}/>
+        <Route path={routes.events.subroutes.calendar.path} element={<Events/>}/>
+        <Route path={routes.events.subroutes.gallery.path} element={<div>Gallery</div>}/>
         <Route path={routes.support.path} element={<Support/>}/>
         <Route path={routes.support.subroutes.volunteer.path} element={<Volunteer/>}/>
         <Route path={routes.support.subroutes.donate.path} element={<Donate/>}/>
         <Route path={routes.support.subroutes.communicate.path}
           element={<Communicate/>}/>
-        <Route path={routes.support.subroutes.needs.path}
-          element={<Needs/>}/>
+        <Route path={routes.support.subroutes.needs.path} element={<Needs/>}/>
+        <Route path={routes.support.subroutes.partners.path} element={<div>Partners</div>}/>
         <Route path={routes.contact.path} element={<Contact/>}/>
       </Route>
     </Routes>

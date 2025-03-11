@@ -7,20 +7,8 @@ export const Communicate: FC = () => (
     <p>Support Ukraine by following and sharing Ukraine news and info</p>
     <h2>Follow our social accounts:</h2>
     <Social/>
-    <h2>Other reliable sources:</h2>
-    <ul>
-      <li>
-        <p>This is news source blah</p>
-        <a href=''>united.24 site</a>
-      </li>
-      <li>
-        <p>Another Scottish Ukrainian group</p>
-        <a href='https://helpukrainescotland.com/'>https://helpukrainescotland.com/</a>
-      </li>
-      <li>
-        <p>This is news source blah</p>
-        <a href=''>united.24 site</a>
-      </li>
-    </ul>
+    <h2>Write to your MP</h2>
+    <p>Copy this template!</p>
+    <p>blah bla h blah</p>
   </section>
 )

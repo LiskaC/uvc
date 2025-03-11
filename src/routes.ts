@@ -7,15 +7,26 @@ export type Route = { name: string, path: string }
  * Type for all the routes available in the application
  */
 export type Routes = {
-  home: Route
-  reporting: Route
-  events: Route
+  home: Route & {
+    subroutes: {
+      about: Route
+      constitution: Route
+      reports: Route
+    }
+  }
+  events: Route & {
+    subroutes: {
+      calendar: Route
+      gallery: Route
+    }
+  }
   support: Route & {
     subroutes: {
       donate: Route
       needs: Route
       volunteer: Route
       communicate: Route
+      partners: Route
     }
   }
   contact: Route
@@ -28,14 +39,19 @@ export const routes: Routes = {
   home: {
     name: 'Home',
     path: '/',
-  },
-  reporting: {
-    name: 'Reporting',
-    path: '/reporting',
+    subroutes: {
+      about: { name: 'About us', path: '/home/about-us' },
+      constitution: { name: 'Constitution', path: '/home/constitution' },
+      reports: { name: 'Reports', path: '/home/reports' }
+    }
   },
   events: {
     name: 'Events',
     path: '/events',
+    subroutes: {
+      calendar: { name: 'Calendar', path: '/home/calendar' },
+      gallery: { name: 'Gallery', path: '/home/gallery' }
+    }
   },
   support: {
     name: 'Support',
@@ -44,7 +60,8 @@ export const routes: Routes = {
       donate: { name: 'Donate', path: '/support/donate' },
       needs: { name: 'Current needs', path: '/resources/needs' },
       volunteer: { name: 'Volunteer', path: '/support/volunteer' },
-      communicate: { name: 'Spread the word', path: '/support/communicate' }
+      communicate: { name: 'Spread the word', path: '/support/communicate' },
+      partners: { name: 'Partners', path: '/support/partners' }
     }
   },
   contact: { name: 'Contact us', path: '/resources/contact' }
