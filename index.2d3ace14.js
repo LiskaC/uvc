@@ -18582,6 +18582,7 @@ var _donate = require("./sections/Donate/Donate");
 var _communicate = require("./sections/Communicate/Communicate");
 var _support = require("./views/Support/Support");
 var _volunteer = require("./sections/Volunteer/Volunteer");
+var _about = require("./views/About/About");
 const App = ()=>// To deploy a test version to Github Pages, it is necessary to use HashRouter since
     // routing with BrowserRouter is not supported
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
@@ -18590,7 +18591,7 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                 path: (0, _routes.routes).home.path,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appShell.AppShell), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 47
                 }, void 0),
                 children: [
@@ -18598,20 +18599,8 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         index: true,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 21,
-                            columnNumber: 31
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).reporting.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
-                            fileName: "src/App.tsx",
                             lineNumber: 22,
-                            columnNumber: 54
+                            columnNumber: 31
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18619,11 +18608,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).events.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.about.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _about.About), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 23,
-                            columnNumber: 51
+                            columnNumber: 65
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18631,11 +18620,13 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _support.Support), {}, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.constitution.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Our constitution"
+                        }, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 24,
-                            columnNumber: 52
+                            columnNumber: 72
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18643,11 +18634,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.volunteer.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _volunteer.Volunteer), {}, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.reports.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 25,
-                            columnNumber: 72
+                            columnNumber: 67
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18655,11 +18646,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.donate.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donate.Donate), {}, void 0, false, {
+                        path: (0, _routes.routes).events.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 26,
-                            columnNumber: 69
+                            columnNumber: 51
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18667,11 +18658,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.communicate.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _communicate.Communicate), {}, void 0, false, {
+                        path: (0, _routes.routes).events.subroutes.calendar.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 28,
-                            columnNumber: 20
+                            lineNumber: 27,
+                            columnNumber: 70
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18679,11 +18670,25 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.needs.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _needs.Needs), {}, void 0, false, {
+                        path: (0, _routes.routes).events.subroutes.gallery.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Gallery"
+                        }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 30,
-                            columnNumber: 20
+                            lineNumber: 28,
+                            columnNumber: 69
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _support.Support), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 29,
+                            columnNumber: 52
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18691,31 +18696,93 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).contact.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contact.Contact), {}, void 0, false, {
+                        path: (0, _routes.routes).support.subroutes.volunteer.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _volunteer.Volunteer), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 30,
+                            columnNumber: 72
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.donate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donate.Donate), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 31,
-                            columnNumber: 52
+                            columnNumber: 69
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
                         lineNumber: 31,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.communicate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _communicate.Communicate), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 33,
+                            columnNumber: 20
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.needs.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _needs.Needs), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 34,
+                            columnNumber: 68
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.partners.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: "Partners"
+                        }, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 35,
+                            columnNumber: 71
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).contact.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contact.Contact), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 36,
+                            columnNumber: 52
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 36,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 3
     }, undefined);
 _c = App;
@@ -18727,7 +18794,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/About/About":"74t4C"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -27924,15 +27991,35 @@ parcelHelpers.export(exports, "routes", ()=>routes);
 const routes = {
     home: {
         name: 'Home',
-        path: '/'
-    },
-    reporting: {
-        name: 'Reporting',
-        path: '/reporting'
+        path: '/',
+        subroutes: {
+            about: {
+                name: 'About us',
+                path: '/home/about-us'
+            },
+            constitution: {
+                name: 'Constitution',
+                path: '/home/constitution'
+            },
+            reports: {
+                name: 'Reports',
+                path: '/home/reports'
+            }
+        }
     },
     events: {
         name: 'Events',
-        path: '/events'
+        path: '/events',
+        subroutes: {
+            calendar: {
+                name: 'Calendar',
+                path: '/home/calendar'
+            },
+            gallery: {
+                name: 'Gallery',
+                path: '/home/gallery'
+            }
+        }
     },
     support: {
         name: 'Support',
@@ -27953,6 +28040,10 @@ const routes = {
             communicate: {
                 name: 'Spread the word',
                 path: '/support/communicate'
+            },
+            partners: {
+                name: 'Partners',
+                path: '/support/partners'
             }
         }
     },
@@ -28771,18 +28862,40 @@ const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.
                 lineNumber: 12,
                 columnNumber: 5
             }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "Spending"
+                    }, void 0, false, {
+                        fileName: "src/views/Reports/Reports.tsx",
+                        lineNumber: 14,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "Impact"
+                    }, void 0, false, {
+                        fileName: "src/views/Reports/Reports.tsx",
+                        lineNumber: 15,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/views/Reports/Reports.tsx",
+                lineNumber: 13,
+                columnNumber: 5
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Our monthly spending reports"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Open pdfs:"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 14,
+                lineNumber: 18,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -28796,17 +28909,38 @@ const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.
                             children: pdf.text
                         }, void 0, false, {
                             fileName: "src/views/Reports/Reports.tsx",
-                            lineNumber: 18,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, undefined)
                     }, pdf.filename, false, {
                         fileName: "src/views/Reports/Reports.tsx",
-                        lineNumber: 17,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 15,
+                lineNumber: 19,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Impact"
+            }, void 0, false, {
+                fileName: "src/views/Reports/Reports.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Group a did b"
+            }, void 0, false, {
+                fileName: "src/views/Reports/Reports.tsx",
+                lineNumber: 29,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "images here"
+            }, void 0, false, {
+                fileName: "src/views/Reports/Reports.tsx",
+                lineNumber: 30,
                 columnNumber: 5
             }, undefined)
         ]
@@ -29063,7 +29197,7 @@ var _submit = require("../../components/Buttons/Submit");
 var _contactFormModuleScss = require("./ContactForm.module.scss");
 var _contactFormModuleScssDefault = parcelHelpers.interopDefault(_contactFormModuleScss);
 const ContactForm = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-        action: "https://formspree.io/f/xoveanqj",
+        action: "https://formspree.io/f/xaneybbo",
         method: "post",
         className: (0, _contactFormModuleScssDefault.default)['contact__form'],
         children: [
@@ -29590,7 +29724,7 @@ $RefreshReg$(_c1, "Needs");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./data":"cJBPj","./Needs.module.scss":"aNibj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"cJBPj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./data":"cJBPj","./Needs.module.scss":"aNibj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cJBPj":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "needs", ()=>needs);
@@ -29789,87 +29923,24 @@ const Communicate = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Other reliable sources:"
+                children: "Write to your MP"
             }, void 0, false, {
                 fileName: "src/sections/Communicate/Communicate.tsx",
                 lineNumber: 10,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "This is news source blah"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 13,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "united.24 site"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 14,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/Communicate/Communicate.tsx",
-                        lineNumber: 12,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Another Scottish Ukrainian group"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 17,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "https://helpukrainescotland.com/",
-                                children: "https://helpukrainescotland.com/"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 18,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/Communicate/Communicate.tsx",
-                        lineNumber: 16,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "This is news source blah"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 21,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                children: "united.24 site"
-                            }, void 0, false, {
-                                fileName: "src/sections/Communicate/Communicate.tsx",
-                                lineNumber: 22,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/Communicate/Communicate.tsx",
-                        lineNumber: 20,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Copy this template!"
+            }, void 0, false, {
                 fileName: "src/sections/Communicate/Communicate.tsx",
                 lineNumber: 11,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "blah bla h blah"
+            }, void 0, false, {
+                fileName: "src/sections/Communicate/Communicate.tsx",
+                lineNumber: 12,
                 columnNumber: 5
             }, undefined)
         ]
@@ -30031,11 +30102,19 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 lineNumber: 27,
                 columnNumber: 5
             }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "https://docs.google.com/forms/d/e/1FAIpQLSdH4mXkx09d04GKyghh07hWAvDNandl-0OQOEum6WQDMKm4yg/viewform",
+                children: "Volunteer form"
+            }, void 0, false, {
+                fileName: "src/sections/Volunteer/Volunteer.tsx",
+                lineNumber: 35,
+                columnNumber: 5
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Volunteer with other groups"
             }, void 0, false, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30049,7 +30128,7 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         }
                     }, void 0, false, {
                         fileName: "src/sections/Volunteer/Volunteer.tsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Opportunity, {
@@ -30061,13 +30140,13 @@ const Volunteer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                         }
                     }, void 0, false, {
                         fileName: "src/sections/Volunteer/Volunteer.tsx",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/sections/Volunteer/Volunteer.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 5
             }, undefined)
         ]
@@ -30089,6 +30168,77 @@ $RefreshReg$(_c1, "Volunteer");
 },{"react/jsx-dev-runtime":"iTorj","../../routes":"cAFqI","./Volunteer.module.scss":"3CLHl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3CLHl":[function(require,module,exports,__globalThis) {
 module.exports["opportunity"] = `-7NWQa_opportunity`;
 
-},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{}],"74t4C":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$aff1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$aff1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "About", ()=>About);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _team = require("../../sections/Team/Team");
+const About = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "About us"
+            }, void 0, false, {
+                fileName: "src/views/About/About.tsx",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "We are blah"
+            }, void 0, false, {
+                fileName: "src/views/About/About.tsx",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _team.Team), {}, void 0, false, {
+                fileName: "src/views/About/About.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+_c = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$aff1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../sections/Team/Team":"3xRla","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3xRla":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ddcf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ddcf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>Team);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Team = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+        children: "Committee About"
+    }, void 0, false, {
+        fileName: "src/sections/Team/Team.tsx",
+        lineNumber: 4,
+        columnNumber: 3
+    }, undefined);
+_c = Team;
+var _c;
+$RefreshReg$(_c, "Team");
+
+  $parcel$ReactRefreshHelpers$ddcf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map
