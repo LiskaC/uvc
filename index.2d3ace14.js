@@ -18583,6 +18583,7 @@ var _communicate = require("./sections/Communicate/Communicate");
 var _support = require("./views/Support/Support");
 var _volunteer = require("./sections/Volunteer/Volunteer");
 var _about = require("./views/About/About");
+var _constitution = require("./views/Constitution/Constitution");
 const App = ()=>// To deploy a test version to Github Pages, it is necessary to use HashRouter since
     // routing with BrowserRouter is not supported
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.HashRouter), {
@@ -18591,7 +18592,7 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                 path: (0, _routes.routes).home.path,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appShell.AppShell), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 47
                 }, void 0),
                 children: [
@@ -18599,20 +18600,8 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         index: true,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 22,
-                            columnNumber: 31
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).home.subroutes.about.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _about.About), {}, void 0, false, {
-                            fileName: "src/App.tsx",
                             lineNumber: 23,
-                            columnNumber: 65
+                            columnNumber: 31
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18620,13 +18609,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).home.subroutes.constitution.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: "Our constitution"
-                        }, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.about.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _about.About), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 24,
-                            columnNumber: 72
+                            columnNumber: 65
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18634,11 +18621,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).home.subroutes.reports.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.constitution.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _constitution.Constitution), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 25,
-                            columnNumber: 67
+                            columnNumber: 72
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18646,11 +18633,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).events.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
+                        path: (0, _routes.routes).home.subroutes.reports.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 26,
-                            columnNumber: 51
+                            columnNumber: 67
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18658,15 +18645,27 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).events.subroutes.calendar.path,
+                        path: (0, _routes.routes).events.path,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 27,
-                            columnNumber: 70
+                            columnNumber: 51
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
                         lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).events.subroutes.calendar.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 28,
+                            columnNumber: 70
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18675,20 +18674,8 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                             children: "Gallery"
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 28,
-                            columnNumber: 69
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "src/App.tsx",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _support.Support), {}, void 0, false, {
-                            fileName: "src/App.tsx",
                             lineNumber: 29,
-                            columnNumber: 52
+                            columnNumber: 69
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18696,11 +18683,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.volunteer.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _volunteer.Volunteer), {}, void 0, false, {
+                        path: (0, _routes.routes).support.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _support.Support), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 30,
-                            columnNumber: 72
+                            columnNumber: 52
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18708,11 +18695,11 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.donate.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donate.Donate), {}, void 0, false, {
+                        path: (0, _routes.routes).support.subroutes.volunteer.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _volunteer.Volunteer), {}, void 0, false, {
                             fileName: "src/App.tsx",
                             lineNumber: 31,
-                            columnNumber: 69
+                            columnNumber: 72
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
@@ -18720,15 +18707,27 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                        path: (0, _routes.routes).support.subroutes.communicate.path,
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _communicate.Communicate), {}, void 0, false, {
+                        path: (0, _routes.routes).support.subroutes.donate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donate.Donate), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 33,
-                            columnNumber: 20
+                            lineNumber: 32,
+                            columnNumber: 69
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
                         lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: (0, _routes.routes).support.subroutes.communicate.path,
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _communicate.Communicate), {}, void 0, false, {
+                            fileName: "src/App.tsx",
+                            lineNumber: 33,
+                            columnNumber: 74
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.tsx",
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18772,17 +18771,17 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 3
     }, undefined);
 _c = App;
@@ -18794,7 +18793,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Constitution/Constitution":"5PY7n"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -30328,6 +30327,69 @@ module.exports["team"] = `GGLLPq_team`;
 module.exports["team-member"] = `GGLLPq_team-member`;
 module.exports["team-member__photo"] = `GGLLPq_team-member__photo`;
 
-},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{}],"5PY7n":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8dd8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8dd8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Constitution", ()=>Constitution);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Constitution = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Constitution"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 5,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "In brief"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "brief version of constitution here...."
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "In full"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "full version of constitution for those who want it"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/Constitution/Constitution.tsx",
+        lineNumber: 4,
+        columnNumber: 3
+    }, undefined);
+_c = Constitution;
+var _c;
+$RefreshReg$(_c, "Constitution");
+
+  $parcel$ReactRefreshHelpers$8dd8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map
