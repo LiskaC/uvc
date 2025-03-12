@@ -9,9 +9,13 @@
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
+			
 			gtag('js', new Date());
-
-			gtag('config', 'G-ZLFBJBB537');
+			gtag('config', 'G-ZLFBJBB537',{
+        'anonymize_ip': true,  // Anonymize IP addresses
+        'allow_google_signals': false,  // Disable Google Signals for ads
+        'allow_ad_personalization_signals': false  // No ad personalization
+    	});
 		</script>
 		<title>Ukrainian Victory Campaign</title>
 	</head>
