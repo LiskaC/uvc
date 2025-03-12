@@ -1,0 +1,14 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-member {
+  min-width: 200px;
+  text-align: center;
+}
+
+.team-member__photo {
+  height: 150px;
+}
