@@ -12,7 +12,7 @@ body {
   padding: 0;
 }
 
-p {
+p, ul {
   color: #fffc;
 }
 
