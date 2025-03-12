@@ -18794,7 +18794,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/About/About":"74t4C"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -30223,22 +30223,111 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Team", ()=>Team);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Team = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-        children: "Committee About"
-    }, void 0, false, {
+var _data = require("./data");
+var _teamModuleScss = require("./Team.module.scss");
+var _teamModuleScssDefault = parcelHelpers.interopDefault(_teamModuleScss);
+const TeamMember = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _teamModuleScssDefault.default)['team-member'],
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: (0, _teamModuleScssDefault.default)['team-member__photo'],
+                src: props.member.photo,
+                alt: "team member"
+            }, void 0, false, {
+                fileName: "src/sections/Team/Team.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: props.member.name
+            }, void 0, false, {
+                fileName: "src/sections/Team/Team.tsx",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: props.member.role
+            }, void 0, false, {
+                fileName: "src/sections/Team/Team.tsx",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/sections/Team/Team.tsx",
-        lineNumber: 4,
+        lineNumber: 7,
         columnNumber: 3
     }, undefined);
-_c = Team;
-var _c;
-$RefreshReg$(_c, "Team");
+_c = TeamMember;
+const Team = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Our Team"
+            }, void 0, false, {
+                fileName: "src/sections/Team/Team.tsx",
+                lineNumber: 16,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _teamModuleScssDefault.default)['team'],
+                children: (0, _data.team).map((person)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(TeamMember, {
+                        member: person
+                    }, person.id, false, {
+                        fileName: "src/sections/Team/Team.tsx",
+                        lineNumber: 18,
+                        columnNumber: 27
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/sections/Team/Team.tsx",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/sections/Team/Team.tsx",
+        lineNumber: 15,
+        columnNumber: 3
+    }, undefined);
+_c1 = Team;
+var _c, _c1;
+$RefreshReg$(_c, "TeamMember");
+$RefreshReg$(_c1, "Team");
 
   $parcel$ReactRefreshHelpers$ddcf.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./data":"8anmP","./Team.module.scss":"kZJoH"}],"8anmP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "team", ()=>team);
+const team = [
+    {
+        id: 0,
+        name: 'Mary',
+        photo: 'https://avatars.cloudflare.steamstatic.com/fd2a252d715374be242bbade81e44b0bf3b30de7_full.jpg',
+        role: 'Secretary'
+    },
+    {
+        id: 2,
+        name: 'Marjan',
+        photo: 'https://ih1.redbubble.net/image.4234177095.1180/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
+        role: 'Secretary'
+    },
+    {
+        id: 3,
+        name: 'Olha',
+        photo: 'https://i.pinimg.com/originals/04/f2/fd/04f2fd610c442bb2c4960cf90ff43898.jpg',
+        role: 'Secretary'
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kZJoH":[function(require,module,exports,__globalThis) {
+module.exports["team"] = `GGLLPq_team`;
+module.exports["team-member"] = `GGLLPq_team-member`;
+module.exports["team-member__photo"] = `GGLLPq_team-member__photo`;
+
+},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map

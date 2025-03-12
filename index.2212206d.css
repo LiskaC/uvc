@@ -476,4 +476,19 @@ input, select, textarea {
   border: none;
   margin: 0;
 }
+
+.GGLLPq_team {
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: flex;
+}
+
+.GGLLPq_team-member {
+  text-align: center;
+  min-width: 200px;
+}
+
+.GGLLPq_team-member__photo {
+  height: 150px;
+}
 /*# sourceMappingURL=index.2212206d.css.map */
