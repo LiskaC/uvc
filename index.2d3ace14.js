@@ -30443,8 +30443,16 @@ const Constitution = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Together to Victory! \uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F\uD83E\uDD1D\uD83C\uDDFA\uD83C\uDDE6 \u0421\u043B\u0430\u0432\u0430 \u0423\u043A\u0440\u0430\u0457\u043D\u0456!"
-            }, void 0, false, {
+                children: [
+                    "Together to Victory! \uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F\uD83E\uDD1D\uD83C\uDDFA\uD83C\uDDE6",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 26,
+                        columnNumber: 7
+                    }, undefined),
+                    "\u0421\u043B\u0430\u0432\u0430 \u0423\u043A\u0440\u0430\u0457\u043D\u0456!"
+                ]
+            }, void 0, true, {
                 fileName: "src/views/Constitution/Constitution.tsx",
                 lineNumber: 24,
                 columnNumber: 5
@@ -30453,14 +30461,14 @@ const Constitution = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                 children: "In full"
             }, void 0, false, {
                 fileName: "src/views/Constitution/Constitution.tsx",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "full version of constitution for those who want it"
             }, void 0, false, {
                 fileName: "src/views/Constitution/Constitution.tsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 5
             }, undefined)
         ]
