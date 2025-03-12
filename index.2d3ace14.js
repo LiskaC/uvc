@@ -18793,7 +18793,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Constitution/Constitution":"5PY7n"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","./views/Constitution/Constitution":"5PY7n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -30297,7 +30297,7 @@ $RefreshReg$(_c1, "Team");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./data":"8anmP","./Team.module.scss":"kZJoH"}],"8anmP":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./data":"8anmP","./Team.module.scss":"kZJoH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8anmP":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "team", ()=>team);
@@ -30338,47 +30338,135 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Constitution", ()=>Constitution);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constitutionModuleScss = require("./Constitution.module.scss");
+var _constitutionModuleScssDefault = parcelHelpers.interopDefault(_constitutionModuleScss);
 const Constitution = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Constitution"
             }, void 0, false, {
                 fileName: "src/views/Constitution/Constitution.tsx",
-                lineNumber: 5,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "In brief"
-            }, void 0, false, {
-                fileName: "src/views/Constitution/Constitution.tsx",
-                lineNumber: 6,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "brief version of constitution here...."
-            }, void 0, false, {
-                fileName: "src/views/Constitution/Constitution.tsx",
                 lineNumber: 7,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "In full"
+                children: "In brief: UVC Statute Overview \uD83D\uDCDC"
             }, void 0, false, {
                 fileName: "src/views/Constitution/Constitution.tsx",
                 lineNumber: 8,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "full version of constitution for those who want it"
+                children: "\uD83D\uDC99 Over the past year, the Ukrainian Victory Campaign (UVC) has grown into a strong community dedicated to supporting Ukraine, raising awareness, and advocating for justice. To mark the first anniversary of our statute, we\u2019re sharing an overview \u2013 the foundation of our mission."
             }, void 0, false, {
                 fileName: "src/views/Constitution/Constitution.tsx",
                 lineNumber: 9,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "\uD83D\uDCDC What We Stand For:"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: (0, _constitutionModuleScssDefault.default)['constitution__list'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Our Mission: Respond to the war in Ukraine by supporting the most vulnerable people - Ukrainian captives, promote cultural exchange and strengthen the Ukrainian community in Scotland."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 14,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Our Activities: Organising demonstrations, educational workshops, cultural events, and fundraising initiatives."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 15,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Membership: We are always open to those who share our values and commit to our ethical code."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 16,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Governance: Led by an elected committee, ensuring transparency and accountability."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 17,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Equality & Inclusivity: UVC is committed to providing equal opportunities for all, regardless of race, gender, or background."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 18,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD39 Supporting Ukrainian Victory: We do not only want to talk about the importance of supporting Ukraine but to have a direct impact where it matters the most. For that we are supporting the most IMPORTANT people in Ukraine - Ukrainian Defenders. We have set up a platform to effectively and transparently manage funds, with financial reports presented to members."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 19,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDCC5 Looking Ahead: As we enter our second year, we remain committed to advocacy, education, and direct action."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 20,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDCE2 Join us at our AGM! Stay tuned for details on how to get involved."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 21,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "\uD83D\uDD17 Want to support our work? Follow, donate, and spread the word! Every voice matters."
+                    }, void 0, false, {
+                        fileName: "src/views/Constitution/Constitution.tsx",
+                        lineNumber: 22,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 13,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Together to Victory! \uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F\uD83E\uDD1D\uD83C\uDDFA\uD83C\uDDE6 \u0421\u043B\u0430\u0432\u0430 \u0423\u043A\u0440\u0430\u0457\u043D\u0456!"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 24,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "In full"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "full version of constitution for those who want it"
+            }, void 0, false, {
+                fileName: "src/views/Constitution/Constitution.tsx",
+                lineNumber: 29,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/views/Constitution/Constitution.tsx",
-        lineNumber: 4,
+        lineNumber: 6,
         columnNumber: 3
     }, undefined);
 _c = Constitution;
@@ -30390,6 +30478,9 @@ $RefreshReg$(_c, "Constitution");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Constitution.module.scss":"cS5iz"}],"cS5iz":[function(require,module,exports,__globalThis) {
+module.exports["constitution__list"] = `MJYZqq_constitution__list`;
+
+},{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
 //# sourceMappingURL=index.2d3ace14.js.map
