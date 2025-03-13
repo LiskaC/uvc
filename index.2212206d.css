@@ -304,9 +304,17 @@ input, select, textarea {
 
 .oZT2ra_app-shell__logo {
   text-align: center;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background: none;
+  border: none;
   grid-area: oZT2ra_title;
   align-items: center;
   gap: 16px;
+  padding: 0;
+  text-decoration: none;
   display: flex;
 }
 

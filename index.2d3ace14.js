@@ -27991,7 +27991,7 @@ const routes = {
             },
             needs: {
                 name: 'Current needs',
-                path: '/resources/needs'
+                path: '/support/needs'
             },
             volunteer: {
                 name: 'Volunteer',
@@ -28033,6 +28033,7 @@ var _logoLightSvg = require("../../assets/icons/logo-light.svg");
 var _logoLightSvgDefault = parcelHelpers.interopDefault(_logoLightSvg);
 var _appShellModuleScss = require("./AppShell.module.scss");
 var _appShellModuleScssDefault = parcelHelpers.interopDefault(_appShellModuleScss);
+var _routes = require("../../routes");
 var _s = $RefreshSig$();
 const AppShell = ()=>{
     _s();
@@ -28045,7 +28046,7 @@ const AppShell = ()=>{
         toggleMenu: toggleMenu
     }, void 0, false, {
         fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 10
     }, undefined);
 };
@@ -28065,15 +28066,16 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             isOpen: props.isMenuOpen
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 32,
+                            lineNumber: 33,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 7
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: (0, _routes.routes).home.path,
                         className: (0, _appShellModuleScssDefault.default)['app-shell__logo'],
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -28082,7 +28084,7 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 alt: ""
                             }, void 0, false, {
                                 fileName: "src/components/AppShell/AppShell.tsx",
-                                lineNumber: 35,
+                                lineNumber: 36,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -28090,43 +28092,43 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: "UKRAINIAN VICTORY CAMPAIGN"
                             }, void 0, false, {
                                 fileName: "src/components/AppShell/AppShell.tsx",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 34,
+                        lineNumber: 35,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__navigation'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.NavBar), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 38,
+                            lineNumber: 39,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__social'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -28139,29 +28141,29 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             toggleMenu: props.toggleMenu
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 3
     }, undefined);
 _c1 = AppShellView;
@@ -28174,7 +28176,7 @@ $RefreshReg$(_c1, "AppShellView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","../../assets/icons/logo-light.svg":"zLAaz","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g8Lpy":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","../../assets/icons/logo-light.svg":"zLAaz","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../routes":"cAFqI"}],"g8Lpy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$550a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
