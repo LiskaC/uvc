@@ -50,10 +50,26 @@
   }
 }
 
-.app-shell__title {
+.app-shell__logo {
   grid-area: title;
-  margin: 0;
   text-align: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.app-shell__icon {
+  display: none;
+
+  @include medias.tablet() {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.app-shell__title {
+  margin: 0;
 }
 
 .app-shell__navigation {
