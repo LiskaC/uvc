@@ -15,6 +15,22 @@ import { About } from './views/About/About'
 import { Constitution } from './views/Constitution/Constitution'
 import { Partners } from './views/Partners/Partners'
 
+const routesConfig = [
+  { path: routes.home.subroutes.about.path, element: <About /> },
+  { path: routes.home.subroutes.constitution.path, element: <Constitution /> },
+  { path: routes.home.subroutes.reports.path, element: <Reports /> },
+  { path: routes.home.subroutes.contact.path, element: <Contact /> },
+  { path: routes.events.path, element: <Events /> },
+  { path: routes.events.subroutes.calendar.path, element: <Events /> },
+  { path: routes.events.subroutes.gallery.path, element: <div>Gallery</div> },
+  { path: routes.support.path, element: <Support /> },
+  { path: routes.support.subroutes.volunteer.path, element: <Volunteer /> },
+  { path: routes.support.subroutes.donate.path, element: <Donate /> },
+  { path: routes.support.subroutes.communicate.path, element: <Communicate /> },
+  { path: routes.support.subroutes.needs.path, element: <Needs /> },
+  { path: routes.support.subroutes.partners.path, element: <Partners /> }
+]
+
 export const App: FC = () => (
   // To deploy a test version to Github Pages, it is necessary to use HashRouter since
   // routing with BrowserRouter is not supported
@@ -22,19 +38,7 @@ export const App: FC = () => (
     <Routes>
       <Route path={routes.home.path} element={<AppShell/>}>
         <Route index element={<Home/>}/>
-        <Route path={routes.home.subroutes.about.path} element={<About/>}/>
-        <Route path={routes.home.subroutes.constitution.path} element={<Constitution/>}/>
-        <Route path={routes.home.subroutes.reports.path} element={<Reports/>}/>
-        <Route path={routes.events.path} element={<Events/>}/>
-        <Route path={routes.events.subroutes.calendar.path} element={<Events/>}/>
-        <Route path={routes.events.subroutes.gallery.path} element={<div>Gallery</div>}/>
-        <Route path={routes.support.path} element={<Support/>}/>
-        <Route path={routes.support.subroutes.volunteer.path} element={<Volunteer/>}/>
-        <Route path={routes.support.subroutes.donate.path} element={<Donate/>}/>
-        <Route path={routes.support.subroutes.communicate.path} element={<Communicate/>}/>
-        <Route path={routes.support.subroutes.needs.path} element={<Needs/>}/>
-        <Route path={routes.support.subroutes.partners.path} element={<Partners/>}/>
-        <Route path={routes.contact.path} element={<Contact/>}/>
+        {routesConfig.map(route => <Route path={route.path} element={route.element}/>)}
       </Route>
     </Routes>
   </HashRouter>

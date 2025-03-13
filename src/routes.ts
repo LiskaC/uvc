@@ -12,6 +12,7 @@ export type Routes = {
       about: Route
       constitution: Route
       reports: Route
+      contact: Route
     }
   }
   events: Route & {
@@ -29,7 +30,6 @@ export type Routes = {
       partners: Route
     }
   }
-  contact: Route
 }
 
 /**
@@ -42,15 +42,16 @@ export const routes: Routes = {
     subroutes: {
       about: { name: 'About us', path: '/home/about-us' },
       constitution: { name: 'Constitution', path: '/home/constitution' },
-      reports: { name: 'Reports', path: '/home/reports' }
+      reports: { name: 'Reports', path: '/home/reports' },
+      contact: { name: 'Contact us', path: '/home/contact' }
     }
   },
   events: {
     name: 'Events',
     path: '/events',
     subroutes: {
-      calendar: { name: 'Calendar', path: '/home/calendar' },
-      gallery: { name: 'Gallery', path: '/home/gallery' }
+      calendar: { name: 'Calendar', path: '/events/calendar' },
+      gallery: { name: 'Gallery', path: '/events/gallery' }
     }
   },
   support: {
@@ -63,8 +64,7 @@ export const routes: Routes = {
       communicate: { name: 'Spread the word', path: '/support/communicate' },
       partners: { name: 'Partners', path: '/support/partners' }
     }
-  },
-  contact: { name: 'Contact us', path: '/resources/contact' }
+  }
 }
 
 /**

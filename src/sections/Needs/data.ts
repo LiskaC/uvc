@@ -28,6 +28,6 @@ export const needs: Need[] = [
     name: 'Urgent appeal vehicle replacement',
     images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mdfGLQDn5csqYRBD6DMLWUa59XwUUimgRw&s'],
     description: 'One of our regular contacts urgently needs a new car. Can you help? Contact us!',
-    links: [{ text: 'Contact us', url: routes.contact.path }, { text: 'Donate cash', url: '/some-url' }]
+    links: [{ text: 'Contact us', url: routes.home.subroutes.contact.path }, { text: 'Donate cash', url: '/some-url' }]
   }
 ]
