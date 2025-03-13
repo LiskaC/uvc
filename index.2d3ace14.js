@@ -28072,6 +28072,8 @@ var _navBar = require("../../sections/NavBar/NavBar");
 var _social = require("../Social/Social");
 var _hamburger = require("../Hamburger/Hamburger");
 var _sideMenu = require("../../sections/SideMenu/SideMenu");
+var _logoLightSvg = require("../../assets/icons/logo-light.svg");
+var _logoLightSvgDefault = parcelHelpers.interopDefault(_logoLightSvg);
 var _appShellModuleScss = require("./AppShell.module.scss");
 var _appShellModuleScssDefault = parcelHelpers.interopDefault(_appShellModuleScss);
 var _s = $RefreshSig$();
@@ -28086,7 +28088,7 @@ const AppShell = ()=>{
         toggleMenu: toggleMenu
     }, void 0, false, {
         fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 10
     }, undefined);
 };
@@ -28106,50 +28108,68 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             isOpen: props.isMenuOpen
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 30,
+                            lineNumber: 32,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 29,
+                        lineNumber: 31,
                         columnNumber: 7
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _appShellModuleScssDefault.default)['app-shell__title'],
-                        children: "UKRAINIAN VICTORY CAMPAIGN"
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _appShellModuleScssDefault.default)['app-shell__logo'],
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: (0, _appShellModuleScssDefault.default)['app-shell__icon'],
+                                src: (0, _logoLightSvgDefault.default),
+                                alt: ""
+                            }, void 0, false, {
+                                fileName: "src/components/AppShell/AppShell.tsx",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: (0, _appShellModuleScssDefault.default)['app-shell__title'],
+                                children: "UKRAINIAN VICTORY CAMPAIGN"
+                            }, void 0, false, {
+                                fileName: "src/components/AppShell/AppShell.tsx",
+                                lineNumber: 36,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__navigation'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBar.NavBar), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 33,
+                            lineNumber: 38,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 33,
+                        lineNumber: 38,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _appShellModuleScssDefault.default)['app-shell__social'],
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _social.Social), {}, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 34,
+                            lineNumber: 39,
                             columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 34,
+                        lineNumber: 39,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 27,
+                lineNumber: 29,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -28162,29 +28182,29 @@ const AppShellView = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             toggleMenu: props.toggleMenu
                         }, void 0, false, {
                             fileName: "src/components/AppShell/AppShell.tsx",
-                            lineNumber: 38,
+                            lineNumber: 43,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 37,
+                        lineNumber: 42,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Outlet), {}, void 0, false, {
                         fileName: "src/components/AppShell/AppShell.tsx",
-                        lineNumber: 40,
+                        lineNumber: 45,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AppShell/AppShell.tsx",
-                lineNumber: 36,
+                lineNumber: 41,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/AppShell/AppShell.tsx",
-        lineNumber: 26,
+        lineNumber: 28,
         columnNumber: 3
     }, undefined);
 _c1 = AppShellView;
@@ -28197,7 +28217,7 @@ $RefreshReg$(_c1, "AppShellView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g8Lpy":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/icons/logo-light.svg":"zLAaz"}],"g8Lpy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$550a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28731,6 +28751,8 @@ module.exports["app-shell__content"] = `oZT2ra_app-shell__content`;
 module.exports["app-shell__hamburger"] = `oZT2ra_app-shell__hamburger`;
 module.exports["app-shell__header"] = `oZT2ra_app-shell__header`;
 module.exports["app-shell__header--sticky"] = `oZT2ra_app-shell__header--sticky`;
+module.exports["app-shell__icon"] = `oZT2ra_app-shell__icon`;
+module.exports["app-shell__logo"] = `oZT2ra_app-shell__logo`;
 module.exports["app-shell__navigation"] = `oZT2ra_app-shell__navigation`;
 module.exports["app-shell__sidemenu"] = `oZT2ra_app-shell__sidemenu`;
 module.exports["app-shell__social"] = `oZT2ra_app-shell__social`;
@@ -28740,7 +28762,10 @@ module.exports["navigation"] = `oZT2ra_navigation`;
 module.exports["social"] = `oZT2ra_social`;
 module.exports["title"] = `oZT2ra_title`;
 
-},{}],"eNyEK":[function(require,module,exports,__globalThis) {
+},{}],"zLAaz":[function(require,module,exports,__globalThis) {
+module.exports = require("e893f400b285f25e").getBundleURL('6EXJA') + "logo-light.bf16334f.svg" + "?" + Date.now();
+
+},{"e893f400b285f25e":"lgJ39"}],"eNyEK":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5faf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28840,8 +28865,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Reports", ()=>Reports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouter = require("react-router");
 var _reportsModuleScss = require("./Reports.module.scss");
 var _reportsModuleScssDefault = parcelHelpers.interopDefault(_reportsModuleScss);
+var _s = $RefreshSig$();
 const pdfs = [
     {
         filename: 'this-is-a-pdf.pdf',
@@ -28850,100 +28878,148 @@ const pdfs = [
     {
         filename: 'this-is-a-pdf-2.pdf',
         text: 'Spending report 01.02.2025 - 28.02.2025'
+    },
+    {
+        filename: 'this-is-a-pdf-3.pdf',
+        text: 'Spending report 01.03.2025 - 30.03.2025'
     }
 ];
-const Reports = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+const Reports = ()=>{
+    _s();
+    const location = (0, _reactRouter.useLocation)();
+    (0, _react.useEffect)(()=>{
+        const hash = location.hash.replace('#', '');
+        if (hash) {
+            const element = document.getElementById(hash);
+            if (element) element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, [
+        location
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Reports"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 12,
-                columnNumber: 5
+                lineNumber: 27,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: (0, _reportsModuleScssDefault.default)['reports__list'],
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Spending"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                            to: "#spending",
+                            children: "Spending"
+                        }, void 0, false, {
+                            fileName: "src/views/Reports/Reports.tsx",
+                            lineNumber: 29,
+                            columnNumber: 13
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/views/Reports/Reports.tsx",
-                        lineNumber: 14,
-                        columnNumber: 7
+                        lineNumber: 29,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Impact"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
+                            to: "#impact",
+                            children: "Impact"
+                        }, void 0, false, {
+                            fileName: "src/views/Reports/Reports.tsx",
+                            lineNumber: 30,
+                            columnNumber: 13
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/views/Reports/Reports.tsx",
-                        lineNumber: 15,
-                        columnNumber: 7
+                        lineNumber: 30,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 13,
-                columnNumber: 5
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                id: "spending",
+                children: "Spending"
+            }, void 0, false, {
+                fileName: "src/views/Reports/Reports.tsx",
+                lineNumber: 32,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Our monthly spending reports"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 17,
-                columnNumber: 5
+                lineNumber: 33,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Open pdfs:"
+                children: "Open PDFs:"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 18,
-                columnNumber: 5
+                lineNumber: 34,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                className: (0, _reportsModuleScssDefault.default).reports__list,
+                className: (0, _reportsModuleScssDefault.default)['reports__spending-list'],
                 children: pdfs.map((pdf)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: pdf.filename,
-                            id: pdf.filename,
                             target: "_blank",
-                            className: (0, _reportsModuleScssDefault.default).reports__link,
+                            className: (0, _reportsModuleScssDefault.default)['reports__spending-link'],
                             children: pdf.text
                         }, void 0, false, {
                             fileName: "src/views/Reports/Reports.tsx",
-                            lineNumber: 22,
-                            columnNumber: 11
+                            lineNumber: 38,
+                            columnNumber: 13
                         }, undefined)
                     }, pdf.filename, false, {
                         fileName: "src/views/Reports/Reports.tsx",
-                        lineNumber: 21,
-                        columnNumber: 9
+                        lineNumber: 37,
+                        columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 19,
-                columnNumber: 5
+                lineNumber: 35,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                id: "impact",
                 children: "Impact"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 28,
-                columnNumber: 5
+                lineNumber: 44,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Group a did b"
+                children: "Group A did B"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 29,
-                columnNumber: 5
+                lineNumber: 45,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "images here"
+                children: "Images here"
             }, void 0, false, {
                 fileName: "src/views/Reports/Reports.tsx",
-                lineNumber: 30,
-                columnNumber: 5
+                lineNumber: 46,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
+};
+_s(Reports, "BXcZrDMM76mmm4zA8/QV5UbMNXE=", false, function() {
+    return [
+        (0, _reactRouter.useLocation)
+    ];
+});
 _c = Reports;
 var _c;
 $RefreshReg$(_c, "Reports");
@@ -28953,9 +29029,10 @@ $RefreshReg$(_c, "Reports");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Reports.module.scss":"dv23R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dv23R":[function(require,module,exports,__globalThis) {
-module.exports["reports__link"] = `_8Tsp7W_reports__link`;
+},{"react/jsx-dev-runtime":"iTorj","./Reports.module.scss":"dv23R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router":"dXVwI"}],"dv23R":[function(require,module,exports,__globalThis) {
 module.exports["reports__list"] = `_8Tsp7W_reports__list`;
+module.exports["reports__spending-link"] = `_8Tsp7W_reports__spending-link`;
+module.exports["reports__spending-list"] = `_8Tsp7W_reports__spending-list`;
 
 },{}],"3sEZD":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e44b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -30486,7 +30563,7 @@ $RefreshReg$(_c, "Constitution");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Constitution.module.scss":"cS5iz"}],"cS5iz":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./Constitution.module.scss":"cS5iz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cS5iz":[function(require,module,exports,__globalThis) {
 module.exports["constitution__list"] = `MJYZqq_constitution__list`;
 
 },{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")

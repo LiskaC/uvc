@@ -302,9 +302,27 @@ input, select, textarea {
   }
 }
 
-.oZT2ra_app-shell__title {
+.oZT2ra_app-shell__logo {
   text-align: center;
   grid-area: oZT2ra_title;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.oZT2ra_app-shell__icon {
+  display: none;
+}
+
+@media only screen and (width >= 768px) {
+  .oZT2ra_app-shell__icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+}
+
+.oZT2ra_app-shell__title {
   margin: 0;
 }
 
@@ -344,11 +362,18 @@ input, select, textarea {
 
 ._8Tsp7W_reports__list {
   flex-direction: column;
+  gap: 8px;
+  list-style-type: disclosure-closed;
+  display: flex;
+}
+
+._8Tsp7W_reports__spending-list {
+  flex-direction: column;
   gap: 1rem;
   display: flex;
 }
 
-._8Tsp7W_reports__link {
+._8Tsp7W_reports__spending-link {
   text-decoration: underline;
 }
 
