@@ -3,23 +3,6 @@ import { routes } from '../../routes'
 
 import styles from './Volunteer.module.scss'
 
-interface Props {
-  name: string
-  description: string
-  link: {
-    text: string
-    address: string
-  }
-}
-
-const Opportunity: FC<Props> = props => (
-  <div className={styles['opportunity']}>
-    <h3>{props.name}</h3>
-    <p>{props.description}</p>
-    <a href={props.link.address}>{props.link.text}</a>
-  </div>
-)
-
 export const Volunteer: FC = () => (
   <section>
     <h1>Volunteer</h1>
@@ -32,13 +15,9 @@ export const Volunteer: FC = () => (
       <br/>
       Other ways people can volunteer with UVC.....
     </p>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdH4mXkx09d04GKyghh07hWAvDNandl-0OQOEum6WQDMKm4yg/viewform'>Volunteer form</a>
-    <h2>Volunteer with other groups</h2>
-    <div>
-      <Opportunity name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
-        link={{ text: 'where to find timetable', address: '' }}/>
-      <Opportunity name='Help Ukraine Scotland' description='Lots of events and stuff.'
-        link={{ text: 'facebook group', address: 'https://www.facebook.com/groups/helpukrainescotland' }}/>
-    </div>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLSdH4mXkx09d04GKyghh07hWAvDNandl-0OQOEum6WQDMKm4yg/viewform'
+      target='_blank'>
+      Volunteer form
+    </a>
   </section>
 )

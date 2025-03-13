@@ -13,6 +13,7 @@ import { Support } from './views/Support/Support'
 import { Volunteer } from './sections/Volunteer/Volunteer'
 import { About } from './views/About/About'
 import { Constitution } from './views/Constitution/Constitution'
+import { Partners } from './views/Partners/Partners'
 
 export const App: FC = () => (
   // To deploy a test version to Github Pages, it is necessary to use HashRouter since
@@ -32,7 +33,7 @@ export const App: FC = () => (
         <Route path={routes.support.subroutes.donate.path} element={<Donate/>}/>
         <Route path={routes.support.subroutes.communicate.path} element={<Communicate/>}/>
         <Route path={routes.support.subroutes.needs.path} element={<Needs/>}/>
-        <Route path={routes.support.subroutes.partners.path} element={<div>Partners</div>}/>
+        <Route path={routes.support.subroutes.partners.path} element={<Partners/>}/>
         <Route path={routes.contact.path} element={<Contact/>}/>
       </Route>
     </Routes>
