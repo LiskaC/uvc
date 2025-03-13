@@ -59,7 +59,7 @@ export const routes: Routes = {
     path: '/support',
     subroutes: {
       donate: { name: 'Donate', path: '/support/donate' },
-      needs: { name: 'Current needs', path: '/resources/needs' },
+      needs: { name: 'Current needs', path: '/support/needs' },
       volunteer: { name: 'Volunteer', path: '/support/volunteer' },
       communicate: { name: 'Spread the word', path: '/support/communicate' },
       partners: { name: 'Partners', path: '/support/partners' }
