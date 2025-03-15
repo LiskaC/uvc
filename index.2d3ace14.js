@@ -18585,12 +18585,13 @@ var _volunteer = require("./sections/Volunteer/Volunteer");
 var _about = require("./views/About/About");
 var _constitution = require("./views/Constitution/Constitution");
 var _partners = require("./views/Partners/Partners");
+var _gallery = require("./sections/Gallery/Gallery");
 const routesConfig = [
     {
         path: (0, _routes.routes).home.subroutes.about.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _about.About), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 54
         }, undefined)
     },
@@ -18598,7 +18599,7 @@ const routesConfig = [
         path: (0, _routes.routes).home.subroutes.constitution.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _constitution.Constitution), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 61
         }, undefined)
     },
@@ -18606,7 +18607,7 @@ const routesConfig = [
         path: (0, _routes.routes).home.subroutes.reports.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reports.Reports), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 56
         }, undefined)
     },
@@ -18614,7 +18615,7 @@ const routesConfig = [
         path: (0, _routes.routes).home.subroutes.contact.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contact.Contact), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 56
         }, undefined)
     },
@@ -18622,7 +18623,7 @@ const routesConfig = [
         path: (0, _routes.routes).events.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 23,
+            lineNumber: 24,
             columnNumber: 40
         }, undefined)
     },
@@ -18630,17 +18631,15 @@ const routesConfig = [
         path: (0, _routes.routes).events.subroutes.calendar.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _events.Events), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 24,
+            lineNumber: 25,
             columnNumber: 59
         }, undefined)
     },
     {
         path: (0, _routes.routes).events.subroutes.gallery.path,
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: "Gallery"
-        }, void 0, false, {
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _gallery.Gallery), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 58
         }, undefined)
     },
@@ -18648,7 +18647,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _support.Support), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 41
         }, undefined)
     },
@@ -18656,7 +18655,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.subroutes.volunteer.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _volunteer.Volunteer), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 61
         }, undefined)
     },
@@ -18664,7 +18663,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.subroutes.donate.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _donate.Donate), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 58
         }, undefined)
     },
@@ -18672,7 +18671,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.subroutes.communicate.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _communicate.Communicate), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 63
         }, undefined)
     },
@@ -18680,7 +18679,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.subroutes.needs.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _needs.Needs), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 57
         }, undefined)
     },
@@ -18688,7 +18687,7 @@ const routesConfig = [
         path: (0, _routes.routes).support.subroutes.partners.path,
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _partners.Partners), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 60
         }, undefined)
     }
@@ -18701,7 +18700,7 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                 path: (0, _routes.routes).home.path,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appShell.AppShell), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 47
                 }, void 0),
                 children: [
@@ -18709,12 +18708,12 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                         index: true,
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 31
                         }, void 0)
                     }, void 0, false, {
                         fileName: "src/App.tsx",
-                        lineNumber: 40,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined),
                     routesConfig.map((route)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
@@ -18722,23 +18721,23 @@ const App = ()=>// To deploy a test version to Github Pages, it is necessary to 
                             element: route.element
                         }, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 41,
+                            lineNumber: 42,
                             columnNumber: 36
                         }, undefined))
                 ]
             }, void 0, true, {
                 fileName: "src/App.tsx",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 3
     }, undefined);
 _c = App;
@@ -18750,7 +18749,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","./views/Constitution/Constitution":"5PY7n","./views/Partners/Partners":"ky2Af","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/Contact/Contact":"eUwRS"}],"dXVwI":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router":"dXVwI","./routes":"cAFqI","./components/AppShell/AppShell":"eq8hI","./views/Home/Home":"eNyEK","./views/Reports/Reports":"8S2qo","./views/Events/Events":"3sEZD","./views/Contact/Contact":"eUwRS","./sections/Needs/Needs":"3UTsk","./sections/Donate/Donate":"1QmPI","./sections/Communicate/Communicate":"20u8p","./views/Support/Support":"cSXV7","./sections/Volunteer/Volunteer":"34g23","./views/About/About":"74t4C","./views/Constitution/Constitution":"5PY7n","./views/Partners/Partners":"ky2Af","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./sections/Gallery/Gallery":"cBMSA"}],"dXVwI":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.2.0
  *
@@ -28176,7 +28175,7 @@ $RefreshReg$(_c1, "AppShellView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","../../assets/icons/logo-light.svg":"zLAaz","./AppShell.module.scss":"7ZCSG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../routes":"cAFqI"}],"g8Lpy":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","../../sections/NavBar/NavBar":"g8Lpy","../Social/Social":"bw1zr","../Hamburger/Hamburger":"exICt","../../sections/SideMenu/SideMenu":"cbqCp","../../assets/icons/logo-light.svg":"zLAaz","./AppShell.module.scss":"7ZCSG","../../routes":"cAFqI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g8Lpy":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$550a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29173,6 +29172,427 @@ module.exports["event__location"] = `K5nriq_event__location`;
 module.exports["event__title"] = `K5nriq_event__title`;
 module.exports["events__list"] = `K5nriq_events__list`;
 
+},{}],"eUwRS":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a5ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a5ca.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Contact", ()=>Contact);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _contactForm = require("../../sections/ContactForm/ContactForm");
+const Contact = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/views/Contact/Contact.tsx",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Get in touch with us via our contact form"
+            }, void 0, false, {
+                fileName: "src/views/Contact/Contact.tsx",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactForm.ContactForm), {}, void 0, false, {
+                fileName: "src/views/Contact/Contact.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+_c = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$a5ca.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../sections/ContactForm/ContactForm":"llmsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"llmsJ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$fe35 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fe35.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ContactForm", ()=>ContactForm);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _submit = require("../../components/Buttons/Submit");
+var _contactFormModuleScss = require("./ContactForm.module.scss");
+var _contactFormModuleScssDefault = parcelHelpers.interopDefault(_contactFormModuleScss);
+const ContactForm = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        action: "https://formspree.io/f/xaneybbo",
+        method: "post",
+        className: (0, _contactFormModuleScssDefault.default)['contact__form'],
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Required fields are followed by",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            "aria-label": "required",
+                            children: "*"
+                        }, void 0, false, {
+                            fileName: "src/sections/ContactForm/ContactForm.tsx",
+                            lineNumber: 10,
+                            columnNumber: 15
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 10,
+                        columnNumber: 7
+                    }, undefined),
+                    "."
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "name",
+                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Name: "
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 14,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    "aria-label": "required",
+                                    children: "*"
+                                }, void 0, false, {
+                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                    lineNumber: 15,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 15,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 13,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        id: "name",
+                        name: "name",
+                        required: true,
+                        placeholder: "Mary X",
+                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 17,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "email",
+                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Email: "
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 22,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    "aria-label": "required",
+                                    children: "*"
+                                }, void 0, false, {
+                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 23,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 21,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "email",
+                        id: "email",
+                        name: "email",
+                        required: true,
+                        placeholder: "email@email.com",
+                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 25,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 20,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "alt-contact",
+                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "Other preferred means to contact: (optional)"
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 29,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        id: "alt-contact",
+                        name: "altContact",
+                        placeholder: "e.g. WhatsApp: +44xxxxxxxxxx",
+                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 30,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "subject",
+                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Subject: "
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    "aria-label": "required",
+                                    children: "*"
+                                }, void 0, false, {
+                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                    lineNumber: 36,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 36,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 34,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                        id: "subject",
+                        name: "subject",
+                        required: true,
+                        className: (0, _contactFormModuleScssDefault.default)['contact__input'],
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "offer",
+                                children: "Offer Equipment"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 39,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "request",
+                                children: "Request Equipment"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 40,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "volunteer",
+                                children: "Volunteer"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 41,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "request",
+                                children: "Collaborate"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 42,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "other",
+                                children: "Other"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 43,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 38,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 33,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "message",
+                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "Message:"
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 48,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    "aria-label": "required",
+                                    children: "*"
+                                }, void 0, false, {
+                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                    lineNumber: 49,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                                lineNumber: 49,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 47,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                        name: "message",
+                        placeholder: "Type in your message to us",
+                        required: true,
+                        className: `${(0, _contactFormModuleScssDefault.default)['contact__message']} ${(0, _contactFormModuleScssDefault.default)['contact__input']}`
+                    }, void 0, false, {
+                        fileName: "src/sections/ContactForm/ContactForm.tsx",
+                        lineNumber: 51,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 46,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _submit.Submit), {
+                text: "Submit",
+                extraStyles: (0, _contactFormModuleScssDefault.default)['contact__submit']
+            }, void 0, false, {
+                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                lineNumber: 54,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/sections/ContactForm/ContactForm.tsx",
+        lineNumber: 7,
+        columnNumber: 3
+    }, undefined);
+_c = ContactForm;
+var _c;
+$RefreshReg$(_c, "ContactForm");
+
+  $parcel$ReactRefreshHelpers$fe35.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../components/Buttons/Submit":"ldqSi","./ContactForm.module.scss":"4zcjo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ldqSi":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$fba8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fba8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Submit", ()=>Submit);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _buttonModuleScss = require("./Button.module.scss");
+var _buttonModuleScssDefault = parcelHelpers.interopDefault(_buttonModuleScss);
+const Submit = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        type: "submit",
+        className: `${(0, _buttonModuleScssDefault.default)['button']} ${props.extraStyles}`,
+        children: props.text
+    }, void 0, false, {
+        fileName: "src/components/Buttons/Submit.tsx",
+        lineNumber: 11,
+        columnNumber: 3
+    }, undefined);
+_c = Submit;
+var _c;
+$RefreshReg$(_c, "Submit");
+
+  $parcel$ReactRefreshHelpers$fba8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Button.module.scss":"39elo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"39elo":[function(require,module,exports,__globalThis) {
+module.exports["button"] = `_0iKTWG_button`;
+
+},{}],"4zcjo":[function(require,module,exports,__globalThis) {
+module.exports["contact__form"] = `vX6X1W_contact__form`;
+module.exports["contact__input"] = `vX6X1W_contact__input`;
+module.exports["contact__label"] = `vX6X1W_contact__label`;
+module.exports["contact__message"] = `vX6X1W_contact__message`;
+module.exports["contact__submit"] = `vX6X1W_contact__submit`;
+
 },{}],"3UTsk":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$79c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -30115,426 +30535,118 @@ $RefreshReg$(_c1, "Partners");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eUwRS":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$a5ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cBMSA":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0b8b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a5ca.prelude(module);
+$parcel$ReactRefreshHelpers$0b8b.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Contact", ()=>Contact);
+parcelHelpers.export(exports, "Gallery", ()=>Gallery);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _contactForm = require("../../sections/ContactForm/ContactForm");
-const Contact = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+var _data = require("./data");
+var _galleryModuleScss = require("./Gallery.module.scss");
+var _galleryModuleScssDefault = parcelHelpers.interopDefault(_galleryModuleScss);
+const Event = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Contact"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: props.event.name
             }, void 0, false, {
-                fileName: "src/views/Contact/Contact.tsx",
-                lineNumber: 6,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Get in touch with us via our contact form"
-            }, void 0, false, {
-                fileName: "src/views/Contact/Contact.tsx",
-                lineNumber: 7,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactForm.ContactForm), {}, void 0, false, {
-                fileName: "src/views/Contact/Contact.tsx",
-                lineNumber: 8,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true);
-_c = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
-
-  $parcel$ReactRefreshHelpers$a5ca.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../sections/ContactForm/ContactForm":"llmsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"llmsJ":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$fe35 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fe35.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ContactForm", ()=>ContactForm);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _submit = require("../../components/Buttons/Submit");
-var _contactFormModuleScss = require("./ContactForm.module.scss");
-var _contactFormModuleScssDefault = parcelHelpers.interopDefault(_contactFormModuleScss);
-const ContactForm = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-        action: "https://formspree.io/f/xaneybbo",
-        method: "post",
-        className: (0, _contactFormModuleScssDefault.default)['contact__form'],
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    "Required fields are followed by",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            "aria-label": "required",
-                            children: "*"
-                        }, void 0, false, {
-                            fileName: "src/sections/ContactForm/ContactForm.tsx",
-                            lineNumber: 10,
-                            columnNumber: 15
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 10,
-                        columnNumber: 7
-                    }, undefined),
-                    "."
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 8,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "name",
-                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Name: "
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 14,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    "aria-label": "required",
-                                    children: "*"
-                                }, void 0, false, {
-                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                    lineNumber: 15,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 15,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 13,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        id: "name",
-                        name: "name",
-                        required: true,
-                        placeholder: "Mary X",
-                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 17,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
+                fileName: "src/sections/Gallery/Gallery.tsx",
                 lineNumber: 12,
                 columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "email",
-                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Email: "
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 22,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    "aria-label": "required",
-                                    children: "*"
-                                }, void 0, false, {
-                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                    lineNumber: 23,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 23,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 21,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "email",
-                        id: "email",
-                        name: "email",
-                        required: true,
-                        placeholder: "email@email.com",
-                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 25,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 20,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "alt-contact",
-                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: "Other preferred means to contact: (optional)"
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 29,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        id: "alt-contact",
-                        name: "altContact",
-                        placeholder: "e.g. WhatsApp: +44xxxxxxxxxx",
-                        className: (0, _contactFormModuleScssDefault.default)['contact__input']
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 30,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 28,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "subject",
-                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Subject: "
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 35,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    "aria-label": "required",
-                                    children: "*"
-                                }, void 0, false, {
-                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                    lineNumber: 36,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 36,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 34,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                        id: "subject",
-                        name: "subject",
-                        required: true,
-                        className: (0, _contactFormModuleScssDefault.default)['contact__input'],
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "offer",
-                                children: "Offer Equipment"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 39,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "request",
-                                children: "Request Equipment"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 40,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "volunteer",
-                                children: "Volunteer"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 41,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "request",
-                                children: "Collaborate"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 42,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "other",
-                                children: "Other"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 43,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 38,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 33,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "message",
-                className: (0, _contactFormModuleScssDefault.default)['contact__label'],
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Message:"
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 48,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    "aria-label": "required",
-                                    children: "*"
-                                }, void 0, false, {
-                                    fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                    lineNumber: 49,
-                                    columnNumber: 17
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                                lineNumber: 49,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 47,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                        name: "message",
-                        placeholder: "Type in your message to us",
-                        required: true,
-                        className: `${(0, _contactFormModuleScssDefault.default)['contact__message']} ${(0, _contactFormModuleScssDefault.default)['contact__input']}`
-                    }, void 0, false, {
-                        fileName: "src/sections/ContactForm/ContactForm.tsx",
-                        lineNumber: 51,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 46,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _submit.Submit), {
-                text: "Submit",
-                extraStyles: (0, _contactFormModuleScssDefault.default)['contact__submit']
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _galleryModuleScssDefault.default)['event__images'],
+                children: props.event.photoUrls.map((photo, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: (0, _galleryModuleScssDefault.default)['event__image'],
+                        src: photo,
+                        alt: `image ${i + 1}`
+                    }, photo, false, {
+                        fileName: "src/sections/Gallery/Gallery.tsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined))
             }, void 0, false, {
-                fileName: "src/sections/ContactForm/ContactForm.tsx",
-                lineNumber: 54,
+                fileName: "src/sections/Gallery/Gallery.tsx",
+                lineNumber: 13,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/sections/ContactForm/ContactForm.tsx",
-        lineNumber: 7,
-        columnNumber: 3
-    }, undefined);
-_c = ContactForm;
-var _c;
-$RefreshReg$(_c, "ContactForm");
-
-  $parcel$ReactRefreshHelpers$fe35.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../../components/Buttons/Submit":"ldqSi","./ContactForm.module.scss":"4zcjo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ldqSi":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$fba8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fba8.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Submit", ()=>Submit);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _buttonModuleScss = require("./Button.module.scss");
-var _buttonModuleScssDefault = parcelHelpers.interopDefault(_buttonModuleScss);
-const Submit = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-        type: "submit",
-        className: `${(0, _buttonModuleScssDefault.default)['button']} ${props.extraStyles}`,
-        children: props.text
-    }, void 0, false, {
-        fileName: "src/components/Buttons/Submit.tsx",
+        fileName: "src/sections/Gallery/Gallery.tsx",
         lineNumber: 11,
         columnNumber: 3
     }, undefined);
-_c = Submit;
-var _c;
-$RefreshReg$(_c, "Submit");
+_c = Event;
+const Gallery = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Event Gallery"
+            }, void 0, false, {
+                fileName: "src/sections/Gallery/Gallery.tsx",
+                lineNumber: 23,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: (0, _data.gallery).map((event)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Event, {
+                        event: event
+                    }, event.name, false, {
+                        fileName: "src/sections/Gallery/Gallery.tsx",
+                        lineNumber: 25,
+                        columnNumber: 29
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/sections/Gallery/Gallery.tsx",
+                lineNumber: 24,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/sections/Gallery/Gallery.tsx",
+        lineNumber: 22,
+        columnNumber: 3
+    }, undefined);
+_c1 = Gallery;
+var _c, _c1;
+$RefreshReg$(_c, "Event");
+$RefreshReg$(_c1, "Gallery");
 
-  $parcel$ReactRefreshHelpers$fba8.postlude(module);
+  $parcel$ReactRefreshHelpers$0b8b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Button.module.scss":"39elo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"39elo":[function(require,module,exports,__globalThis) {
-module.exports["button"] = `_0iKTWG_button`;
+},{"react/jsx-dev-runtime":"iTorj","./data":"6P9Ep","./Gallery.module.scss":"jJUCz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6P9Ep":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "gallery", ()=>gallery);
+const gallery = [
+    {
+        name: 'Soldiers Q&A',
+        photoUrls: [
+            'https://as2.ftcdn.net/v2/jpg/05/68/55/85/1000_F_568558545_v7emPoS2EuXaSc2ULRkioUDgzepiQ2IS.jpg',
+            'https://i.pinimg.com/736x/19/d7/f6/19d7f6a1f09c7569c8648d22a38ab737.jpg'
+        ]
+    },
+    {
+        name: 'Other event',
+        photoUrls: [
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdZirLb_SZW1Yv0rH6IzQutryc2fP11hU5g&s',
+            'https://img.freepik.com/premium-photo/isometric-image-ultra-realistic-raccoon-business-meeting-scene-perfect-corporate-collaborati_980716-133724.jpg',
+            'https://www.kark.com/wp-content/uploads/sites/85/2018/02/raccoon_1518370395979_33816586_ver1.0.jpg?w=1280',
+            'https://beachmetro.com/wp-content/uploads/2024/09/web-Wild-Side-beach-metro-roof.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2iM83QU259rACB-6HmPxR0_ojfR3dRS2cwQ&s',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpT5NfeqFBBw_VKjtxpT8bcRQHHPKvpBSORw&s'
+        ]
+    }
+];
 
-},{}],"4zcjo":[function(require,module,exports,__globalThis) {
-module.exports["contact__form"] = `vX6X1W_contact__form`;
-module.exports["contact__input"] = `vX6X1W_contact__input`;
-module.exports["contact__label"] = `vX6X1W_contact__label`;
-module.exports["contact__message"] = `vX6X1W_contact__message`;
-module.exports["contact__submit"] = `vX6X1W_contact__submit`;
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jJUCz":[function(require,module,exports,__globalThis) {
+module.exports["event__image"] = `zB3DnG_event__image`;
+module.exports["event__images"] = `zB3DnG_event__images`;
 
 },{}]},["aQL8O","kMAEo","4aBH6"], "4aBH6", "parcelRequire94c2")
 
