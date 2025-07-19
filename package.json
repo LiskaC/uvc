@@ -5,11 +5,12 @@
   "homepage": "https://liskac.github.io/uvc/",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && parcel build src/index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
-    "predeploy": "parcel build src/index.html --public-url ./",
-    "deploy": "gh-pages -d dist"
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
