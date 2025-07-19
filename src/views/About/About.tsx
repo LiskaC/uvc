@@ -5,6 +5,6 @@ export const About: FC = () => (
   <>
     <h1>About us</h1>
     <p>We are blah</p>
-    <Team/>
+    <Team />
   </>
 )

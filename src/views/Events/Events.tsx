@@ -20,9 +20,7 @@ const Event: FC<Props> = (props) => (
   <div key={props.event.id} className={styles['event']}>
     <h2 className={styles['event__title']}>{props.event.summary}</h2>
     <p className={styles['event__datetime']}>{props.event.start.dateTime}</p>
-    {props.event.location && (
-      <p className={styles['event__location']}>{props.event.location}</p>
-    )}
+    {props.event.location && <p className={styles['event__location']}>{props.event.location}</p>}
     {props.event.description && (
       <p className={styles['event__description']}>{props.event.description}</p>
     )}
@@ -40,9 +38,7 @@ export const Events: FC = () => {
   useEffect(() => {
     async function loadEvents() {
       const events = await fetchEvents()
-      const sortedEvents = events.sort((a, b) =>
-        sortByDateTime(a.start.dateTime, b.start.dateTime)
-      )
+      const sortedEvents = events.sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
       setEvents(sortedEvents)
     }
     loadEvents()

@@ -19,20 +19,20 @@ export type GoogleCalendarEvent = {
    */
   location?: string
   creator: {
-      email: string
+    email: string
   }
   organizer: {
-      email: string
-      displayName?: string
-      self?: boolean
+    email: string
+    displayName?: string
+    self?: boolean
   }
   start: {
-      dateTime: string
-      timeZone?: string
+    dateTime: string
+    timeZone?: string
   }
   end: {
-      dateTime: string
-      timeZone?: string
+    dateTime: string
+    timeZone?: string
   }
   visibility?: 'public' | 'private'
   iCalUID: string
@@ -42,20 +42,20 @@ export type GoogleCalendarEvent = {
    */
   hangoutLink?: string
   conferenceData?: {
-      entryPoints?: {
-          entryPointType: 'video'
-          uri: string
-          label?: string
-      }[]
-      conferenceSolution?: {
-          key: { type: 'hangoutsMeet' }
-          name: string
-          iconUri?: string
-      }
-      conferenceId?: string
+    entryPoints?: {
+      entryPointType: 'video'
+      uri: string
+      label?: string
+    }[]
+    conferenceSolution?: {
+      key: { type: 'hangoutsMeet' }
+      name: string
+      iconUri?: string
+    }
+    conferenceId?: string
   }
   reminders: {
-      useDefault: boolean
+    useDefault: boolean
   }
   eventType: 'default'
 }

@@ -9,7 +9,7 @@ interface Props {
   }
 }
 
-const Partner: FC<Props> = props => (
+const Partner: FC<Props> = (props) => (
   <div>
     <h3>{props.name}</h3>
     <p>{props.description}</p>
@@ -20,9 +20,11 @@ const Partner: FC<Props> = props => (
 export const Partners: FC = () => (
   <>
     <h1>Groups we partner with</h1>
-    <Partner name='Edinburgh Spiders' description='Description: Weave camouflage nets.'
-      link={{ text: 'where to find timetable', address: '' }}/>
-    <Partner name='Battalion Edi' description='Cars.'
-      link={{ text: 'instagram', address: '' }}/>
+    <Partner
+      name='Edinburgh Spiders'
+      description='Description: Weave camouflage nets.'
+      link={{ text: 'where to find timetable', address: '' }}
+    />
+    <Partner name='Battalion Edi' description='Cars.' link={{ text: 'instagram', address: '' }} />
   </>
 )

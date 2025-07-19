@@ -6,9 +6,9 @@ import { Volunteer } from '../../sections/Volunteer/Volunteer'
 
 export const Support: FC = () => (
   <div>
-    <Donate/>
-    <Needs/>
-    <Volunteer/>
-    <Communicate/>
+    <Donate />
+    <Needs />
+    <Volunteer />
+    <Communicate />
   </div>
 )

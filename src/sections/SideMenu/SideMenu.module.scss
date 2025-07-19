@@ -32,18 +32,18 @@
 
 .navbar__link,
 .navbar__subroute-link {
-	background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   width: 100%;
   text-align: left;
   display: block;
   padding: 2rem;
   text-decoration: none;
-  
+
   &:active {
     background-color: vars.$yellow;
   }

@@ -33,8 +33,6 @@ const routesConfig = [
 ]
 
 export const App: FC = () => (
-  // To deploy a test version to Github Pages, it is necessary to use HashRouter since
-  // routing with BrowserRouter is not supported
   <BrowserRouter>
     <Routes>
       <Route path={routes.home.path} element={<AppShell />}>

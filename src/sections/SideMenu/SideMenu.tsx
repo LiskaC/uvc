@@ -9,7 +9,7 @@ interface MenuItemProps {
   toggleMenu: () => void
 }
 
-const MenuItem: FC<MenuItemProps> = props => {
+const MenuItem: FC<MenuItemProps> = (props) => {
   const navigate = useNavigate()
 
   function handleClick(path: string) {
@@ -19,16 +19,17 @@ const MenuItem: FC<MenuItemProps> = props => {
 
   return (
     <li className={styles['navbar__item']}>
-      <button onClick={() => handleClick(props.route.path)}
-        className={styles['navbar__link']}>
+      <button onClick={() => handleClick(props.route.path)} className={styles['navbar__link']}>
         {props.route.name}
       </button>
       {hasSubroutes(props.route) && (
         <ul className={styles['navbar__subroutes']}>
           {Object.values(props.route.subroutes).map((subroute) => (
             <li key={subroute.path} className={styles['navbar__subroute-item']}>
-              <button onClick={() => handleClick(subroute.path)}
-                className={styles['navbar__subroute-link']}>
+              <button
+                onClick={() => handleClick(subroute.path)}
+                className={styles['navbar__subroute-link']}
+              >
                 {subroute.name}
               </button>
             </li>
@@ -44,11 +45,12 @@ interface Props {
   toggleMenu: () => void
 }
 
-export const SideMenu: FC<Props> = props => (
+export const SideMenu: FC<Props> = (props) => (
   <nav className={`${styles['navbar']} ${props.isMenuOpen ? styles['navbar--open'] : ''}`}>
     <ol className={styles['navbar__links']}>
-      {Object.values(routes).map(route => <MenuItem key={route.name} route={route}
-        toggleMenu={props.toggleMenu}/>)}
+      {Object.values(routes).map((route) => (
+        <MenuItem key={route.name} route={route} toggleMenu={props.toggleMenu} />
+      ))}
     </ol>
   </nav>
 )

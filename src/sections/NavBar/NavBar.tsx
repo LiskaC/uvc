@@ -23,14 +23,8 @@ const NavItem: FC<Props> = (props) => {
         <nav className={styles['navbar__dropdown']}>
           <ol className={styles['navbar__dropdown-list']}>
             {Object.values(props.route.subroutes!).map((subroute) => (
-              <li
-                key={subroute.path}
-                className={styles['navbar__dropdown-item']}
-              >
-                <a
-                  href={subroute.path}
-                  className={styles['navbar__dropdown-link']}
-                >
+              <li key={subroute.path} className={styles['navbar__dropdown-item']}>
+                <a href={subroute.path} className={styles['navbar__dropdown-link']}>
                   {subroute.name}
                 </a>
               </li>
