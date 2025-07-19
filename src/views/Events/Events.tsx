@@ -14,18 +14,22 @@ function sortByDateTime(a: string, b: string) {
   const dateA = new Date(a).getTime()
   const dateB = new Date(b).getTime()
   return dateB - dateA
-} 
+}
 
-const Event: FC<Props> = props => (
+const Event: FC<Props> = (props) => (
   <div key={props.event.id} className={styles['event']}>
     <h2 className={styles['event__title']}>{props.event.summary}</h2>
     <p className={styles['event__datetime']}>{props.event.start.dateTime}</p>
-    {props.event.location && <p className={styles['event__location']}>{props.event.location}</p>}
+    {props.event.location && (
+      <p className={styles['event__location']}>{props.event.location}</p>
+    )}
     {props.event.description && (
       <p className={styles['event__description']}>{props.event.description}</p>
-      )}
+    )}
     {props.event.hangoutLink && (
-      <a href={props.event.hangoutLink} className={styles['event__link']}>Join here!</a>
+      <a href={props.event.hangoutLink} className={styles['event__link']}>
+        Join here!
+      </a>
     )}
   </div>
 )
@@ -36,7 +40,9 @@ export const Events: FC = () => {
   useEffect(() => {
     async function loadEvents() {
       const events = await fetchEvents()
-      const sortedEvents = events.sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
+      const sortedEvents = events.sort((a, b) =>
+        sortByDateTime(a.start.dateTime, b.start.dateTime)
+      )
       setEvents(sortedEvents)
     }
     loadEvents()
@@ -53,7 +59,9 @@ export const Events: FC = () => {
       />
       <div className={styles['events__list']}>
         <p>An alternate display for events:</p>
-        {events.map(event => <Event key={event.id} event={event}/>)}
+        {events.map((event) => (
+          <Event key={event.id} event={event} />
+        ))}
       </div>
     </>
   )
