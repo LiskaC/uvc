@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { HashRouter, Route, Routes } from 'react-router'
+import { BrowserRouter, Route, Routes } from 'react-router'
 import { routes } from './routes'
 import { AppShell } from './components/AppShell/AppShell'
 import { Home } from './views/Home/Home'
@@ -23,24 +23,26 @@ const routesConfig = [
   { path: routes.home.subroutes.contact.path, element: <Contact /> },
   { path: routes.events.path, element: <Events /> },
   { path: routes.events.subroutes.calendar.path, element: <Events /> },
-  { path: routes.events.subroutes.gallery.path, element: <Gallery/> },
+  { path: routes.events.subroutes.gallery.path, element: <Gallery /> },
   { path: routes.support.path, element: <Support /> },
   { path: routes.support.subroutes.volunteer.path, element: <Volunteer /> },
   { path: routes.support.subroutes.donate.path, element: <Donate /> },
   { path: routes.support.subroutes.communicate.path, element: <Communicate /> },
   { path: routes.support.subroutes.needs.path, element: <Needs /> },
-  { path: routes.support.subroutes.partners.path, element: <Partners /> }
+  { path: routes.support.subroutes.partners.path, element: <Partners /> },
 ]
 
 export const App: FC = () => (
   // To deploy a test version to Github Pages, it is necessary to use HashRouter since
   // routing with BrowserRouter is not supported
-  <HashRouter>
+  <BrowserRouter>
     <Routes>
-      <Route path={routes.home.path} element={<AppShell/>}>
-        <Route index element={<Home/>}/>
-        {routesConfig.map(route => <Route path={route.path} element={route.element}/>)}
+      <Route path={routes.home.path} element={<AppShell />}>
+        <Route index element={<Home />} />
+        {routesConfig.map((route) => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
       </Route>
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 )

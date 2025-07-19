@@ -1,7 +1,7 @@
 /**
  * Data for a single route
  */
-export type Route = { name: string, path: string }
+export type Route = { name: string; path: string }
 
 /**
  * Type for all the routes available in the application
@@ -43,16 +43,16 @@ export const routes: Routes = {
       about: { name: 'About us', path: '/home/about-us' },
       constitution: { name: 'Constitution', path: '/home/constitution' },
       reports: { name: 'Reports', path: '/home/reports' },
-      contact: { name: 'Contact us', path: '/home/contact' }
-    }
+      contact: { name: 'Contact us', path: '/home/contact' },
+    },
   },
   events: {
     name: 'Events',
     path: '/events',
     subroutes: {
       calendar: { name: 'Calendar', path: '/events/calendar' },
-      gallery: { name: 'Gallery', path: '/events/gallery' }
-    }
+      gallery: { name: 'Gallery', path: '/events/gallery' },
+    },
   },
   support: {
     name: 'Support',
@@ -62,9 +62,9 @@ export const routes: Routes = {
       needs: { name: 'Current needs', path: '/support/needs' },
       volunteer: { name: 'Volunteer', path: '/support/volunteer' },
       communicate: { name: 'Spread the word', path: '/support/communicate' },
-      partners: { name: 'Partners', path: '/support/partners' }
-    }
-  }
+      partners: { name: 'Partners', path: '/support/partners' },
+    },
+  },
 }
 
 /**
@@ -72,6 +72,8 @@ export const routes: Routes = {
  * @param route Any {@link Route}
  * @returns Only routes with subroutes
  */
-export function hasSubroutes(route: Route): route is Route & { subroutes: Record<string, Route> } {
-  return (route as any).subroutes !== undefined
+export function hasSubroutes(
+  route: Route & { subroutes?: Record<string, Route> }
+): route is Route & { subroutes: Record<string, Route> } {
+  return route.subroutes !== undefined
 }
