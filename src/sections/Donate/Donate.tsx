@@ -6,7 +6,9 @@ export const Donate: FC = () => (
     <h1>Donate</h1>
     <div>
       <p>Donate to us directly here - we'll prioritise the spend</p>
-      <a href=''>Link to donation page/paypal or whatever</a>
+      <a href='https://www.paypal.com/paypalme/UVC123' target='_blank' rel='noreferrer'>
+        Donate via PayPal
+      </a>
     </div>
     <div>
       <h2>Donate directly to fill a need</h2>
