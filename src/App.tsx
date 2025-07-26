@@ -15,6 +15,7 @@ import { About } from './views/About/About'
 import { Constitution } from './views/Constitution/Constitution'
 import { Partners } from './views/Partners/Partners'
 import { Gallery } from './sections/Gallery/Gallery'
+import { Petitions } from './views/Petitions/Petitions'
 
 const routesConfig = [
   { path: routes.home.subroutes.about.path, element: <About /> },
@@ -24,11 +25,12 @@ const routesConfig = [
   { path: routes.events.path, element: <Events /> },
   { path: routes.events.subroutes.calendar.path, element: <Events /> },
   { path: routes.events.subroutes.gallery.path, element: <Gallery /> },
+  { path: routes.events.subroutes.volunteer.path, element: <Volunteer /> },
   { path: routes.support.path, element: <Support /> },
-  { path: routes.support.subroutes.volunteer.path, element: <Volunteer /> },
   { path: routes.support.subroutes.donate.path, element: <Donate /> },
   { path: routes.support.subroutes.communicate.path, element: <Communicate /> },
   { path: routes.support.subroutes.needs.path, element: <Needs /> },
+  { path: routes.support.subroutes.petitions.path, element: <Petitions /> },
   { path: routes.support.subroutes.partners.path, element: <Partners /> },
 ]
 

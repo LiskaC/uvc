@@ -19,14 +19,15 @@ export type Routes = {
     subroutes: {
       calendar: Route
       gallery: Route
+      volunteer: Route
     }
   }
   support: Route & {
     subroutes: {
       donate: Route
       needs: Route
-      volunteer: Route
       communicate: Route
+      petitions: Route
       partners: Route
     }
   }
@@ -52,6 +53,7 @@ export const routes: Routes = {
     subroutes: {
       calendar: { name: 'Calendar', path: '/events/calendar' },
       gallery: { name: 'Gallery', path: '/events/gallery' },
+      volunteer: { name: 'Volunteer', path: '/events/volunteer' },
     },
   },
   support: {
@@ -60,8 +62,8 @@ export const routes: Routes = {
     subroutes: {
       donate: { name: 'Donate', path: '/support/donate' },
       needs: { name: 'Current needs', path: '/support/needs' },
-      volunteer: { name: 'Volunteer', path: '/support/volunteer' },
       communicate: { name: 'Spread the word', path: '/support/communicate' },
+      petitions: { name: 'Active Petitions', path: '/support/petitions' },
       partners: { name: 'Partners', path: '/support/partners' },
     },
   },
