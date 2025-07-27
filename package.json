@@ -5,7 +5,7 @@
   "homepage": "https://liskac.github.io/uvc/",
   "scripts": {
     "start": "parcel",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist .parcel-cache",
     "build": "npm run clean && parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
