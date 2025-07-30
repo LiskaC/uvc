@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel",
     "clean": "rm -rf dist .parcel-cache",
-    "build": "npm run clean && parcel build src/index.html --public-url ./",
+    "build": "npm run clean && parcel build src/index.html --public-url /",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
