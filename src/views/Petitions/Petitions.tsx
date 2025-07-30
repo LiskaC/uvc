@@ -12,29 +12,20 @@ export const Petitions: FC = () => (
     <ul>
       <li>
         <a
-          href='https://www.change.org/p/stop-the-war-in-ukraine'
+          href='https://petition.parliament.uk/petitions/719124'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Stop the War in Ukraine
+          Transfer UK Warrior Infantry Fighting Vehicles to Ukraine
         </a>
       </li>
       <li>
         <a
-          href='https://www.change.org/p/ukraine-needs-more-weapons'
+          href='https://petition.parliament.uk/petitions/725804'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Ukraine Needs More Weapons
-        </a>
-      </li>
-      <li>
-        <a
-          href='https://www.change.org/p/ukraine-needs-more-sanctions-on-russia'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          More Sanctions on Russia
+          Help to return Ukrainian children that have been forcibly taken by Russia
         </a>
       </li>
     </ul>
