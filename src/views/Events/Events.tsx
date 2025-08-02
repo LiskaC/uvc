@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, Fragment, useEffect, useState } from 'react'
 import { fetchEvents } from '../../api/google'
 import { GoogleCalendarEvent } from '../../api/types'
 
@@ -45,20 +45,17 @@ export const Events: FC = () => {
   }, [])
 
   return (
-    <>
+    <Fragment>
       <h1>Events</h1>
-      <h2>Sundays 13:00 - 17:00, Wellington Statue</h2>
-      <p>Join our weekly demo at Wellington statue</p>
-      <iframe
-        className={styles['calendar']}
-        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`}
-      />
       <div className={styles['events__list']}>
-        <p>An alternate display for events:</p>
         {events.map((event) => (
           <Event key={event.id} event={event} />
         ))}
       </div>
-    </>
+      <iframe
+        className={styles['calendar']}
+        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`}
+      />
+    </Fragment>
   )
 }
