@@ -13,6 +13,7 @@ export type Routes = {
       constitution: Route
       reports: Route
       contact: Route
+      partners: Route
     }
   }
   events: Route & {
@@ -28,7 +29,6 @@ export type Routes = {
       needs: Route
       communicate: Route
       petitions: Route
-      partners: Route
     }
   }
 }
@@ -45,6 +45,7 @@ export const routes: Routes = {
       constitution: { name: 'Constitution', path: '/home/constitution' },
       reports: { name: 'Reports', path: '/home/reports' },
       contact: { name: 'Contact us', path: '/home/contact' },
+      partners: { name: 'Partners', path: '/home/partners' },
     },
   },
   events: {
@@ -64,7 +65,6 @@ export const routes: Routes = {
       needs: { name: 'Current needs', path: '/support/needs' },
       communicate: { name: 'Spread the word', path: '/support/communicate' },
       petitions: { name: 'Active Petitions', path: '/support/petitions' },
-      partners: { name: 'Partners', path: '/support/partners' },
     },
   },
 }

@@ -22,6 +22,7 @@ const routesConfig = [
   { path: routes.home.subroutes.about.path, element: <About /> },
   { path: routes.home.subroutes.constitution.path, element: <Constitution /> },
   { path: routes.home.subroutes.reports.path, element: <Reports /> },
+  { path: routes.home.subroutes.partners.path, element: <Partners /> },
   { path: routes.home.subroutes.contact.path, element: <Contact /> },
   { path: routes.events.path, element: <Events /> },
   { path: routes.events.subroutes.calendar.path, element: <Events /> },
@@ -32,7 +33,6 @@ const routesConfig = [
   { path: routes.support.subroutes.communicate.path, element: <Communicate /> },
   { path: routes.support.subroutes.needs.path, element: <Needs /> },
   { path: routes.support.subroutes.petitions.path, element: <Petitions /> },
-  { path: routes.support.subroutes.partners.path, element: <Partners /> },
 ]
 
 const ConstructionWrapper: FC = () => {
