@@ -8,7 +8,6 @@ import { Events } from './views/Events/Events'
 import { Contact } from './views/Contact/Contact'
 import { Needs } from './sections/Needs/Needs'
 import { Donate } from './sections/Donate/Donate'
-import { Communicate } from './sections/Communicate/Communicate'
 import { Support } from './views/Support/Support'
 import { Volunteer } from './sections/Volunteer/Volunteer'
 import { About } from './views/About/About'
@@ -30,7 +29,6 @@ const routesConfig = [
   { path: routes.events.subroutes.volunteer.path, element: <Volunteer /> },
   { path: routes.support.path, element: <Support /> },
   { path: routes.support.subroutes.donate.path, element: <Donate /> },
-  { path: routes.support.subroutes.communicate.path, element: <Communicate /> },
   { path: routes.support.subroutes.needs.path, element: <Needs /> },
   { path: routes.support.subroutes.petitions.path, element: <Petitions /> },
 ]

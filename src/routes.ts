@@ -27,7 +27,6 @@ export type Routes = {
     subroutes: {
       donate: Route
       needs: Route
-      communicate: Route
       petitions: Route
     }
   }
@@ -63,7 +62,6 @@ export const routes: Routes = {
     subroutes: {
       donate: { name: 'Donate', path: '/support/donate' },
       needs: { name: 'Current needs', path: '/support/needs' },
-      communicate: { name: 'Spread the word', path: '/support/communicate' },
       petitions: { name: 'Active Petitions', path: '/support/petitions' },
     },
   },
