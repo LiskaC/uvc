@@ -16,6 +16,7 @@ import { Constitution } from './views/Constitution/Constitution'
 import { Partners } from './views/Partners/Partners'
 import { Gallery } from './sections/Gallery/Gallery'
 import { Petitions } from './views/Petitions/Petitions'
+import { UnderConstruction } from './components/UnderConstruction/UnderConstruction'
 
 const routesConfig = [
   { path: routes.home.subroutes.about.path, element: <About /> },
@@ -34,10 +35,20 @@ const routesConfig = [
   { path: routes.support.subroutes.partners.path, element: <Partners /> },
 ]
 
+const ConstructionWrapper: FC = () => {
+  const admin = localStorage.getItem('admin')
+
+  if (admin !== 'true') {
+    return <UnderConstruction />
+  }
+
+  return <AppShell />
+}
+
 export const App: FC = () => (
   <BrowserRouter>
     <Routes>
-      <Route path={routes.home.path} element={<AppShell />}>
+      <Route path={routes.home.path} element={<ConstructionWrapper />}>
         <Route index element={<Home />} />
         {routesConfig.map((route) => (
           <Route key={route.path} path={route.path} element={route.element} />
