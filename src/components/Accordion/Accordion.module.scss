@@ -1,0 +1,30 @@
+.accordion {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgba(0, 0, 255, 0.6);
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.title {
+  margin: 0;
+}
+
+.content {
+  padding: 10px;
+  margin: 0px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
