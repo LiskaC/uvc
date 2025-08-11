@@ -1,6 +1,7 @@
 import { FC, Fragment, useEffect, useState } from 'react'
 import { fetchEvents } from '../../api/google'
 import { GoogleCalendarEvent } from '../../api/types'
+import * as dateFns from 'date-fns'
 
 import styles from './Events.module.scss'
 
@@ -38,7 +39,17 @@ export const Events: FC = () => {
   useEffect(() => {
     async function loadEvents() {
       const events = await fetchEvents()
-      const sortedEvents = events.sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
+      const sortedEvents = events
+        .sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
+        .map((event) => ({
+          ...event,
+          start: {
+            ...event.start,
+            dateTime:
+              dateFns.format(new Date(event.start.dateTime), 'EEE do MMMM yyyy - HH:mm') +
+              ' (your time)',
+          },
+        }))
       setEvents(sortedEvents)
     }
     loadEvents()
@@ -54,7 +65,7 @@ export const Events: FC = () => {
       </div>
       <iframe
         className={styles['calendar']}
-        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe%2FBerlin`}
+        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe/London`}
       />
     </Fragment>
   )
