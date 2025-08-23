@@ -1,72 +1,28 @@
-import { FC, Fragment, useEffect, useState } from 'react'
-import { fetchEvents } from '../../api/google'
-import { GoogleCalendarEvent } from '../../api/types'
-import * as dateFns from 'date-fns'
+import { FC, Fragment } from 'react'
 
 import styles from './Events.module.scss'
 
 const CALENDAR_ID = process.env.CALENDAR_ID
 
-interface Props {
-  event: GoogleCalendarEvent
-}
-
-function sortByDateTime(a: string, b: string) {
-  const dateA = new Date(a).getTime()
-  const dateB = new Date(b).getTime()
-  return dateB - dateA
-}
-
-const Event: FC<Props> = (props) => (
-  <div key={props.event.id} className={styles['event']}>
-    <h2 className={styles['event__title']}>{props.event.summary}</h2>
-    <p className={styles['event__datetime']}>{props.event.start.dateTime}</p>
-    {props.event.location && <p className={styles['event__location']}>{props.event.location}</p>}
-    {props.event.description && (
-      <p className={styles['event__description']}>{props.event.description}</p>
-    )}
-    {props.event.hangoutLink && (
-      <a href={props.event.hangoutLink} className={styles['event__link']}>
-        Join here!
-      </a>
-    )}
-  </div>
+export const Events: FC = () => (
+  <Fragment>
+    <h1>Events</h1>
+    <p>
+      Here you can find all of our upcoming activities in one place. Our Google Calendar is
+      regularly updated with event details and locations — so you’ll always know where to find us.
+    </p>
+    <section>
+      <h2>🇺🇦 Weekly Public Demonstrations</h2>
+      <p>
+        Every <b>Saturday</b>, we gather for our <b>Public Action</b> at the{' '}
+        <b>Duke of Wellington Monument</b> in
+        <b>Edinburgh</b> from <b>2pm to 4pm</b>.
+      </p>
+      <p>Come join us: bring posters, flags, and friends!</p>
+    </section>
+    <iframe
+      className={styles['calendar']}
+      src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe/London`}
+    />
+  </Fragment>
 )
-
-export const Events: FC = () => {
-  const [events, setEvents] = useState<GoogleCalendarEvent[]>([])
-
-  useEffect(() => {
-    async function loadEvents() {
-      const events = await fetchEvents()
-      const sortedEvents = events
-        .sort((a, b) => sortByDateTime(a.start.dateTime, b.start.dateTime))
-        .map((event) => ({
-          ...event,
-          start: {
-            ...event.start,
-            dateTime:
-              dateFns.format(new Date(event.start.dateTime), 'EEE do MMMM yyyy - HH:mm') +
-              ' (your time)',
-          },
-        }))
-      setEvents(sortedEvents)
-    }
-    loadEvents()
-  }, [])
-
-  return (
-    <Fragment>
-      <h1>Events</h1>
-      <div className={styles['events__list']}>
-        {events.map((event) => (
-          <Event key={event.id} event={event} />
-        ))}
-      </div>
-      <iframe
-        className={styles['calendar']}
-        src={`https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=Europe/London`}
-      />
-    </Fragment>
-  )
-}
