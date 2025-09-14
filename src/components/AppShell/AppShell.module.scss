@@ -17,19 +17,6 @@
     'social social';
   gap: 16px;
 
-  @include medias.mobile-lg() {
-    grid-template-areas:
-      'title'
-      'navigation'
-      'social';
-  }
-
-  @include medias.tablet() {
-    grid-template-areas:
-      'title social'
-      'navigation navigation';
-  }
-
   @include medias.desktop() {
     grid-template-areas: 'title navigation social';
   }
@@ -45,7 +32,7 @@
 .app-shell__hamburger {
   grid-area: hamburger;
 
-  @include medias.mobile-lg() {
+  @include medias.desktop() {
     display: none;
   }
 }
@@ -84,7 +71,7 @@
   grid-area: navigation;
   display: none;
 
-  @include medias.mobile-lg() {
+  @include medias.desktop() {
     display: block;
   }
 }
@@ -92,7 +79,7 @@
 .app-shell__sidemenu {
   display: block;
 
-  @include medias.mobile-lg() {
+  @include medias.desktop() {
     display: none;
   }
 }

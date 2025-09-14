@@ -4,11 +4,11 @@ import { NavBar } from '../../sections/NavBar/NavBar'
 import { Social } from '../Social/Social'
 import { Hamburger } from '../Hamburger/Hamburger'
 import { SideMenu } from '../../sections/SideMenu/SideMenu'
+import { routes } from '../../routes'
 
 import LOGO from '../../assets/icons/logo-light.svg'
 
 import styles from './AppShell.module.scss'
-import { routes } from '../../routes'
 
 export const AppShell: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
