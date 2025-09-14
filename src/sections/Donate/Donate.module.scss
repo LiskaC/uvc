@@ -1,0 +1,16 @@
+.donate__options {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 5rem;
+}
+
+.donate__options::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #fff;
+}

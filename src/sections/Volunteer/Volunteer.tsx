@@ -14,9 +14,10 @@ export const Volunteer: FC = () => (
       Other ways people can volunteer with UVC.....
     </p>
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSdH4mXkx09d04GKyghh07hWAvDNandl-0OQOEum6WQDMKm4yg/viewform"
-      target="_blank"
-      rel="noreferrer"
+      // eslint-disable-next-line max-len
+      href='https://docs.google.com/forms/d/e/1FAIpQLSdH4mXkx09d04GKyghh07hWAvDNandl-0OQOEum6WQDMKm4yg/viewform'
+      target='_blank'
+      rel='noreferrer'
     >
       Volunteer form
     </a>
