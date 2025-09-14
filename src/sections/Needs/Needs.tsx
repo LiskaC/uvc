@@ -2,6 +2,7 @@ import { ChangeEvent, FC, useState } from 'react'
 import { type Need, needs } from './data'
 
 import styles from './Needs.module.scss'
+import { routes } from '../../routes'
 
 interface Props {
   need: Need
@@ -29,6 +30,10 @@ const NeedItem: FC<Props> = (props) => (
 export const Needs: FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('')
   const [shownNeeds, setShownNeeds] = useState<Need[]>(needs)
+
+  if (routes.support.subroutes.needs.hidden) {
+    return null
+  }
 
   function handleSearch(event: ChangeEvent<HTMLInputElement>) {
     const value = event.target.value.toLowerCase()

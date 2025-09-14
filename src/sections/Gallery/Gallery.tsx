@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { EventGallery, gallery } from './data'
 
 import styles from './Gallery.module.scss'
+import { routes } from '../../routes'
 
 interface Props {
   event: EventGallery
@@ -18,13 +19,19 @@ const Event: FC<Props> = (props) => (
   </div>
 )
 
-export const Gallery: FC = () => (
-  <section>
-    <h1>Event Gallery</h1>
-    <div>
-      {gallery.map((event) => (
-        <Event key={event.name} event={event} />
-      ))}
-    </div>
-  </section>
-)
+export const Gallery: FC = () => {
+  if (routes.events.subroutes.gallery.hidden) {
+    return null
+  }
+
+  return (
+    <section>
+      <h1>Event Gallery</h1>
+      <div>
+        {gallery.map((event) => (
+          <Event key={event.name} event={event} />
+        ))}
+      </div>
+    </section>
+  )
+}

@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { routes } from '../../routes'
 
 interface Props {
   name: string
@@ -17,14 +18,20 @@ const Partner: FC<Props> = (props) => (
   </div>
 )
 
-export const Partners: FC = () => (
-  <>
-    <h1>Groups we partner with</h1>
-    <Partner
-      name='Edinburgh Spiders'
-      description='Description: Weave camouflage nets.'
-      link={{ text: 'where to find timetable', address: '' }}
-    />
-    <Partner name='Battalion Edi' description='Cars.' link={{ text: 'instagram', address: '' }} />
-  </>
-)
+export const Partners: FC = () => {
+  if (routes.home.subroutes.partners.hidden) {
+    return null
+  }
+
+  return (
+    <>
+      <h1>Groups we partner with</h1>
+      <Partner
+        name='Edinburgh Spiders'
+        description='Description: Weave camouflage nets.'
+        link={{ text: 'where to find timetable', address: '' }}
+      />
+      <Partner name='Battalion Edi' description='Cars.' link={{ text: 'instagram', address: '' }} />
+    </>
+  )
+}
