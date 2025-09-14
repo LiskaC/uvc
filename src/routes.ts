@@ -1,7 +1,7 @@
 /**
  * Data for a single route
  */
-export type Route = { name: string; path: string }
+export type Route = { name: string; path: string; hidden?: boolean }
 
 /**
  * Type for all the routes available in the application
@@ -44,7 +44,7 @@ export const routes: Routes = {
       constitution: { name: 'Constitution', path: '/home/constitution' },
       reports: { name: 'Reports', path: '/home/reports' },
       contact: { name: 'Contact us', path: '/home/contact' },
-      partners: { name: 'Partners', path: '/home/partners' },
+      partners: { name: 'Partners', path: '/home/partners', hidden: true },
     },
   },
   events: {
@@ -52,7 +52,7 @@ export const routes: Routes = {
     path: '/events',
     subroutes: {
       calendar: { name: 'Calendar', path: '/events/calendar' },
-      gallery: { name: 'Gallery', path: '/events/gallery' },
+      gallery: { name: 'Gallery', path: '/events/gallery', hidden: true },
       volunteer: { name: 'Volunteer', path: '/events/volunteer' },
     },
   },
@@ -61,7 +61,7 @@ export const routes: Routes = {
     path: '/support',
     subroutes: {
       donate: { name: 'Donate', path: '/support/donate' },
-      needs: { name: 'Current needs', path: '/support/needs' },
+      needs: { name: 'Current needs', path: '/support/needs', hidden: true },
       petitions: { name: 'Active Petitions', path: '/support/petitions' },
     },
   },
