@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react'
 import { Route } from '../../routes'
 
 type Props = {
-  route: Partial<Route>
+  route: Route
 }
 
 export const RouteFilter = (props: PropsWithChildren<Props>) => {
