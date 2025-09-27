@@ -3,18 +3,17 @@ import { useLocation, Link } from 'react-router'
 
 import styles from './Reports.module.scss'
 
+import pdf1 from 'url:../../assets/pdfs/Financial review 2023-2024.pdf'
+import pdf2 from 'url:../../assets/pdfs/UVC Financial report (detailed) - 2023-2024.pdf'
+
 const pdfs = [
   {
-    filename: 'this-is-a-pdf.pdf',
-    text: 'Spending report 01.01.2025 - 31.01.2025',
+    filename: pdf1,
+    text: 'Financial review 2023-2024',
   },
   {
-    filename: 'this-is-a-pdf-2.pdf',
-    text: 'Spending report 01.02.2025 - 28.02.2025',
-  },
-  {
-    filename: 'this-is-a-pdf-3.pdf',
-    text: 'Spending report 01.03.2025 - 30.03.2025',
+    filename: pdf2,
+    text: 'Financial report 2023-2024',
   },
 ]
 
@@ -127,7 +126,7 @@ export const Reports: FC = () => {
       </ul>
       <h3>Our annual financial reports</h3>
       <p>We publish annual reports detailing how each donation is used.</p>
-      {/* <ul className={styles['reports__spending-list']}>
+      <ul className={styles['reports__spending-list']}>
         {pdfs.map((pdf) => (
           <li key={pdf.filename}>
             <a
@@ -140,7 +139,7 @@ export const Reports: FC = () => {
             </a>
           </li>
         ))}
-      </ul> */}
+      </ul>
       <h2 id='impact'>Our Impact</h2>
       <p>Together, we’ve achieved incredible things—and we’re aiming to do much more. </p>
       <ol>

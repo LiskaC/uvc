@@ -2,6 +2,9 @@ import { FC } from 'react'
 
 import styles from './Constitution.module.scss'
 
+import STATUTE from 'url:../../assets/pdfs/Ukrainian Victory Campaign Consitution (4).pdf'
+import CODE_OF_CONDUCT from 'url:../../assets/pdfs/UVC Code of Conduct and Ethics 17 May 2025.pdf'
+
 export const Constitution: FC = () => (
   <section>
     <h1>Constitution</h1>
@@ -36,8 +39,20 @@ export const Constitution: FC = () => (
         our Defenders.
       </li>
     </ul>
-    <p>Read the full version of our constitution</p>
-    <p>Read our statute</p>
-    <p>Access the Ukrainian Victory Campaign Code of Conduct and Ethics</p>
+    {/* <p>
+      <a href={STATUTE} target='_blank' rel='noreferrer'>
+        Read the full version of our constitution
+      </a>
+    </p> */}
+    <p>
+      <a href={STATUTE} target='_blank' rel='noreferrer'>
+        Read our statute
+      </a>
+    </p>
+    <p>
+      <a href={CODE_OF_CONDUCT} target='_blank' rel='noreferrer'>
+        Access the Ukrainian Victory Campaign Code of Conduct and Ethics
+      </a>
+    </p>
   </section>
 )
