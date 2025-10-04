@@ -5,10 +5,10 @@ import { Needs } from '../../sections/Needs/Needs'
 import { Volunteer } from '../../sections/Volunteer/Volunteer'
 
 export const Support: FC = () => (
-  <div>
+  <section>
     <Donate />
     <Needs />
     <Volunteer />
     <Communicate />
-  </div>
+  </section>
 )

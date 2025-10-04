@@ -8,12 +8,14 @@ export const Communicate: FC = () => {
 
   return (
     <section>
-      <h1>Spread the word</h1>
-      <p>Support Ukraine by following and sharing Ukraine news and info</p>
-      <h2>Follow our social accounts:</h2>
-      <Social />
-      <h2>Share our petitions and write to your MP:</h2>
-      <Button text='View Petitions!' onClick={() => navigate('/support/petitions')} />
+      <div>
+        <h1>Spread the word</h1>
+        <p>Support Ukraine by following and sharing Ukraine news and info</p>
+        <h2>Follow our social accounts:</h2>
+        <Social />
+        <h2>Share our petitions and write to your MP:</h2>
+        <Button text='View Petitions!' onClick={() => navigate('/support/petitions')} />
+      </div>
     </section>
   )
 }

@@ -1,29 +1,42 @@
 .donate__options {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   position: relative;
-  gap: 5rem;
-}
+  gap: 2rem;
 
-.donate__options::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: #fff;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .donate__option {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 40vw;
+  align-self: center;
+  text-align: center;
+  width: 80vw;
+  border-radius: 5px;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #888;
+  border: 1px solid blue;
+  background-color: #111;
+  cursor: pointer;
+  text-decoration: auto;
+
+  @media (min-width: 768px) {
+    width: 40vw;
+    align-self: unset;
+  }
+
+  &:hover {
+    background-color: #222;
+  }
 }
 
 .donate__image {
   display: block;
-  max-width: 300px;
   align-self: center;
+  max-width: 100%;
 }

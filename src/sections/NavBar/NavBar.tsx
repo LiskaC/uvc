@@ -1,8 +1,8 @@
 import { FC, useState } from 'react'
 import { hasSubroutes, Route, routes } from '../../routes'
+import { RouteFilter } from '../../components/RouteFilter/RouteFilter'
 
 import styles from './NavBar.module.scss'
-import { RouteFilter } from '../../components/RouteFilter/RouteFilter'
 
 interface Props {
   route: Route

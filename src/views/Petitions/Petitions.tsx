@@ -72,37 +72,45 @@ const links = [
 ]
 
 export const Petitions: FC = () => (
-  <main>
-    <h1>Petitions</h1>
-    <p>
-      Helping Ukraine doesn&#39;t have to be time-consuming or expensive. These are the petitions
-      we&#39;re supporting - support Ukraine with us!
-    </p>
-    <h2>Active Online Petitions</h2>
-    <p>Take two minutes to sign and/or share these petitions:</p>
-    <ul>
-      {petitions.map((petition, index) => (
-        <ListItem key={index}>
-          <Link href={petition.href} text={petition.title} />
-        </ListItem>
-      ))}
-    </ul>
-    <h2>Letters to MP</h2>
-    <p>Ready-made templates for letters to your MP - feel free to use and adjust as you wish:</p>
-    <div className={styles['letters']}>
-      {letters.map((letter, index) => (
-        <Accordion key={index} title={letter.title} content={letter.content} />
-      ))}
+  <section>
+    <div>
+      <h1>Petitions</h1>
+      <p>
+        Helping Ukraine doesn&#39;t have to be time-consuming or expensive. These are the petitions
+        we&#39;re supporting - support Ukraine with us!
+      </p>
     </div>
-    <p>Check these resources to find out more:</p>
-    <ul>
-      {links.map((link, index) => (
-        <ListItem key={index}>
-          <Link href={link.href} text={link.text} />
-        </ListItem>
-      ))}
-    </ul>
-  </main>
+    <div>
+      <h2>Active Online Petitions</h2>
+      <p>Take two minutes to sign and/or share these petitions:</p>
+      <ul>
+        {petitions.map((petition, index) => (
+          <ListItem key={index}>
+            <Link href={petition.href} text={petition.title} />
+          </ListItem>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <h2>Letters to MP</h2>
+      <p>Ready-made templates for letters to your MP - feel free to use and adjust as you wish:</p>
+      <div className={styles['letters']}>
+        {letters.map((letter, index) => (
+          <Accordion key={index} title={letter.title} content={letter.content} />
+        ))}
+      </div>
+    </div>
+    <div>
+      <p>Check these resources to find out more:</p>
+      <ul>
+        {links.map((link, index) => (
+          <ListItem key={index}>
+            <Link href={link.href} text={link.text} />
+          </ListItem>
+        ))}
+      </ul>
+    </div>
+  </section>
 )
 
 export default Petitions

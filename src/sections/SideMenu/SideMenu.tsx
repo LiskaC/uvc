@@ -17,6 +17,10 @@ const MenuItem: FC<MenuItemProps> = (props) => {
     props.toggleMenu()
   }
 
+  if (props.route.hidden) {
+    return null
+  }
+
   return (
     <li className={styles['navbar__item']}>
       <button onClick={() => handleClick(props.route.path)} className={styles['navbar__link']}>
@@ -24,16 +28,21 @@ const MenuItem: FC<MenuItemProps> = (props) => {
       </button>
       {hasSubroutes(props.route) && (
         <ul className={styles['navbar__subroutes']}>
-          {Object.values(props.route.subroutes).map((subroute) => (
-            <li key={subroute.path} className={styles['navbar__subroute-item']}>
-              <button
-                onClick={() => handleClick(subroute.path)}
-                className={styles['navbar__subroute-link']}
-              >
-                {subroute.name}
-              </button>
-            </li>
-          ))}
+          {Object.values(props.route.subroutes).map((subroute) => {
+            if (subroute.hidden) {
+              return null
+            }
+            return (
+              <li key={subroute.path} className={styles['navbar__subroute-item']}>
+                <button
+                  onClick={() => handleClick(subroute.path)}
+                  className={styles['navbar__subroute-link']}
+                >
+                  {subroute.name}
+                </button>
+              </li>
+            )
+          })}
         </ul>
       )}
     </li>
