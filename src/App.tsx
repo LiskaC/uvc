@@ -15,7 +15,7 @@ import { Constitution } from './views/Constitution/Constitution'
 import { Partners } from './views/Partners/Partners'
 import { Gallery } from './sections/Gallery/Gallery'
 import { Petitions } from './views/Petitions/Petitions'
-import { UnderConstruction } from './components/UnderConstruction/UnderConstruction'
+// import { UnderConstruction } from './components/UnderConstruction/UnderConstruction'
 
 const routesConfig = [
   { path: routes.home.subroutes.about.path, element: <About /> },
@@ -34,11 +34,11 @@ const routesConfig = [
 ]
 
 const ConstructionWrapper: FC = () => {
-  const admin = localStorage.getItem('admin')
+  // const admin = localStorage.getItem('admin')
 
-  if (admin !== 'true') {
-    return <UnderConstruction />
-  }
+  // if (admin !== 'true') {
+  //   return <UnderConstruction />
+  // }
 
   return <AppShell />
 }
