@@ -31,7 +31,7 @@ export const Donate: FC = () => (
           <p>Donate via PayPal</p>
         </a>
         <a href={routes.events.path} className={styles['donate__option']}>
-          <h3>At our demonstrations</h3>
+          <h3>At our demonstraions</h3>
           <p>Come to our Saturday demonstrations and donate by cash or card</p>
           <img className={styles['donate__image']} src={FUNDRAISING} alt='' aria-hidden />
         </a>
