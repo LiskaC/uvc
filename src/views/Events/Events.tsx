@@ -20,7 +20,7 @@ export const Events: FC = () => (
         <h2>🇺🇦 Weekly Public Demonstrations</h2>
         <p>
           Every <b>Saturday</b>, we gather for our <b>Public Action</b> at the{' '}
-          <b>Duke of Wellington Monument</b> in <b>Edinburgh</b> from <b>2pm to 4pm</b>.
+          <b>Duke of Wellington Monument</b> in <b>Edinburgh</b> from <b>1pm to 3pm</b>.
         </p>
         <p>Come join us: bring posters, flags, and friends!</p>
 
