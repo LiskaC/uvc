@@ -65,7 +65,6 @@ export const About: FC = () => (
         <li>Activists</li>
         <li>Volunteers</li>
         <li>Fundraisers</li>
-        <li>Bakers</li>
         <li>Organisers</li>
         <li>Friends</li>
       </ul>
