@@ -1,7 +1,7 @@
 import { GoogleCalendarEvent } from './types'
 
-const CALENDAR_ID = process.env.CALENDAR_ID
-const CALENDAR_KEY = process.env.CALENDAR_KEY
+const CALENDAR_ID = process.env.REACT_APP_CALENDAR_ID
+const CALENDAR_KEY = process.env.REACT_APP_CALENDAR_KEY
 const GOOGLE_CALENDAR_EVENTS_URL = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${CALENDAR_KEY}`
 
 export async function fetchEvents(): Promise<GoogleCalendarEvent[]> {

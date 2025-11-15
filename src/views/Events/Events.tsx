@@ -1,9 +1,9 @@
 import { FC } from 'react'
-
-import styles from './Events.module.scss'
 import { Volunteer } from '../../sections/Volunteer/Volunteer'
 
-const CALENDAR_ID = process.env.CALENDAR_ID
+import styles from './Events.module.scss'
+
+const CALENDAR_ID = process.env.REACT_APP_CALENDAR_ID
 
 export const Events: FC = () => (
   <>
